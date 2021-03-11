@@ -1,0 +1,90 @@
+<section class="prefooter" id="contact">
+    <div class="grid">
+        <div class="col-1-1">
+            <img src="images/squirrel-circle.png">
+            <h3>Get in touch anytime for advice, engagement, or just to say hello!</h3>
+	    <h6>(But not for marketing and recruiting please.)</h6>
+            <h3>Email <a href="mailto:ds@douglassquirrel.com">ds@douglassquirrel.com</a> or call <a href="tel:+447773795491">+44 777 3795 491</a></h3>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="grid">
+        <div class="col-1-1">
+            <h2>About Squirrel</h2>
+            <p>I’m an executive coach and consulting chief technology officer (CTO). I use the techniques of <a href="how-i-work.html#action-science">Action Science</a>, originated by Chris Argyris, to help companies of all sizes make big changes in their culture, skills, and processes. See how I can help <a href="what-i-do.html#advice">advise</a> your business and the <a href="how-i-work.html#courses-and-talks">courses and talks</a> I offer.</p>
+            <ul>
+                <li><a href="about.html#biography">Biography</a></li>
+                <li><a href="how-i-work.html#courses-and-talks">Courses & Talks</a></li>
+                <li><a href="how-i-work.html#action-science">Action Science</a></li>
+                <li><a href="about.html#research-and-open-source">Research & Personal Matters</a></li>
+                <li><a href="my-clients.html">My Clients</a></li>
+                <li><a href="https://www.google.com/calendar/embed?src=jpj9j3ngmmaub4et8u50mmfmss%40group.calendar.google.com&ctz=Europe/London" target="_blank">Schedule</a></li>
+                <li><a href="https://uk.linkedin.com/in/dsquirrel" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<section class="copyright">
+    <div class="grid">
+        <div class="col-1-1">
+            <p><small>Squirrel Squared Limited (company number 07008780) is a company registered in England and Wales. The company, along with Squirrel, Lisa, Paige, and Star, resides at Old Kent Cottage, Frogholt, CT18 8AT. Come and visit anytime!</small></p>
+        </div>
+    </div>
+</section>
+
+<script>
+    if ( window.location.hash ) {
+        window.scrollTo(0,0);
+    }
+
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 72
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+        if (location.hash) {
+            var target = window.location.hash;
+
+            setTimeout( function() {
+                $('html, body').animate({
+                    scrollTop: $( target ).offset().top - 72
+                }, 1000);
+                return false;
+            }, 300 );
+        }
+
+        $('#nav-toggle').click(function() {
+            if ($(this).is(':checked')) {
+                $('#menu-label').html('Menu <span>&#x2715;</span>');
+            } else {
+                $('#menu-label').html('Menu <span>&#9776;</span>');
+            }
+        });
+
+        $('nav.main a').click( function(){
+            $('#nav-toggle').click();
+        });
+
+        $('.accordion dt').click(function() {
+            if( $(this).parents('.accordion').hasClass('open') ) {
+                $(this).next().slideUp();
+                $(this).parents('.accordion').removeClass('open');
+            } else {
+                $(this).next().slideDown();
+                $(this).parents('.accordion').addClass('open');
+            }
+        });
+    });
+</script>

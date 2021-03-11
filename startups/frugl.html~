@@ -1,0 +1,38 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<title>Squirrel's Startup Notes - Frugl</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<meta name="keywords" content="Squirrel,CTO,startups"/>
+<meta name="description" content="Douglas Squirrel"/> 
+<meta name="DISTRIBUTION" content="global"/>
+<meta name="author" content="Douglas Squirrel"/>
+<meta name="ROBOTS" content="all"/>
+</head>
+<body>
+<h1>Frugl - 3 June 2014</h1>
+<ul>
+  <li><strong>Startup name</strong>: Frugl, <a href="http://frugl.com">http://frugl.com</a></li>
+  <li><strong>Founder</strong>: Suzanne, Tix</li>
+One-sentence summary: 
+Startup Stage: App was released in the App Store on 15th March
+Current Funding: Self funded and seeking investment although we are applying for a start-up loan in the interim
+Specific questions for Squirrel: 
+  <li><strong>One-sentence summary</strong>: Events discovery app for Londoners looking for affordable things to do</li>
+  <li><strong>Startup Stage</strong>: MVP app released with some users and marketing, but no revenue</li>
+  <li><strong>Current Funding</strong>: Bootstrapping and using a startup loan; actively seeking investment</li>
+  <li><strong>Question</strong>: What further funding sources should Frugl consider (currently looking for a loan)? How should Frugl find and hire developers to improve its software (currently using outsourced dev team)?</li>
+</ul>
+
+<p>
+Suzanne, Tix, and I worked out how much runway Frugl has before current self-funding and loan run out, which was helpful for focussing their attention on the time left before they need to start generating cash. As usual, I suggested that angel investment is most likely to come only after they have a proven business model (even if that model has very modest revenue to start with). We explored a few ideas about how to find such a model very quickly; I suggested that since they have customers actually using the product, running some very cheap experiments on segments of the current users could help them to iterate very fast. For example, put up a button that says "Buy This" but does nothing - except report that users clicked it. It sounds like this would annoy users but in practise it has much less effect than you'd think (thanks, Internet, for being broken a lot and training users that busted buttons are their fault!) and it gives very accurate data about user intentions and behaviour. They plan to try some experiments of this kind very soon.
+</p>
+
+<p>
+Suzanne and Tix have to date outsourced their software development, and the result is that they actually have little technical knowledge about their own app. We discussed hiring in-house developers, as contractors or employees, so that Tix (the techie of the two) can work closely with them, absorb tech information, and rapidly influence technical decisions. They may try finding these developers via recruiters - they may not have time to use advertisements or community networks, which I usually prefer - but they should be aware that the recruiter fee will absorb a good chunk of their available capital.
+</p>
+
+</body>
+</html>

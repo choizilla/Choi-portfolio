@@ -1,0 +1,160 @@
+header {
+    font-family: 'Ladybird-Light';
+    background-color: $secondary;
+    padding: 0;
+    position: fixed;
+    display: block;
+    width: 100%;
+    min-height: $baseline*3;
+    box-sizing: border-box;
+    z-index: 10;
+    max-height: 100%;
+    overflow-y: visible;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center top -60px;
+    background-size: 120px;
+    color: $light;
+    margin-top: 0;
+    top: 0;
+    z-index: 9999;
+    ul{
+        li{
+            margin: 0;
+            line-height: 1.2;
+        }
+    }
+    .logo {
+        padding: 6px;
+        position: absolute;
+        width: 10em;
+        height: 10em;
+        background-image: url(/images/choi-logo.png);
+        background-color: transparent;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 1em;
+        right: -5em;
+        transition: all .2s ease-in-out;
+        &:hover{
+            background-image: url(/images/logo-menu.png);
+            background-size: contain;
+            transition: all .2s ease-in-out;
+        }
+    }
+    span.title {
+        font-size: 20px;
+        line-height: 24px;
+        // padding-left: 12%;
+        padding-left: 0;
+    }
+
+    label {
+        // float: right;
+        font-size: 1.5em;
+
+        span {
+            display: inline-block;
+            width: 14px;
+        }
+    }
+    input#nav-toggle {
+        display: none;
+    }
+    
+    input#nav-toggle:not(:checked) ~ nav {
+        max-height: 0;
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    input#nav-toggle:checked ~ nav {
+        min-height: 100vh;
+        // border-top: 1px solid #ffffff;
+        padding-top: 10vh;
+        // margin-top: 24px;
+        background: $primary;
+        margin: 0 auto;
+        width: 100%;
+        // max-width: 500px;
+        height: 100vh;
+    }
+
+    a {
+        font-size: 4em;
+        line-height: 1.5;
+        padding: $baseline*0.5;
+        text-decoration: none;
+        // color: $light;
+        padding: 0.5em $baseline*2;
+
+        // &:hover {
+        //     color: darken($light, 20%);
+        // }
+    }
+
+    nav {
+        max-height: 0;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        overflow: hidden;
+
+        a {
+            // display: block;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: $mobile) {
+    .nav-group {
+        a:not(:first-child) {
+            display: none;
+        }
+    }
+    input#nav-toggle:checked ~ nav {
+        box-shadow: $box-shadow;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    span.title {
+        padding-left: 0;
+    }
+
+    nav {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header{
+        .logo{
+            max-width: 8em;
+            right: -4em;
+            top: -1em;
+        }
+    }
+    .intro{
+        background-size: auto!important;
+        background-attachment: fixed;
+        height: 80vh;
+        background-position: center;
+    }
+}
+
+// logo rotating
+.rotate {
+    animation: rotation 20s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
