@@ -65,7 +65,7 @@ h1 { font-family: 'Ladybird-Light'; font-size: 46px; line-height: 52px; text-ali
 h2 { font-family: 'Ladybird-Light'; font-size: 5em; line-height: 1.5; color: #cfff00; margin: 12px 0; }
 @media (max-width: 800px) { h2 { font-size: 3em; } }
 
-a { color: #cfff00; position: relative; color: #cfff00; background: linear-gradient(to right, #333333, #333333 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
+a { color: #cfff00; position: relative; color: #cfff00; background: linear-gradient(to right, #000000, #000000 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
 a:hover { background-position: 0 100%; }
 
 h3 { font-family: 'Ladybird-Light'; font-size: 1.5em; line-height: 1.2; margin-top: 12px; margin-bottom: 24px; padding-right: .5em; }
@@ -111,11 +111,11 @@ hr { border: none; background-color: #5d4d65; height: 3px; width: 20%; margin: 8
 div.card { background-color: #ffffff; padding: 24px; margin: 24px 0; box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05); -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05); }
 div.card h3 { margin-bottom: 12px; padding: 0; }
 
-.clients { border: 5px solid #cfff00; }
-.clients section .col-1-1 { max-width: 1000px; margin: auto; }
-.clients section ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; margin: 2em 0; }
-.clients section ul li { padding-left: 0; font-size: 15px; text-indent: 0; text-transform: uppercase; margin: 18px 0; }
-.clients section ul li:first-of-type { margin-top: 0; }
+.projects { border: 5px solid #cfff00; }
+.projects section .col-1-1 { max-width: 1000px; margin: auto; }
+.projects section ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; margin: 2em 0; }
+.projects section ul li { padding-left: 0; font-size: 15px; text-indent: 0; text-transform: uppercase; margin: 18px 0; }
+.projects section ul li:first-of-type { margin-top: 0; }
 
 section { padding: 40px 24px; }
 section:first-of-type { padding-top: 136px; }
@@ -159,7 +159,7 @@ a.button:hover span::before, a.button:focus span::before { -webkit-transform: ro
 
 .newsflash { text-align: center; background-color: #5d4d65; color: #cfff00; padding: 1em; padding-left: 10%; padding-right: 10%; margin: 2em 0; }
 .newsflash .button { margin: 0.5em auto 1em auto !important; max-width: 200px; }
-.newsflash a.button span { background-color: #cfff00; color: #333333; }
+.newsflash a.button span { background-color: #cfff00; color: #000000; }
 .newsflash hr { background-color: #cfff00; width: 20%; margin: 1.5em 40%; float: none; }
 .newsflash small { color: #cfff00; }
 
@@ -201,7 +201,7 @@ header nav a { text-align: center; }
 
 @keyframes rotation { from { transform: rotate(0deg); }
   to { transform: rotate(359deg); } }
-footer { background-color: #333333; padding: 40px 24px; color: #ffffff; }
+footer { background-color: #000000; padding: 40px 24px; color: #ffffff; }
 footer a { color: #ffffff; }
 
 body.home { background-color: #cfff00; }
