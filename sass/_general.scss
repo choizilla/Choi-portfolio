@@ -44,7 +44,7 @@ video {
 
 hr {
     border: none;
-    background-color: $primary;
+    background-color: $light;
     height: 3px;
     width: 20%;
     margin: 80px 80% 0 0;
@@ -375,4 +375,18 @@ a.secondary-btn {
         left: 0px;
         top: -66px;
     }
+}
+
+
+.portfolio-page{
+  .contribute,
+  ul{
+    display: inline-block;
+    li {
+      background-color: darken($color: $primary, $amount: 5);
+      padding: 0.4em 1em 0.4em;
+      display: inline;
+      border-radius: 1em;
+    }
+  }
 }
