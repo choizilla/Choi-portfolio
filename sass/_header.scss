@@ -18,8 +18,8 @@ header {
     margin-top: 0;
     top: 0;
     z-index: 9999;
-    ul{
-        li{
+    ul {
+        li {
             margin: 0;
             line-height: 1.2;
         }
@@ -37,7 +37,7 @@ header {
         top: 1em;
         right: -5em;
         transition: all .2s ease-in-out;
-        &:hover{
+        &:hover {
             background-image: url(/images/logo-menu.png);
             background-size: contain;
             transition: all .2s ease-in-out;
@@ -49,11 +49,9 @@ header {
         // padding-left: 12%;
         padding-left: 0;
     }
-
     label {
         // float: right;
         font-size: 1.5em;
-
         span {
             display: inline-block;
             width: 14px;
@@ -62,15 +60,13 @@ header {
     input#nav-toggle {
         display: none;
     }
-    
-    input#nav-toggle:not(:checked) ~ nav {
+    input#nav-toggle:not(:checked)~nav {
         max-height: 0;
         border-top: none;
         padding-top: 0;
         margin-top: 0;
     }
-
-    input#nav-toggle:checked ~ nav {
+    input#nav-toggle:checked~nav {
         min-height: 100vh;
         // border-top: 1px solid #ffffff;
         padding-top: 10vh;
@@ -81,7 +77,6 @@ header {
         // max-width: 500px;
         height: 100vh;
     }
-
     a {
         font-size: 4em;
         line-height: 1.5;
@@ -89,18 +84,15 @@ header {
         text-decoration: none;
         // color: $light;
         padding: 0.5em $baseline*2;
-
         // &:hover {
         //     color: darken($light, 20%);
         // }
     }
-
     nav {
         max-height: 0;
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
         overflow: hidden;
-
         a {
             // display: block;
             text-align: center;
@@ -114,7 +106,7 @@ header {
             display: none;
         }
     }
-    input#nav-toggle:checked ~ nav {
+    input#nav-toggle:checked~nav {
         box-shadow: $box-shadow;
     }
 }
@@ -123,38 +115,47 @@ header {
     span.title {
         padding-left: 0;
     }
-
     nav {
         padding-right: 0;
     }
 }
 
 @media (max-width: 600px) {
-    header{
-        .logo{
+    header {
+        .logo {
             max-width: 8em;
             right: -4em;
             top: -1em;
         }
     }
-    .intro{
+    .intro {
         background-size: auto!important;
-        background-attachment: fixed;
+        // background-attachment: fixed;
         height: 80vh;
         background-position: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    header {
+        .logo {
+            width: 12em;
+            height: 12em;
+            right: -6em;
+        }
     }
 }
 
 // logo rotating
 .rotate {
     animation: rotation 20s infinite linear;
-  }
-  
-  @keyframes rotation {
+}
+
+@keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(359deg);
+        transform: rotate(359deg);
     }
-  }
+}

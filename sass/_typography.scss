@@ -200,11 +200,12 @@ footer ul {
 }
 
 small {
-    font-size: 12px;
+    font-size: .7em;
     line-height: 18px;
-    text-align: center;
+    // text-align: center;
     display: block;
-    color: $fine;
+    color: $light;
+    margin: .5em 0;
 }
 
 span.call-to-action, a.button, button, input[type=button] {

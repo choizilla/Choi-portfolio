@@ -1,9 +1,13 @@
 footer {
-    background-color: $dark;
+    background-color: transparent;
     padding: 40px $baseline;
     color: $light;
-
     a {
         color: $light;
+    }
+    li {
+        list-style: none;
+        font-size: 2em;
+        font-family: 'Ladybird-Light';
     }
 }
