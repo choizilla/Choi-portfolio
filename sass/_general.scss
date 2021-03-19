@@ -287,18 +287,22 @@ a.secondary-btn {
     }
 }
 
-.portfolio-page {
-    .contribute,
-    ul {
+// .portfolio-page{
+  .contribute{
+  display: inline-block;
+  margin: .5em 0 .2em;
+  }
+  ul.contribute{
         display: inline-block;
         li {
-            background-color: darken($color: $primary, $amount: 5);
+            background-color: rgba(0, 0, 0, 0.1);
             padding: 0.4em 1em 0.4em;
             display: inline;
             border-radius: 1em;
         }
-    }
-}
+      }
+  
+// }
 
 .decca section{
   padding: 40px 24px 0;
@@ -313,8 +317,13 @@ body {
 }
 
 section.browser-mockup-section {
+    position: relative;
     padding: 2em 0;
     overflow: hidden;
+    h4{
+      text-align: center;
+      margin: 2em 0;
+    }
     &::before {
         content: "";
         position: absolute;
@@ -329,7 +338,7 @@ section.browser-mockup-section {
         border-top-width: 45px;
         border-radius: 6px;
         box-shadow: 3px 12px 30px -8px rgba(0, 0, 0, 0.2);
-        // transform: rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+        transform: rotateX(-15deg) rotateY(0deg) rotateZ(0deg);
         transition: all ease 0.4s;
         max-width: 1200px;
         width: 90%;
@@ -457,4 +466,10 @@ section.browser-mockup-section {
 
 .video{
   text-align: center;
+}
+
+.projects{
+  ul li{
+    list-style: none;
+  }
 }

@@ -65,7 +65,7 @@ h1 { font-family: 'Ladybird-Light'; font-size: 46px; line-height: 52px; text-ali
 h2 { font-family: 'Ladybird-Light'; font-size: 5em; line-height: 1.2; color: #cfff00; margin: 12px 0; }
 @media (max-width: 800px) { h2 { font-size: 3em; } }
 
-a { color: #cfff00; position: relative; color: #cfff00; background: linear-gradient(to right, #000000, #000000 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
+a { color: #cfff00; word-wrap: break-word; position: relative; color: #cfff00; background: linear-gradient(to right, #000000, #000000 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
 a:hover { background-position: 0 100%; }
 
 h3 { font-family: 'Ladybird-Light'; font-size: 1.5em; line-height: 1.2; margin-top: 12px; margin-bottom: 24px; padding-right: .5em; }
@@ -79,7 +79,7 @@ q { quotes: "“" "”"; }
 q:before { content: open-quote; }
 q:after { content: close-quote; }
 
-ul { list-style: none; }
+ul { list-style-type: disclosure-closed; }
 ul li { padding-left: 18px; margin: 24px 0; text-indent: -16px; }
 
 footer ul { list-style: none; }
@@ -162,8 +162,10 @@ a.secondary-btn span { background-color: #cfff00; color: #07829c; box-shadow: in
 .about h2 { text-align: center; }
 
 @media screen and (min-width: 896px) { .anchor a { position: absolute; left: 0px; top: -66px; } }
-.portfolio-page .contribute, .portfolio-page ul { display: inline-block; }
-.portfolio-page .contribute li, .portfolio-page ul li { background-color: #066e84; padding: 0.4em 1em 0.4em; display: inline; border-radius: 1em; }
+.contribute { display: inline-block; margin: .5em 0 .2em; }
+
+ul.contribute { display: inline-block; }
+ul.contribute li { background-color: rgba(0, 0, 0, 0.1); padding: 0.4em 1em 0.4em; display: inline; border-radius: 1em; }
 
 .decca section { padding: 40px 24px 0; }
 
@@ -171,9 +173,10 @@ a.secondary-btn span { background-color: #cfff00; color: #07829c; box-shadow: in
 
 body { font-size: 16px; }
 
-section.browser-mockup-section { padding: 2em 0; overflow: hidden; }
+section.browser-mockup-section { position: relative; padding: 2em 0; overflow: hidden; }
+section.browser-mockup-section h4 { text-align: center; margin: 2em 0; }
 section.browser-mockup-section::before { content: ""; position: absolute; width: 150%; height: 58%; top: -20%; left: -25%; }
-section.browser-mockup-section .mockup { border: solid 10px #e8e8e8; border-top-width: 45px; border-radius: 6px; box-shadow: 3px 12px 30px -8px rgba(0, 0, 0, 0.2); transition: all ease 0.4s; max-width: 1200px; width: 90%; margin: auto; }
+section.browser-mockup-section .mockup { border: solid 10px #e8e8e8; border-top-width: 45px; border-radius: 6px; box-shadow: 3px 12px 30px -8px rgba(0, 0, 0, 0.2); transform: rotateX(-15deg) rotateY(0deg) rotateZ(0deg); transition: all ease 0.4s; max-width: 1200px; width: 90%; margin: auto; }
 section.browser-mockup-section .mockup .scroll-container { overflow-y: scroll; max-height: 75vh; }
 section.browser-mockup-section .mockup ::-webkit-scrollbar { width: 0; }
 section.browser-mockup-section .mockup img { width: 100%; height: auto; }
@@ -202,6 +205,8 @@ section.browser-mockup-section .mockup:hover { transform: rotateX(-10deg) rotate
   50% { transform: translateY(7.5px); opacity: 1; }
   100% { transform: translateY(0); opacity: 0; } }
 .video { text-align: center; }
+
+.projects ul li { list-style: none; }
 
 header { font-family: 'Ladybird-Light'; background-color: #cfff00; padding: 0; position: fixed; display: block; width: 100%; min-height: 72px; box-sizing: border-box; z-index: 10; max-height: 100%; overflow-y: visible; background-color: transparent; background-repeat: no-repeat; background-position: center top -60px; background-size: 120px; color: #ffffff; margin-top: 0; top: 0; z-index: 9999; }
 header ul li { margin: 0; line-height: 1.2; }
