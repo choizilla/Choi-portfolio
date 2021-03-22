@@ -97,11 +97,17 @@ a {
 h3 {
     font-family: 'Ladybird-Light';
     // font-family: 'Stick', sans-serif;
-    font-size: 1.5em;
+    // font-size: 1.5em;
+    // line-height: 1.2;
+    // margin-top: $baseline*0.5;
+    // margin-bottom: $baseline;
+    // padding-right: .5em;
+
+    font-size: 4em;
     line-height: 1.2;
-    margin-top: $baseline*0.5;
-    margin-bottom: $baseline;
-    padding-right: .5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-right: 0;
     &.CTA{
         font-size: 30px;
         line-height: 1.5;
@@ -176,18 +182,26 @@ q {
 
 ul {
     // list-style: none;
-    list-style-type: disclosure-closed;
+    list-style-type: disc;
+    margin-left: -2em;
 
     li {
         padding-left: $baseline*0.75;
         margin: $baseline 0;
-        text-indent: -16px;
-
+        // text-indent: -16px;
+        font-size: 20px;
+        margin-left: 16px;
         // &:before {
         //     content: "• ";
         //     color: $primary;
         //     padding-right: $baseline*0.25;
         // }
+    }
+    ul{
+      margin-left: 32px;
+      li{
+        list-style-type: circle;
+      }
     }
 }
 

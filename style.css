@@ -68,7 +68,7 @@ h2 { font-family: 'Ladybird-Light'; font-size: 5em; line-height: 1.2; color: #cf
 a { color: #cfff00; word-wrap: break-word; position: relative; color: #cfff00; background: linear-gradient(to right, #000000, #000000 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
 a:hover { background-position: 0 100%; }
 
-h3 { font-family: 'Ladybird-Light'; font-size: 1.5em; line-height: 1.2; margin-top: 12px; margin-bottom: 24px; padding-right: .5em; }
+h3 { font-family: 'Ladybird-Light'; font-size: 4em; line-height: 1.2; margin-top: 2em; margin-bottom: 1em; padding-right: 0; }
 h3.CTA { font-size: 30px; line-height: 1.5; text-align: center; }
 
 H4 { font-size: 22px; line-height: 1.5; text-transform: uppercase; margin: 72px 0 12px; font-weight: 700; letter-spacing: 5px; }
@@ -79,8 +79,10 @@ q { quotes: "“" "”"; }
 q:before { content: open-quote; }
 q:after { content: close-quote; }
 
-ul { list-style-type: disclosure-closed; }
-ul li { padding-left: 18px; margin: 24px 0; text-indent: -16px; }
+ul { list-style-type: disc; margin-left: -2em; }
+ul li { padding-left: 18px; margin: 24px 0; font-size: 20px; margin-left: 16px; }
+ul ul { margin-left: 32px; }
+ul ul li { list-style-type: circle; }
 
 footer ul { list-style: none; }
 footer ul li { font-size: 19px; line-height: 22px; margin: 12px 0; }
@@ -102,7 +104,7 @@ img { width: 100%; display: block; }
 
 .resource-img { max-width: 120px; margin: 0 auto !important; padding: 1em; }
 
-.external-img { width: 10px; margin-bottom: auto; padding: 0 0 0.2em; display: inline; }
+.external-img { width: 10px; margin-bottom: auto; padding: 0 0 0.2em; display: inline; margin: 0; }
 
 video { width: 100%; margin: 24px 0 !important; display: block; background: #ffffff; }
 
@@ -117,6 +119,7 @@ div.card h3 { margin-bottom: 12px; padding: 0; }
 .projects section ul li:first-of-type { margin-top: 0; }
 
 section { padding: 40px 24px; }
+section .content-img { margin: 48px 0; }
 section:first-of-type { padding-top: 136px; }
 section.illustration { background-color: #07829c; background: linear-gradient(#07829c 88.6%, #ffffff 1%); background-size: 100% 100%; padding: 96px 0 0 0; }
 section.illustration img { margin: 0 !important; }
@@ -162,12 +165,10 @@ a.secondary-btn span { background-color: #cfff00; color: #07829c; box-shadow: in
 .about h2 { text-align: center; }
 
 @media screen and (min-width: 896px) { .anchor a { position: absolute; left: 0px; top: -66px; } }
-.contribute { display: inline-block; margin: .5em 0 .2em; }
+.contribute { display: inline-block; margin: .5em 0 .2em; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
 
 ul.contribute { display: inline-block; }
-ul.contribute li { background-color: rgba(0, 0, 0, 0.1); padding: 0.4em 1em 0.4em; display: inline; border-radius: 1em; }
-
-.decca section { padding: 40px 24px 0; }
+ul.contribute li { font-size: 12px; background-color: rgba(0, 0, 0, 0.1); padding: .7em 1em 0.5em; display: inline; border-radius: 1em; }
 
 .mockup ::-webkit-scrollbar { display: none; }
 
@@ -208,6 +209,13 @@ section.browser-mockup-section .mockup:hover { transform: rotateX(-10deg) rotate
 
 .projects ul li { list-style: none; }
 
+body.lisa-squirrel { color: #333; background-color: #ebe8d7; background-image: url(/images/lisa-squirrel/lisa-bg.jpg); background-size: contain; background-repeat: no-repeat; border: 5px solid #3c528f; }
+body.lisa-squirrel h2 { color: #3c518f; }
+body.lisa-squirrel section a { -webkit-text-fill-color: unset; color: #2d55cb !important; }
+body.lisa-squirrel ul.contribute li { background-color: #3c528f; color: white; }
+body.lisa-squirrel section.browser-mockup-section .mockup { border: solid 10px #cfcfcf; border-top-width: 45px; }
+body.lisa-squirrel #scroll-text { background: #3c528f; }
+
 header { font-family: 'Ladybird-Light'; background-color: #cfff00; padding: 0; position: fixed; display: block; width: 100%; min-height: 72px; box-sizing: border-box; z-index: 10; max-height: 100%; overflow-y: visible; background-color: transparent; background-repeat: no-repeat; background-position: center top -60px; background-size: 120px; color: #ffffff; margin-top: 0; top: 0; z-index: 9999; }
 header ul li { margin: 0; line-height: 1.2; }
 header .logo { padding: 6px; position: absolute; width: 10em; height: 10em; background-image: url(/images/choi-logo.png); background-color: transparent; background-size: 90%; background-repeat: no-repeat; background-position: center; top: 1em; right: -5em; transition: all .2s ease-in-out; }
@@ -220,7 +228,7 @@ header input#nav-toggle:not(:checked) ~ nav { max-height: 0; border-top: none; p
 header input#nav-toggle:checked ~ nav { min-height: 100vh; padding-top: 10vh; background: #07829c; margin: 0 auto; width: 100%; height: 100vh; }
 header a { font-size: 4em; line-height: 1.5; padding: 12px; text-decoration: none; padding: 0.5em 48px; }
 header nav { max-height: 0; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; overflow: hidden; }
-header nav a { text-align: center; }
+header nav a { text-align: center; color: #cfff00 !important; }
 
 @media screen and (min-width: 800px) { .nav-group a:not(:first-child) { display: none; }
   input#nav-toggle:checked ~ nav { box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05); } }

@@ -34,6 +34,7 @@ img {
     margin-bottom: auto;
     padding: 0 0 0.2em;
     display: inline;
+    margin: 0;
 }
 
 video {
@@ -94,6 +95,9 @@ div.card {
 
 section {
     padding: 40px $baseline;
+    .content-img {
+      margin: ($baseline*2) 0;
+    }
     &:first-of-type {
         padding-top: ($baseline*4)+40;
     }
@@ -287,25 +291,22 @@ a.secondary-btn {
     }
 }
 
-// .portfolio-page{
-  .contribute{
+.contribute{
   display: inline-block;
   margin: .5em 0 .2em;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
   }
   ul.contribute{
-        display: inline-block;
-        li {
-            background-color: rgba(0, 0, 0, 0.1);
-            padding: 0.4em 1em 0.4em;
-            display: inline;
-            border-radius: 1em;
-        }
-      }
-  
-// }
-
-.decca section{
-  padding: 40px 24px 0;
+    display: inline-block;
+  li {
+      font-size: 12px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: .7em 1em 0.5em;
+      display: inline;
+      border-radius: 1em;
+  }
 }
 
 .mockup ::-webkit-scrollbar {
@@ -471,5 +472,34 @@ section.browser-mockup-section {
 .projects{
   ul li{
     list-style: none;
+  }
+}
+
+body.lisa-squirrel{
+  color: #333;
+  background-color: #ebe8d7;
+  background-image: url(/images/lisa-squirrel/lisa-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 5px solid #3c528f;
+  h2 {
+    color: #3c518f;
+  }
+  section a{
+    -webkit-text-fill-color: unset;
+    color: #2d55cb!important
+  }
+  ul.contribute{
+    li {
+        background-color:#3c528f;
+        color: white;
+    }
+  }
+  section.browser-mockup-section .mockup {
+    border: solid 10px #cfcfcf;
+    border-top-width: 45px;
+  }
+  #scroll-text {
+    background: #3c528f;
   }
 }
