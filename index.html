@@ -55,25 +55,51 @@
             </h2>
 
         </div>
+
         <div class="home-grid"> 
-            <div class="col">
-                <a href="/decca-records.html"> <img src="images/home/Artboard 6.jpg" alt="Thumbs-up sign"></a>
-            </div>
-            <div class="col">
-              <a href="/sam-smith.html">
-                <div id="container" class="container samsmith">
-                    <div id="scene" class="scene">
-                        <div data-depth="0.40"><img src="images/sam/sam2.png"></div>
-                        <div data-depth="0.60"><img src="images/sam/sam3.png"></div>
-                        <div data-depth="1.00"><img src="images/sam/sam4.png"></div>
-                    </div>
-                </div>
-              </a>
-                <script>
-                    var scene = document.getElementById('scene');
-                    var parallax = new Parallax(scene);
-                </script>
-            </div>
+
+          <div class="col">
+            <a href="/lisa-squirrel.html"><img src="images/home/Artboard 8.png" alt="Lisa Squirrel"></a>
+          </div>
+
+          <div class="col">
+            <a href="/sam-smith.html">
+              <div id="container" class="container samsmith">
+                  <div id="scene" class="scene">
+                      <div data-depth="0.40"><img src="images/sam/sam2.png"></div>
+                      <div data-depth="0.60"><img src="images/sam/sam3.png"></div>
+                      <div data-depth="1.00"><img src="images/sam/sam4.png"></div>
+                  </div>
+              </div>
+            </a>
+              <script>
+                  var scene = document.getElementById('scene');
+                  var parallax = new Parallax(scene);
+              </script>
+          </div>
+          <div class="col"><img src="images/home/Artboard 5.png" alt="Thumbs-up sign"></div>
+
+          <div class="col">
+            <img id="mainImage" src="/images/home/dirty_hit_1.png"/>
+            <script type = "text/javascript">
+                var myImage = document.getElementById("mainImage");
+                var imageArray = ["/images/home/dirty_hit_1.png", "/images/home/dirty_hit_2.jpg", "/images/home/dirty_hit_3.jpg" ]
+                var imageIndex = 0;
+                function changeImage() {
+                myImage.setAttribute("src",imageArray[imageIndex]);
+                imageIndex++;
+                if (imageIndex >= imageArray.length) {
+                    imageIndex = 0;
+                }
+                }
+                setInterval(changeImage,1000);
+            </script>
+          </div>
+
+          <div class="col">
+            <a href="/decca-records.html"> <img src="images/home/Artboard 6.jpg" alt="Thumbs-up sign"></a>
+          </div>
+
             <div class="col islandrecords">
                 <a href="/island-records.html"><img class="rotate" src="images/home/island/island2.png" alt="island records logo"></a>
             </div>
@@ -92,40 +118,19 @@
 
               </div>
             <!-- </div> -->
-            <div class="col"><img src="images/home/Artboard 4a.jpg" alt="Thumbs-up sign"></div>
             <div class="col python move-area">
-                <div class='.face'>
-                    <div class='eye'></div>
-                    <div class='eye'></div>
-                </div>
-                <!-- <img src="images/home/python-logo.png" alt="Thumbs-up sign" > -->
+              <div class='.face'>
+                  <div class='eye'></div>
+                  <div class='eye'></div>
+              </div>
+              <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+              <script src="/eyescript.js"></script>
+          </div>
+            <div class="col"><img src="images/home/Artboard 4a.jpg" alt="Thumbs-up sign"></div>
 
-                <!-- <img id="mainImage" src="images/home/Artboard 3.png"/>
-                    <script type = "text/javascript">
-                        var myImage = document.getElementById("mainImage");
-                        var imageArray = ["http://images.8tracks.com/cover/i/001/626/696/space_final-2275.png?rect=0,0,500,500&q=98&fm=jpg&fit=max", "http://creativefan.com/files/2011/02/hubble-wallpaper-10-500x500.jpg"]
-                        var imageIndex = 0;
-                        function changeImage() {
-                        myImage.setAttribute("src",imageArray[imageIndex]);
-                        imageIndex++;
-                        if (imageIndex >= imageArray.length) {
-                            imageIndex = 0;
-                        }
-                        }
-                        setInterval(changeImage,1000);
-                    </script> -->
+            
+            <!-- <div class="col"><img src="images/home/Artboard 9.png" alt="Thumbs-up sign"></div> -->
 
-                <!-- <section class="move-area"> -->
-
-                <!-- </section> -->
-                <!-- partial -->
-                <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-                <script src="/eyescript.js"></script>
-
-            </div>
-            <div class="col"><img src="images/home/Artboard 5.png" alt="Thumbs-up sign"></div>
-            <div class="col"><a href="/lisa-squirrel.html"><img src="images/home/Artboard 8.png" alt="Lisa Squirrel"></a></div>
-            <div class="col"><img src="images/home/Artboard 9.png" alt="Thumbs-up sign"></div>
             <div class="home-foot">
                 <!-- <div class="clients"><h2><a href="/clients.html">Clients</a></h2></div class="project-list">
                     <div><h2><a href="/about.html">Biography</a></h2></div> -->

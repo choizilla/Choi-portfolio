@@ -338,7 +338,7 @@ body.home {
 }
 
 .python {
-    background-image: url(/images/home/Artboard\ 3c.jpg);
+    background-image: url(/images/home/Artboard\ 3d.jpg);
     background-size: cover;
 }
 
@@ -350,27 +350,30 @@ body.home {
 }
 
 .\.face {
-    padding: 0.75vw 25%;
+    // padding: 0.75vw 25%;
     display: block;
     position: relative;
     margin: auto;
     left: 50%;
     transform: translate(-50%);
+    width: 100%;
+    text-align: center;
+    height: 50vw;
 }
 
 .eye {
     display: inline-block;
     border-radius: 50%;
-    height: 6vw;
-    width: 6vw;
-    margin: 2.7vw;
+    height: 5vw;
+    width: 5vw;
+    margin: 3.8vw 5vh;
 }
 
 .eye:after {
     /*pupil*/
     position: absolute;
-    bottom: 5px;
-    right: 15px;
+    // bottom: 5px;
+    // right: 15px;
     width: 1.5vw;
     height: 1.5vw;
     background: #17110ad9;

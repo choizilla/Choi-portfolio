@@ -301,15 +301,15 @@ body.home { background-color: #cfff00; }
 .home-foot .project-list { background-color: #06768d; }
 .home-foot div { background-color: #07829c; }
 
-.python { background-image: url(/images/home/Artboard\ 3c.jpg); background-size: cover; }
+.python { background-image: url(/images/home/Artboard\ 3d.jpg); background-size: cover; }
 
 .move-area { /*normally use body*/ }
 
-.\.face { padding: 0.75vw 25%; display: block; position: relative; margin: auto; left: 50%; transform: translate(-50%); }
+.\.face { display: block; position: relative; margin: auto; left: 50%; transform: translate(-50%); width: 100%; text-align: center; height: 50vw; }
 
-.eye { display: inline-block; border-radius: 50%; height: 6vw; width: 6vw; margin: 2.7vw; }
+.eye { display: inline-block; border-radius: 50%; height: 5vw; width: 5vw; margin: 3.8vw 5vh; }
 
-.eye:after { /*pupil*/ position: absolute; bottom: 5px; right: 15px; width: 1.5vw; height: 1.5vw; background: #17110ad9; border-radius: 50%; content: " "; border: 0.3em solid #654734bf; }
+.eye:after { /*pupil*/ position: absolute; width: 1.5vw; height: 1.5vw; background: #17110ad9; border-radius: 50%; content: " "; border: 0.3em solid #654734bf; }
 
 @media (min-width: 1400px) { .home .intro { background-size: 105%; } }
 @media (max-width: 800px) { .vinyl { display: none; }
