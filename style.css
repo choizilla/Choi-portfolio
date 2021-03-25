@@ -63,7 +63,7 @@ em { font-style: italic; }
 h1 { font-family: 'Ladybird-Light'; font-size: 46px; line-height: 52px; text-align: center; margin-bottom: 36px; }
 
 h2 { font-family: 'Ladybird-Light'; font-size: 5em; line-height: 1.2; color: #cfff00; margin: 12px 0; }
-@media (max-width: 800px) { h2 { font-size: 3em; } }
+@media (max-width: 800px) { h2 { font-size: 5em; } }
 
 a { color: #cfff00; word-wrap: break-word; position: relative; color: #cfff00; background: linear-gradient(to right, #000000, #000000 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
 a:hover { background-position: 0 100%; }
@@ -161,7 +161,7 @@ a.secondary-btn span { background-color: #cfff00; color: #07829c; box-shadow: in
 
 .anchor a { position: absolute; left: 0px; top: -48px; }
 
-.about img { max-width: 350px; margin: auto; }
+.about .profile-pic { max-width: 350px; margin: auto; }
 .about h2 { text-align: center; }
 
 @media screen and (min-width: 896px) { .anchor a { position: absolute; left: 0px; top: -66px; } }
@@ -210,11 +210,14 @@ section.browser-mockup-section .mockup:hover { transform: rotateX(-10deg) rotate
 .projects ul li { list-style: none; }
 
 body.lisa-squirrel { color: #333; background-color: #ebe8d7; background-image: url(/images/lisa-squirrel/lisa-bg.jpg); background-size: contain; background-repeat: no-repeat; border: 5px solid #3c528f; }
+@media (max-width: 800px) { body.lisa-squirrel { background-size: 150%; background-position: top right; } }
 body.lisa-squirrel h2 { color: #3c518f; }
 body.lisa-squirrel section a { -webkit-text-fill-color: unset; color: #2d55cb !important; }
 body.lisa-squirrel ul.contribute li { background-color: #3c528f; color: white; }
 body.lisa-squirrel section.browser-mockup-section .mockup { border: solid 10px #cfcfcf; border-top-width: 45px; }
 body.lisa-squirrel #scroll-text { background: #3c528f; }
+
+.vinyl { width: 90%; margin: 10vh auto; max-width: 1300px; margin-top: 20vw; }
 
 header { font-family: 'Ladybird-Light'; background-color: #cfff00; padding: 0; position: fixed; display: block; width: 100%; min-height: 72px; box-sizing: border-box; z-index: 10; max-height: 100%; overflow-y: visible; background-color: transparent; background-repeat: no-repeat; background-position: center top -60px; background-size: 120px; color: #ffffff; margin-top: 0; top: 0; z-index: 9999; }
 header ul li { margin: 0; line-height: 1.2; }
@@ -259,7 +262,6 @@ body.home { background-color: #cfff00; }
 @keyframes AnimationName { 0% { background-position: 92% 100%; }
   50% { background-position: 9% 0%; }
   100% { background-position: 92% 100%; } }
-.home .intro .vinyl { width: 90%; margin: 10vh auto; max-width: 1300px; margin-top: 20vw; }
 .home .intro h2 { text-shadow: 1px 1px 10px #918492; }
 .home h1 { font-size: 30px; line-height: 36px; border-bottom: 3px solid #07829c; padding: 0 0 24px 0; margin: 0 0 24px 0; }
 .home .col { background-size: cover; }
@@ -313,4 +315,5 @@ body.home { background-color: #cfff00; }
 
 @media (min-width: 1400px) { .home .intro { background-size: 105%; } }
 @media (max-width: 800px) { .vinyl { display: none; }
-  .intro { -webkit-animation: AnimationName 120s ease infinite !important; -moz-animation: AnimationName 120s ease infinite !important; animation: AnimationName 120s ease infinite !important; background-size: cover; } }
+  .intro { -webkit-animation: AnimationName 120s ease infinite !important; -moz-animation: AnimationName 120s ease infinite !important; animation: AnimationName 120s ease infinite !important; background-size: cover; }
+  .intro h2 { font-size: 3.5em; } }

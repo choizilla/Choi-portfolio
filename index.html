@@ -45,7 +45,7 @@
     <section class="home" id="featured-folio">
         <div class="intro">
             <div class="scroll-container"><span id="scroll-text">Scroll Down<svg class="scroll-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><path d="M50,1.8c-17.7,0-32.2,14.5-32.2,32.2v32.2c0,17.7,14.5,32.2,32.2,32.2s32.2-14.5,32.2-32.2V33.9C82.2,16.2,67.7,1.8,50,1.8   z M77.6,66.1c0,15.2-12.4,27.6-27.6,27.6S22.4,81.2,22.4,66.1V33.9C22.4,18.8,34.8,6.3,50,6.3s27.6,12.4,27.6,27.6V66.1z"></path><path d="M50,22.4c-1.3,0-2.3,1-2.3,2.3v11.5c0,1.3,1,2.3,2.3,2.3s2.3-1,2.3-2.3V24.7C52.3,23.5,51.3,22.4,50,22.4z" class="scroll-animation"></path></g></svg></span></div>
-            <img class="rotate vinyl" src="images/home/home-vinyl copy-2.png" alt="clear vinyl">
+            <!-- <img class="rotate vinyl" src="images/home/home-vinyl copy-2.png" alt="clear vinyl"> -->
             <h2 class="rotatingText">Digital creative and developer for
                 <span class="rotatingText-adjective">The Rolling Stones.</span>
                 <span class="rotatingText-adjective">Justin Bieber.</span>
@@ -57,27 +57,12 @@
         </div>
 
         <div class="home-grid"> 
+          
+          <div class="col"><img src="images/home/Artboard 5.png" alt="Record Store webstore"></div>
 
           <div class="col">
             <a href="/lisa-squirrel.html"><img src="images/home/Artboard 8.png" alt="Lisa Squirrel"></a>
           </div>
-
-          <div class="col">
-            <a href="/sam-smith.html">
-              <div id="container" class="container samsmith">
-                  <div id="scene" class="scene">
-                      <div data-depth="0.40"><img src="images/sam/sam2.png"></div>
-                      <div data-depth="0.60"><img src="images/sam/sam3.png"></div>
-                      <div data-depth="1.00"><img src="images/sam/sam4.png"></div>
-                  </div>
-              </div>
-            </a>
-              <script>
-                  var scene = document.getElementById('scene');
-                  var parallax = new Parallax(scene);
-              </script>
-          </div>
-          <div class="col"><img src="images/home/Artboard 5.png" alt="Thumbs-up sign"></div>
 
           <div class="col">
             <img id="mainImage" src="/images/home/dirty_hit_1.png"/>
@@ -97,6 +82,22 @@
           </div>
 
           <div class="col">
+            <a href="/sam-smith.html">
+              <div id="container" class="container samsmith">
+                  <div id="scene" class="scene">
+                      <div data-depth="0.40"><img src="images/sam/sam2.png"></div>
+                      <div data-depth="0.60"><img src="images/sam/sam3.png"></div>
+                      <div data-depth="1.00"><img src="images/sam/sam4.png"></div>
+                  </div>
+              </div>
+            </a>
+              <script>
+                  var scene = document.getElementById('scene');
+                  var parallax = new Parallax(scene);
+              </script>
+          </div>
+
+          <div class="col">
             <a href="/decca-records.html"> <img src="images/home/Artboard 6.jpg" alt="Thumbs-up sign"></a>
           </div>
 
@@ -106,6 +107,14 @@
 
             <!-- <div> -->
               <!-- <a href="/our-planet.html"><img src="images/home/ourplanet-logo.png" alt="Our Planet logo"></a> -->
+              <div class="col python move-area">
+                <div class='.face'>
+                    <div class='eye'></div>
+                    <div class='eye'></div>
+                </div>
+                <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+                <script src="/eyescript.js"></script>
+            </div>
             
               <div class="blueplanet">
                 <div class="tile-logo">
@@ -118,14 +127,7 @@
 
               </div>
             <!-- </div> -->
-            <div class="col python move-area">
-              <div class='.face'>
-                  <div class='eye'></div>
-                  <div class='eye'></div>
-              </div>
-              <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-              <script src="/eyescript.js"></script>
-          </div>
+            
             <div class="col"><img src="images/home/Artboard 4a.jpg" alt="Thumbs-up sign"></div>
 
             

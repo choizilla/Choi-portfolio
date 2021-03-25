@@ -114,12 +114,6 @@ body.home {
           background-position: 92% 100%
         }
         }
-        .vinyl {
-            width: 90%;
-            margin: 10vh auto;
-            max-width: 1300px;
-            margin-top: 20vw;
-        }
         h2 {
             text-shadow: 1px 1px 10px #918492;
         }
@@ -397,5 +391,9 @@ body.home {
         -moz-animation: AnimationName 120s ease infinite!important;
         animation: AnimationName 120s ease infinite!important;
         background-size: cover;
+    }
+
+    .intro h2 {
+        font-size: 3.5em;
     }
 }

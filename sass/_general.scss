@@ -274,7 +274,7 @@ a.secondary-btn {
 }
 
 .about {
-    img {
+    .profile-pic{
         max-width: 350px;
         margin: auto;
     }
@@ -482,6 +482,10 @@ body.lisa-squirrel{
   background-size: contain;
   background-repeat: no-repeat;
   border: 5px solid #3c528f;
+  @media (max-width: 800px) {
+    background-size: 150%;
+    background-position: top right;
+  }
   h2 {
     color: #3c518f;
   }
@@ -502,4 +506,11 @@ body.lisa-squirrel{
   #scroll-text {
     background: #3c528f;
   }
+}
+
+.vinyl {
+  width: 90%;
+  margin: 10vh auto;
+  max-width: 1300px;
+  margin-top: 20vw;
 }
