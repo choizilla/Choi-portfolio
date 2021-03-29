@@ -11,6 +11,9 @@ img {
     // margin: auto;
 }
 
+figure{
+  margin: 2em 0 1em;
+}
 .small-img {
     max-width: 100px;
     margin: auto!important;
@@ -30,9 +33,9 @@ img {
 }
 
 .external-img {
-    width: 10px;
+    width: 8px;
     margin-bottom: auto;
-    padding: 0 0 0.2em;
+    padding: 0 0 0.2em 0.1em;
     display: inline;
     margin: 0;
 }
@@ -94,9 +97,10 @@ div.card {
 }
 
 section {
-    padding: 40px $baseline;
+    padding: ($baseline*2) $baseline;
+   
     .content-img {
-      margin: ($baseline*2) 0;
+      margin: ($baseline*2) 0 ($baseline*4);
     }
     &:first-of-type {
         padding-top: ($baseline*4)+40;
@@ -292,20 +296,21 @@ a.secondary-btn {
 }
 
 .contribute{
+  font-size: 1.2em;
   display: inline-block;
   margin: .5em 0 .2em;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
+  // text-transform: uppercase;
+  // font-size: 12px;
+  // letter-spacing: 1px;
   }
   ul.contribute{
     display: inline-block;
   li {
-      font-size: 12px;
+      font-size: 1em;
       background-color: rgba(0, 0, 0, 0.1);
-      padding: .7em 1em 0.5em;
-      display: inline;
-      border-radius: 1em;
+      padding:  0.2em .5em;
+      display: inline-block;
+      margin: 0.2em .5em 0.2em 0;
   }
 }
 
@@ -475,36 +480,75 @@ section.browser-mockup-section {
   }
 }
 
+
+// All lisa styling 
+
+$lisa:#2764ac;
+$lisa-sub: #ebe8d7;
+
 body.lisa-squirrel{
   color: #333;
-  background-color: #ebe8d7;
+  background-color: $lisa-sub;
   background-image: url(/images/lisa-squirrel/lisa-bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  border: 5px solid #3c528f;
+  border: 5px solid $lisa;
+  .button {
+    background: $lisa;
+    border: 0;
+    padding: 0.5em 2em;
+    font-family: inherit;
+    border-radius: 3em;
+    margin: .5em 0;
+    display: block;
+    color: $lisa-sub;
+    font-size: 1em;
+    display: inline-block;
+  }
   @media (max-width: 800px) {
-    background-size: 150%;
+    background-size: 200%;
     background-position: top right;
   }
-  h2 {
-    color: #3c518f;
+  h2, h4 {
+    color: $lisa;
+  }
+  h3{
+    -webkit-text-stroke: 1px $lisa;
   }
   section a{
     -webkit-text-fill-color: unset;
-    color: #2d55cb!important
+    color: $lisa!important
   }
   ul.contribute{
     li {
-        background-color:#3c528f;
-        color: white;
+        background-color:$lisa;
+        color: $lisa-sub;
     }
   }
   section.browser-mockup-section .mockup {
-    border: solid 10px #cfcfcf;
+    border: solid 10px #d4d2c8;
     border-top-width: 45px;
   }
   #scroll-text {
-    background: #3c528f;
+    background: $lisa;
+  }
+  // Section where it changes colour to break it up a bit
+  .lisa-alt-section{
+    background: $lisa;
+    p, ul li, h4, ul ::marker{
+      color: $lisa-sub;
+    }
+    h3{
+      -webkit-text-stroke: 1px $lisa-sub;
+    }
+    a{
+      color: #f7a235 !important;
+    }
+    .button{
+      background: #da8a70;
+      color: $lisa-sub!important;
+      
+    }
   }
 }
 
@@ -513,4 +557,32 @@ body.lisa-squirrel{
   margin: 10vh auto;
   max-width: 1300px;
   margin-top: 20vw;
+}
+
+.new-design, .old-design {
+  position: relative;
+  &:before{
+    content: " ";
+    width: 12vh;
+    height: 12vh;
+    position: absolute;
+    right: 1em;
+    top: -2em;
+  }
+}
+
+.old-design{
+  margin: 4em 0 0;
+  &:before{
+    background: url(/images/original-badge.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+.new-design{
+  margin: 1em 0;
+  &:before{
+    background: url(/images/new-badge-blue.png) no-repeat;
+    background-size: cover;
+  }
 }

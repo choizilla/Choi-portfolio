@@ -53,6 +53,8 @@
 
 .col-1-1 {
     width: 100%;
+    max-width: 1800px;
+    max-width: auto;
 }
 
 .col-1-2 {
@@ -81,8 +83,14 @@
     display: none;
 }
 
-
-
+@media (min-width: $mobile) {
+  .gallery-col-2 {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(2,1fr);
+    margin: 10em 0;
+  }
+}
 
 @media screen and (max-width: $mobile) {
     .home-grid{

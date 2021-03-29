@@ -130,7 +130,7 @@ body.home {
     }
     .rotatingText {
         margin: 0;
-        font-family: 'Ladybird-Light';
+        font-family: $title;
         line-height: 1.5;
         position: absolute;
         top: 12vh;
@@ -151,7 +151,7 @@ body.home {
         }
     }
     .rotatingText-adjective {
-        font-family: 'Ladybird-Light';
+        font-family: $title;
         text-align: left;
         font-style: normal;
         left: 0;
@@ -299,6 +299,10 @@ body.home {
         // width: auto;
         margin: auto!important;
     }
+}
+
+.recordstore{
+  background-color: #2078df;
 }
 
 .samsmith {

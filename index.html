@@ -58,7 +58,22 @@
 
         <div class="home-grid"> 
           
-          <div class="col"><img src="images/home/Artboard 5.png" alt="Record Store webstore"></div>
+          <div class="col">
+            <a href="">
+              <div id="container" class="container recordstore">
+                  <div id="scene" class="scene">
+
+                      <div data-depth="1.00"><img src="images/recordstore/recordstore-vinyl.png"></div>
+                      <div data-depth="0.60"><img src="images/recordstore/recordstore-text.png"></div>
+                      <div data-depth="0.40"><img src="images/recordstore/recordstore-logo.png"></div>
+                  </div>
+              </div>
+            </a>
+              <script>
+                  var scene = document.getElementById('scene');
+                  var parallax = new Parallax(scene);
+              </script>
+          </div>
 
           <div class="col">
             <a href="/lisa-squirrel.html"><img src="images/home/Artboard 8.png" alt="Lisa Squirrel"></a>
@@ -81,7 +96,7 @@
             </script>
           </div>
 
-          <div class="col">
+          <!-- <div class="col">
             <a href="/sam-smith.html">
               <div id="container" class="container samsmith">
                   <div id="scene" class="scene">
@@ -95,8 +110,10 @@
                   var scene = document.getElementById('scene');
                   var parallax = new Parallax(scene);
               </script>
+          </div> -->
+          <div class="col">
+            <a href="/sam-smith.html"><img src="images/sam/sam-home.jpg" alt="Sam Smith"></a>
           </div>
-
           <div class="col">
             <a href="/decca-records.html"> <img src="images/home/Artboard 6.jpg" alt="Thumbs-up sign"></a>
           </div>

@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Ladybird-Light';
-    src: url('Trial-Ladybird-Light.woff') format('woff'); /* IE9 Compat Modes */
+    // font-family: 'Ladybird-Light';
+    // src: url('Trial-Ladybird-Light.woff') format('woff'); /* IE9 Compat Modes */
+    font-family: 'MillikDemoVersion';
+    src: url('MillikDemoVersion.woff') format('woff'); /* IE9 Compat Modes */
     // font-family: 'tenebras';
     // src: url('tenebras-trial.woff') format('woff'); /* IE9 Compat Modes */
     // src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -36,8 +38,7 @@ em {
 }
 
 h1 {
-    font-family: 'Ladybird-Light';
-    // font-family: 'tenebras';
+    font-family:  $title;;
     font-size: 46px;
     line-height: 52px;
     text-align: center;
@@ -45,13 +46,12 @@ h1 {
 }
 
 h2 {
-    // font-family: 'Stick', sans-serif;
-    font-family: 'Ladybird-Light';
-    font-size: 5em;
+    font-family:  $title;;
+    font-size: 8em;
     line-height: 1.2;
     color: $secondary;
     margin: $baseline*0.5 0;
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
         font-size: 5em;
     }
     // a {
@@ -95,19 +95,17 @@ a {
   }
   
 h3 {
-    font-family: 'Ladybird-Light';
-    // font-family: 'Stick', sans-serif;
-    // font-size: 1.5em;
-    // line-height: 1.2;
-    // margin-top: $baseline*0.5;
-    // margin-bottom: $baseline;
-    // padding-right: .5em;
-
-    font-size: 4em;
+    font-family:  $title;
+    font-size: 5em;
     line-height: 1.2;
-    margin-top: 2em;
+    margin-top: 1.5em;
     margin-bottom: 1em;
     padding-right: 0;
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+    &.mockup-title{
+      text-align: center;
+    }
     &.CTA{
         font-size: 30px;
         line-height: 1.5;
@@ -119,11 +117,31 @@ H4 {
     font-size: 22px;
     line-height: 1.5;
     text-transform: uppercase;
-    margin: $baseline*3 0 $baseline*.5;
+    margin: $baseline*2.5 0 $baseline*.5;
     // margin-bottom: $baseline*0.5;
     font-weight: 700;
     letter-spacing: 5px;
+    &.mockup-title{
+      text-align: center;
+    }
+}
 
+.sub-title{
+  font-size: 3.5em;
+  -webkit-text-stroke: 1px #2764ac;
+  color: transparent;
+  font-family: $title;
+  margin-top: 0.2em;
+  line-height: 1.2;
+  @media (max-width: 800px){
+    font-size: 2em;
+    color:#2764ac;
+    -webkit-text-stroke:unset;
+  }
+}
+figcaption {
+  font-size: 0.8em;
+  padding: .5em 0;
 }
 
 // a {
@@ -182,9 +200,14 @@ q {
 
 ul {
     // list-style: none;
-    list-style-type: disc;
+    list-style-type: square;
     margin-left: -2em;
-
+    ::marker {
+      color: #2764ac;
+    }
+      @media (max-width:800px) {
+        margin-left: 0;
+      }
     li {
         padding-left: $baseline*0.75;
         margin: $baseline 0;
@@ -238,4 +261,10 @@ span.call-to-action, a.button, button, input[type=button] {
     text-decoration: line-through;
     padding: 0 .2em;
     font-size: 19px;
+}
+
+@media (max-width: 1000px){
+  h3{
+    hyphens: auto;
+  }
 }
