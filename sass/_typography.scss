@@ -131,7 +131,7 @@ H4 {
   -webkit-text-stroke: 1px #2764ac;
   color: transparent;
   font-family: $title;
-  margin-top: 0.2em;
+  margin: 0.2em 0 .5em;
   line-height: 1.2;
   @media (max-width: 800px){
     font-size: 2em;
@@ -139,6 +139,7 @@ H4 {
     -webkit-text-stroke:unset;
   }
 }
+
 figcaption {
   font-size: 0.8em;
   padding: .5em 0;
@@ -203,7 +204,7 @@ ul {
     list-style-type: square;
     margin-left: -2em;
     ::marker {
-      color: #2764ac;
+      color: $secondary;
     }
       @media (max-width:800px) {
         margin-left: 0;

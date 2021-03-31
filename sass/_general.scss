@@ -515,6 +515,11 @@ body.lisa-squirrel{
   h3{
     -webkit-text-stroke: 1px $lisa;
   }
+  ul{
+    ::marker {
+      color: #2764ac;
+    }
+  }
   section a{
     -webkit-text-fill-color: unset;
     color: $lisa!important
@@ -523,7 +528,16 @@ body.lisa-squirrel{
     li {
         background-color:$lisa;
         color: $lisa-sub;
+        transform: skewX(-10deg);
     }
+  }
+  .alt-section-start{
+    background: url(/images/lisa-squirrel/lisa-squirrel-alt-bg.jpg) $lisa no-repeat top center !important;
+    background-size: contain!important;
+  }
+  .alt-section-end{
+    background: url(/images/lisa-squirrel/lisa-squirrel-alt-bg-end.jpg) $lisa-sub no-repeat top center !important;
+    background-size: contain!important;
   }
   section.browser-mockup-section .mockup {
     border: solid 10px #d4d2c8;
@@ -535,7 +549,7 @@ body.lisa-squirrel{
   // Section where it changes colour to break it up a bit
   .lisa-alt-section{
     background: $lisa;
-    p, ul li, h4, ul ::marker{
+    p, ul li, h4, ul ::marker, figcaption{
       color: $lisa-sub;
     }
     h3{
@@ -552,13 +566,15 @@ body.lisa-squirrel{
   }
 }
 
-.vinyl {
-  width: 90%;
-  margin: 10vh auto;
-  max-width: 1300px;
-  margin-top: 20vw;
-}
+// .vinyl {
+//   width: 90%;
+//   margin: 10vh auto;
+//   max-width: 1300px;
+//   margin-top: 20vw;
+// }
 
+
+// comparision shots
 .new-design, .old-design {
   position: relative;
   &:before{
