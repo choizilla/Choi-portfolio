@@ -140,6 +140,10 @@ H4 {
   }
 }
 
+.center-title{
+text-align: center;
+}
+
 figcaption {
   font-size: 0.8em;
   padding: .5em 0;
@@ -197,6 +201,12 @@ q {
     &:after {
         content: close-quote;
     }
+}
+
+ul.contribute{
+  li {
+      transform: skewX(-10deg);
+  }
 }
 
 ul {

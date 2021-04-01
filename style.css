@@ -79,6 +79,8 @@ H4.mockup-title { text-align: center; }
 .sub-title { font-size: 3.5em; -webkit-text-stroke: 1px #2764ac; color: transparent; font-family: "MillikDemoVersion"; margin: 0.2em 0 .5em; line-height: 1.2; }
 @media (max-width: 800px) { .sub-title { font-size: 2em; color: #2764ac; -webkit-text-stroke: unset; } }
 
+.center-title { text-align: center; }
+
 figcaption { font-size: 0.8em; padding: .5em 0; }
 
 p, q { font-size: 20px; margin: 1.5em 0; }
@@ -86,6 +88,8 @@ p, q { font-size: 20px; margin: 1.5em 0; }
 q { quotes: "“" "”"; }
 q:before { content: open-quote; }
 q:after { content: close-quote; }
+
+ul.contribute li { transform: skewX(-10deg); }
 
 ul { list-style-type: square; margin-left: -2em; }
 ul ::marker { color: #cfff00; }
@@ -125,6 +129,7 @@ hr { border: none; background-color: #ffffff; height: 3px; width: 20%; margin: 8
 
 div.card { background-color: #ffffff; padding: 24px; margin: 24px 0; box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05); -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05); }
 div.card h3 { margin-bottom: 12px; padding: 0; }
+div.card a { background-color: #07829c !important; }
 
 .projects section .col-1-1 { max-width: 1000px; margin: auto; }
 .projects section ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; margin: 2em 0; }
@@ -229,7 +234,7 @@ body.lisa-squirrel h2, body.lisa-squirrel h4 { color: #2764ac; }
 body.lisa-squirrel h3 { -webkit-text-stroke: 1px #2764ac; }
 body.lisa-squirrel ul ::marker { color: #2764ac; }
 body.lisa-squirrel section a { -webkit-text-fill-color: unset; color: #2764ac !important; }
-body.lisa-squirrel ul.contribute li { background-color: #2764ac; color: #ebe8d7; transform: skewX(-10deg); }
+body.lisa-squirrel ul.contribute li { background-color: #2764ac; color: #ebe8d7; }
 body.lisa-squirrel .alt-section-start { background: url(/images/lisa-squirrel/lisa-squirrel-alt-bg.jpg) #2764ac no-repeat top center !important; background-size: contain !important; }
 body.lisa-squirrel .alt-section-end { background: url(/images/lisa-squirrel/lisa-squirrel-alt-bg-end.jpg) #ebe8d7 no-repeat top center !important; background-size: contain !important; }
 body.lisa-squirrel section.browser-mockup-section .mockup { border: solid 10px #d4d2c8; border-top-width: 45px; }
@@ -241,6 +246,7 @@ body.lisa-squirrel .lisa-alt-section a { color: #f7a235 !important; }
 body.lisa-squirrel .lisa-alt-section .button { background: #da8a70; color: #ebe8d7 !important; }
 
 .new-design, .old-design { position: relative; }
+.new-design img, .old-design img { border-radius: 1em; }
 .new-design:before, .old-design:before { content: " "; width: 12vh; height: 12vh; position: absolute; right: 1em; top: -2em; }
 
 .old-design { margin: 4em 0 0; }
@@ -248,6 +254,24 @@ body.lisa-squirrel .lisa-alt-section .button { background: #da8a70; color: #ebe8
 
 .new-design { margin: 1em 0; }
 .new-design:before { background: url(/images/new-badge-blue.png) no-repeat; background-size: cover; }
+
+.recordstore { background-color: #1562bb; color: #efeeec; }
+.recordstore .alt-section img { border-radius: 1em; }
+.recordstore h2 { color: #efeeec; }
+.recordstore h3 { -webkit-text-stroke: 1px #efeeec; }
+.recordstore .sub-title { -webkit-text-stroke: 1px #efeeec; }
+.recordstore ul.contribute li { background-color: #efeeec; color: #1562bb; }
+@media (min-width: 800px) { .recordstore .gallery-col-2 { grid-gap: 2%; } }
+.recordstore section .card a { -webkit-text-fill-color: unset; color: #1562bb !important; }
+.recordstore .vinyl { width: 95%; max-width: 1300px; top: -47vw; position: absolute; left: 5%; transform: translate(-50%); }
+.recordstore .sub-title { -webkit-text-stroke: 1px #efeeec; }
+@media (max-width: 800px) { .recordstore .sub-title { color: #efeeec; -webkit-text-stroke: transparent; } }
+@media (min-width: 800px) { .recordstore .sub-title .col-2-text { padding: 5%; } }
+.recordstore .alt-section { background: #191919; }
+.recordstore .alt-section p, .recordstore .alt-section ul li, .recordstore .alt-section h4, .recordstore .alt-section ul ::marker, .recordstore .alt-section figcaption { color: #efeeec; }
+.recordstore .alt-section h3 { -webkit-text-stroke: 1px #efeeec; }
+.recordstore .alt-section a { color: #191919 !important; }
+.recordstore .alt-section .button { background: #191919; color: #191919 !important; }
 
 header { font-family: "MillikDemoVersion"; background-color: #cfff00; padding: 0; position: fixed; display: block; width: 100%; min-height: 72px; box-sizing: border-box; z-index: 10; max-height: 100%; overflow-y: visible; background-color: transparent; background-repeat: no-repeat; background-position: center top -60px; background-size: 120px; color: #ffffff; margin-top: 0; top: 0; z-index: 9999; }
 header ul li { margin: 0; line-height: 1.2; }
@@ -324,11 +348,9 @@ body.home { background-color: #cfff00; }
 .container { background-size: contain; background-repeat: no-repeat; width: 100%; overflow: hidden; background-position: center; overflow: hidden; }
 .container img { margin: auto !important; }
 
-.recordstore { background-color: #2078df; }
-
-.samsmith { background-image: url(/images/sam/sam1.jpg); }
-
-.islandrecords { background-image: url(/images/home/island/island1.jpg); overflow: hidden; }
+.home .recordstore { background-color: #2078df; }
+.home .samsmith { background-image: url(/images/sam/sam1.jpg); }
+.home .islandrecords { background-image: url(/images/home/island/island1.jpg); overflow: hidden; }
 
 .home-foot { background-color: #07829c; color: #ffffff; padding: 5%; }
 .home-foot h2 { color: #ffffff; }

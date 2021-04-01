@@ -301,17 +301,19 @@ body.home {
     }
 }
 
-.recordstore{
-  background-color: #2078df;
-}
+.home {
+  .recordstore{
+    background-color: #2078df;
+  }
 
-.samsmith {
-    background-image: url(/images/sam/sam1.jpg);
-}
+  .samsmith {
+      background-image: url(/images/sam/sam1.jpg);
+  }
 
-.islandrecords {
-    background-image: url(/images/home/island/island1.jpg);
-    overflow: hidden;
+  .islandrecords {
+      background-image: url(/images/home/island/island1.jpg);
+      overflow: hidden;
+}
 }
 
 .home-foot {

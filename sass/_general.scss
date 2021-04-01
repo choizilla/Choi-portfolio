@@ -67,6 +67,9 @@ div.card {
         margin-bottom: 12px;
         padding: 0;
     }
+    a{
+      background-color: $primary!important;
+    }
 }
 
 .projects {
@@ -98,7 +101,6 @@ div.card {
 
 section {
     padding: ($baseline*2) $baseline;
-   
     .content-img {
       margin: ($baseline*2) 0 ($baseline*4);
     }
@@ -528,7 +530,6 @@ body.lisa-squirrel{
     li {
         background-color:$lisa;
         color: $lisa-sub;
-        transform: skewX(-10deg);
     }
   }
   .alt-section-start{
@@ -566,16 +567,11 @@ body.lisa-squirrel{
   }
 }
 
-// .vinyl {
-//   width: 90%;
-//   margin: 10vh auto;
-//   max-width: 1300px;
-//   margin-top: 20vw;
-// }
-
-
 // comparision shots
 .new-design, .old-design {
+  img{
+    border-radius: 1em;
+  }
   position: relative;
   &:before{
     content: " ";
@@ -600,5 +596,84 @@ body.lisa-squirrel{
   &:before{
     background: url(/images/new-badge-blue.png) no-repeat;
     background-size: cover;
+  }
+}
+
+
+$recordstore: #1562bb;
+// $recordstore: #c76227;
+$recordstore-sub: #efeeec;
+$recordstore-alt: #191919;
+
+.recordstore {
+  background-color:$recordstore;
+  color:$recordstore-sub;
+  .alt-section img{
+    border-radius: 1em;
+  }
+  h2{
+    color:$recordstore-sub;
+  }
+  h3{
+    -webkit-text-stroke: 1px $recordstore-sub;
+  }
+  .sub-title {
+    -webkit-text-stroke: 1px $recordstore-sub;
+  }
+  ul.contribute{
+    li {
+        background-color:$recordstore-sub;
+        color: $recordstore;
+    }
+  }
+  @media (min-width: 800px){
+    .gallery-col-2 {
+        grid-gap: 2%;
+    }
+  }
+  section .card a{
+    -webkit-text-fill-color: unset;
+    color: $recordstore!important;
+  }
+  // .grid {
+  //   position: relative;
+  // }
+  .vinyl {
+    width: 95%;
+    max-width: 1300px;
+    top: -47vw;
+    // margin-top: -50%;
+    position: absolute;
+    left: 5%;
+    transform: translate(-50%);
+  }
+  .sub-title{
+    -webkit-text-stroke: 1px $recordstore-sub;
+    @media (max-width: 800px){
+      color:$recordstore-sub;
+      -webkit-text-stroke:transparent;
+    }
+    @media (min-width: 800px){
+      .col-2-text {
+        padding: 5%;
+      }
+    }
+  }
+  .alt-section{
+    background: $recordstore-alt;
+    p, ul li, h4, ul ::marker, figcaption{
+      color: $recordstore-sub;
+    }
+    h3{
+      -webkit-text-stroke: 1px $recordstore-sub;
+    }
+    a{
+      color: $recordstore-alt !important;
+    }
+    .button{
+      background: $recordstore-alt;
+      color: $recordstore-alt!important;
+      
+    }
   }
 }
