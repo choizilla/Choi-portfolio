@@ -78,7 +78,7 @@
           <div class="gallery-col-2">
             <img src="images/recordstore/recordstore-old-home-page.jpg" alt="Old design of Record Store home page" style="width:100%">
             <div class="col-2-text"><h4>Previous home page</h4>
-            <p>Overall, the old home page layout served their audience well and so it makes sense to maintain some continuality to avoid needlessly distrupting the current user flow. This means we can focus on improvementing the navigation which appears across the online store. The analytic data indicated a large percentile of visitors would interact with the search feature to look for artist name, release name, as well as empty searches to display all products available on the shop. Lesser used category links, login icon, currency switches could be potentially moved or hidden away.</p>
+            <p>Overall, the old home page layout served their audience well and so it makes sense to maintain some continuality to avoid needlessly distrupting the current user flow. On the other hand, we need to focus on improvementing the navigation which appears across the online store.</p>
             <p>We could look at optimising page load speeds which has been affected by the image heavy design.</p>
           </div>
           <img src="images/recordstore/recordstore-old-product-page.jpg" alt="Old design of Record Store product page" style="width:100%">
@@ -93,6 +93,62 @@
         </div>
   </section>
 
+  <section class="alt-section-end ">
+    <div class="col-1-2">
+    <h3 class="mockup-title">Solution</h3>  
+    <h4>Updating Product visuals</h4>
+    <p>One of the most important aspects of visual design is the photography/imagery used within a layout to sell the product. As humans primarily use sight and visuals to cue their actions, we need to put more emphasis on images which had issues of duplication, inconsitent perspectives and sizing.</p>
+    <p>My first course of action was to setup a library of easy to use templates for the store managers so that their products can start looking more uniform. To ensure they understood how the templates worked, I then trained them step by step and gave them guidance when they were unsure. </p>
+    
+  </div>
+    <div class="col-1-1">
+    <img src="images/recordstore/recordstore-product-lineup.jpg" alt="New product images using a template sitting on a baseline">
+  </div>
+  <div class="col-1-2">
+    <p><strong>Changes include:</strong></p>
+    <ul>
+      <li>Transparent background PNGs so we can control the colour via code instantly.</li>
+      <li>Consistent lighting and perspectives.</li>
+      <li>Contextual sizing, ie CDs are smaller than vinyl records.</li>
+      <li>Visually anchoring the products on a baseline.</li>
+      <li>Transparent vinyl sitting above the sleeve to show that it's see-through.</li>
+    </ul>  
+  </div>
+  </section>
+
+<section class="alt-section alt-section-start">
+  <div class="col-1-2">
+    <h4 class="mockup-title">Navigation improvements</h4>
+    <p>Years worth of data indicated a large percentile of visitors would interact with the search feature on the home page to look for artist name, release name, as well as empty searches to display all products available on the shop.</p>
+    <p>In the new design, we wanted to bring the search to the users attention by increasing the size drastically which also leads to easier access due to it's size. We also included smart suggestions based on what has been typed.</p>
+    <h5>Old vs new search design</h5>
+  </div>
+  <div class="col-1-1">
+    <img src="images/recordstore/recordstore-search.jpg" alt="Record Store search design" style="width:100%">
+  </div>
+  
+  <div class="col-1-2 recordstore-menu-ani">
+    <h5 class="mockup-title">Menus and icons</h5>
+    <p>The infrequently used category links, login icon, currency switches could be moved or hidden away in a hamburger menu.</p>
+    <img id="mainImage" src="/images/recordstore/recordstore-menu-1.jpg"/>
+    <script type = "text/javascript">
+        var myImage = document.getElementById("mainImage");
+        var imageArray = ["/images/recordstore/recordstore-menu-1.jpg", "/images/recordstore/recordstore-menu-2.jpg", "/images/recordstore/recordstore-menu-3.jpg", "/images/recordstore/recordstore-menu-2.jpg" ]
+        var imageIndex = 0;
+        function changeImage() {
+        myImage.setAttribute("src",imageArray[imageIndex]);
+        imageIndex++;
+        if (imageIndex >= imageArray.length) {
+            imageIndex = 0;
+        }
+        }
+        setInterval(changeImage,1000);
+    </script>
+  </div>
+</section>
+
+  </section>
+
   <section class="browser-mockup-section ">
     <h3 class="mockup-title">Result</h3>  
     <h4 class="mockup-title">Home page design</h4>
@@ -101,6 +157,16 @@
             <div class="col-lg-8 mockup-col">
                 <div class="mockup">
                     <div class="scroll-container"><span id="scroll-text">Scroll Here<svg class="scroll-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><path d="M50,1.8c-17.7,0-32.2,14.5-32.2,32.2v32.2c0,17.7,14.5,32.2,32.2,32.2s32.2-14.5,32.2-32.2V33.9C82.2,16.2,67.7,1.8,50,1.8   z M77.6,66.1c0,15.2-12.4,27.6-27.6,27.6S22.4,81.2,22.4,66.1V33.9C22.4,18.8,34.8,6.3,50,6.3s27.6,12.4,27.6,27.6V66.1z"></path><path d="M50,22.4c-1.3,0-2.3,1-2.3,2.3v11.5c0,1.3,1,2.3,2.3,2.3s2.3-1,2.3-2.3V24.7C52.3,23.5,51.3,22.4,50,22.4z" class="scroll-animation"></path></g></svg></span><img src="/images/recordstore/recordstore-new-home-page.jpg" /></div>
+                    <span class="browser-control"></span>
+                </div>
+            </div>
+        </div>
+    <h4 class="mockup-title">Product page design</h4>
+    <div class="mockup-container">
+        <div class="row">
+            <div class="col-lg-8 mockup-col">
+                <div class="mockup">
+                    <div class="scroll-container"><span id="scroll-text">Scroll Here<svg class="scroll-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><path d="M50,1.8c-17.7,0-32.2,14.5-32.2,32.2v32.2c0,17.7,14.5,32.2,32.2,32.2s32.2-14.5,32.2-32.2V33.9C82.2,16.2,67.7,1.8,50,1.8   z M77.6,66.1c0,15.2-12.4,27.6-27.6,27.6S22.4,81.2,22.4,66.1V33.9C22.4,18.8,34.8,6.3,50,6.3s27.6,12.4,27.6,27.6V66.1z"></path><path d="M50,22.4c-1.3,0-2.3,1-2.3,2.3v11.5c0,1.3,1,2.3,2.3,2.3s2.3-1,2.3-2.3V24.7C52.3,23.5,51.3,22.4,50,22.4z" class="scroll-animation"></path></g></svg></span><img src="/images/recordstore/recordstore-new-product-page.jpg" /></div>
                     <span class="browser-control"></span>
                 </div>
             </div>

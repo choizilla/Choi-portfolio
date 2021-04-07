@@ -55,6 +55,11 @@
     width: 100%;
     max-width: 1800px;
     max-width: auto;
+    img {
+      max-width: 1200px;
+      margin: auto;
+      border-radius: 1em;
+  }
 }
 
 .col-1-2 {

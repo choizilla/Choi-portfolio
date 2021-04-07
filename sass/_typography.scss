@@ -73,6 +73,14 @@ h2 {
     //   }
 }
 
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .9em;
+  text-align: center;
+  margin: 5em 0 0;
+}
+
 a {
     color: $secondary;
     word-wrap: break-word;

@@ -31,6 +31,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .nav-toggle { width: 100px; height: 100px; background: red; border-radius: 100px; }
 
 .col-1-1 { width: 100%; max-width: 1800px; max-width: auto; }
+.col-1-1 img { max-width: 1200px; margin: auto; border-radius: 1em; }
 
 .col-1-2 { width: 48%; }
 
@@ -65,6 +66,8 @@ h1 { font-family: "MillikDemoVersion"; font-size: 46px; line-height: 52px; text-
 
 h2 { font-family: "MillikDemoVersion"; font-size: 8em; line-height: 1.2; color: #cfff00; margin: 12px 0; }
 @media (max-width: 1000px) { h2 { font-size: 5em; } }
+
+h5 { text-transform: uppercase; letter-spacing: 2px; font-size: .9em; text-align: center; margin: 5em 0 0; }
 
 a { color: #cfff00; word-wrap: break-word; position: relative; color: #cfff00; background: linear-gradient(to right, #000000, #000000 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
 a:hover { background-position: 0 100%; }
@@ -255,23 +258,28 @@ body.lisa-squirrel .lisa-alt-section .button { background: #da8a70; color: #ebe8
 .new-design { margin: 1em 0; }
 .new-design:before { background: url(/images/new-badge-blue.png) no-repeat; background-size: cover; }
 
-.recordstore { background-color: #1562bb; color: #efeeec; }
+.recordstore { background-color: #31993d; color: #efefef; }
+.recordstore .alt-section-start { background: url(/images/recordstore/recordstore-bg-2.jpg) #efefef no-repeat top center !important; background-size: contain !important; }
+.recordstore .alt-section-end { background: url(/images/recordstore/recordstore-bg-1.jpg) #31993d no-repeat top center !important; background-size: contain !important; }
 .recordstore .alt-section img { border-radius: 1em; }
-.recordstore h2 { color: #efeeec; }
-.recordstore h3 { -webkit-text-stroke: 1px #efeeec; }
-.recordstore .sub-title { -webkit-text-stroke: 1px #efeeec; }
-.recordstore ul.contribute li { background-color: #efeeec; color: #1562bb; }
-@media (min-width: 800px) { .recordstore .gallery-col-2 { grid-gap: 2%; } }
-.recordstore section .card a { -webkit-text-fill-color: unset; color: #1562bb !important; }
-.recordstore .vinyl { width: 95%; max-width: 1300px; top: -47vw; position: absolute; left: 5%; transform: translate(-50%); }
-.recordstore .sub-title { -webkit-text-stroke: 1px #efeeec; }
-@media (max-width: 800px) { .recordstore .sub-title { color: #efeeec; -webkit-text-stroke: transparent; } }
+.recordstore h2 { color: #efefef; }
+.recordstore h3 { -webkit-text-stroke: 1px #efefef; }
+.recordstore .sub-title { -webkit-text-stroke: 1px #efefef; }
+.recordstore ul.contribute li { background-color: #efefef; color: #31993d; }
+.recordstore .recordstore-menu-ani img { max-width: 450px; margin: auto; }
+.recordstore .gallery-col-2 img { filter: grayscale(100%); transition: all 0.2s ease; -webkit-transition: all 0.2s ease; }
+.recordstore .gallery-col-2 img:hover { filter: grayscale(0%); transition: all 0.2s ease; -webkit-transition: all 0.2s ease; }
+@media (min-width: 800px) { .recordstore .gallery-col-2 { grid-gap: 5%; max-width: 1100px; margin: auto; } }
+.recordstore section .card a { -webkit-text-fill-color: unset; color: #31993d !important; }
+.recordstore .vinyl { width: 95%; max-width: 1300px; top: -40vw; position: absolute; left: -40%; transform: translate(-50%); }
+.recordstore .sub-title { -webkit-text-stroke: 1px #efefef; }
+@media (max-width: 800px) { .recordstore .sub-title { color: #efefef; -webkit-text-stroke: transparent; } }
 @media (min-width: 800px) { .recordstore .sub-title .col-2-text { padding: 5%; } }
-.recordstore .alt-section { background: #191919; }
-.recordstore .alt-section p, .recordstore .alt-section ul li, .recordstore .alt-section h4, .recordstore .alt-section ul ::marker, .recordstore .alt-section figcaption { color: #efeeec; }
-.recordstore .alt-section h3 { -webkit-text-stroke: 1px #efeeec; }
-.recordstore .alt-section a { color: #191919 !important; }
-.recordstore .alt-section .button { background: #191919; color: #191919 !important; }
+.recordstore .alt-section { background: #efefef; }
+.recordstore .alt-section p, .recordstore .alt-section ul li, .recordstore .alt-section h4, .recordstore .alt-section ul ::marker, .recordstore .alt-section figcaption { color: #31993d; }
+.recordstore .alt-section h3 { -webkit-text-stroke: 1px #31993d; }
+.recordstore .alt-section a { color: #efefef !important; }
+.recordstore .alt-section .button { background: #efefef; color: #31993d !important; }
 
 header { font-family: "MillikDemoVersion"; background-color: #cfff00; padding: 0; position: fixed; display: block; width: 100%; min-height: 72px; box-sizing: border-box; z-index: 10; max-height: 100%; overflow-y: visible; background-color: transparent; background-repeat: no-repeat; background-position: center top -60px; background-size: 120px; color: #ffffff; margin-top: 0; top: 0; z-index: 9999; }
 header ul li { margin: 0; line-height: 1.2; }
@@ -325,7 +333,7 @@ body.home { background-color: #cfff00; }
 .home .rotatingText-adjective { font-family: "MillikDemoVersion"; text-align: left; font-style: normal; left: 0; margin-bottom: 0; margin-top: 50px; opacity: 0; position: absolute; right: 0; margin-top: 1.5em; }
 .home .rotatingText-adjective { animation-name: rotate; animation-duration: 1.5s; }
 .home .rotatingText-adjective:nth-of-type(1) { animation-delay: 0.5s; }
-.home .rotatingText-adjective:nth-of-type(2) { animation-delay: 2s; }
+.home .rotatingText-adjective:nth-of-type(2) { animation-: 2s; }
 .home .rotatingText-adjective:nth-of-type(3) { animation-delay: 3.5s; }
 .home .rotatingText-adjective:nth-of-type(4) { animation-delay: 5s; }
 .home .rotatingText-adjective:nth-of-type(5) { animation-name: rotate-last; animation-duration: 1.5s; animation-delay: 6.5s; animation-fill-mode: forwards; }
@@ -348,7 +356,7 @@ body.home { background-color: #cfff00; }
 .container { background-size: contain; background-repeat: no-repeat; width: 100%; overflow: hidden; background-position: center; overflow: hidden; }
 .container img { margin: auto !important; }
 
-.home .recordstore { background-color: #2078df; }
+.home .recordstore { background-color: #45b152; }
 .home .samsmith { background-image: url(/images/sam/sam1.jpg); }
 .home .islandrecords { background-image: url(/images/home/island/island1.jpg); overflow: hidden; }
 

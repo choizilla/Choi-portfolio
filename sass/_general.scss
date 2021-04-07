@@ -600,14 +600,23 @@ body.lisa-squirrel{
 }
 
 
-$recordstore: #1562bb;
-// $recordstore: #c76227;
-$recordstore-sub: #efeeec;
-$recordstore-alt: #191919;
+// $recordstore: #1562bb;
+$recordstore: #31993d;
+// $recordstore-sub: #efeeec;
+$recordstore-sub: #efefef;
+$recordstore-alt: #efefef;
 
 .recordstore {
   background-color:$recordstore;
   color:$recordstore-sub;
+  .alt-section-start{
+    background: url(/images/recordstore/recordstore-bg-2.jpg) $recordstore-sub no-repeat top center !important;
+    background-size: contain!important;
+  }
+  .alt-section-end{
+    background: url(/images/recordstore/recordstore-bg-1.jpg) $recordstore no-repeat top center !important;
+    background-size: contain!important;
+  }
   .alt-section img{
     border-radius: 1em;
   }
@@ -622,13 +631,29 @@ $recordstore-alt: #191919;
   }
   ul.contribute{
     li {
-        background-color:$recordstore-sub;
+        background-color:$recordstore-alt;
         color: $recordstore;
+    }
+  }
+  .recordstore-menu-ani img{
+    max-width: 450px;
+    margin: auto;
+  }
+  .gallery-col-2 img {
+    filter: grayscale(100%);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    &:hover{
+        filter: grayscale(0%);
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
     }
   }
   @media (min-width: 800px){
     .gallery-col-2 {
-        grid-gap: 2%;
+        grid-gap: 5%;
+        max-width: 1100px;
+        margin: auto;
     }
   }
   section .card a{
@@ -641,10 +666,9 @@ $recordstore-alt: #191919;
   .vinyl {
     width: 95%;
     max-width: 1300px;
-    top: -47vw;
-    // margin-top: -50%;
+    top: -40vw;
     position: absolute;
-    left: 5%;
+    left: -40%;
     transform: translate(-50%);
   }
   .sub-title{
@@ -662,18 +686,17 @@ $recordstore-alt: #191919;
   .alt-section{
     background: $recordstore-alt;
     p, ul li, h4, ul ::marker, figcaption{
-      color: $recordstore-sub;
+      color: $recordstore;
     }
     h3{
-      -webkit-text-stroke: 1px $recordstore-sub;
+      -webkit-text-stroke: 1px $recordstore;
     }
     a{
       color: $recordstore-alt !important;
     }
     .button{
       background: $recordstore-alt;
-      color: $recordstore-alt!important;
-      
+      color: $recordstore!important;
     }
   }
 }
