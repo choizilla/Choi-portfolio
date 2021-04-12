@@ -102,7 +102,7 @@ div.card {
 section {
     padding: ($baseline*2) $baseline;
     .content-img {
-      margin: ($baseline*2) 0 ($baseline*4);
+      margin: ($baseline*2) auto ($baseline*4);
     }
     &:first-of-type {
         padding-top: ($baseline*4)+40;
@@ -322,6 +322,10 @@ a.secondary-btn {
 
 body {
     font-size: 16px;
+}
+
+section.intro {
+  min-height: 70vh;
 }
 
 section.browser-mockup-section {
@@ -600,15 +604,14 @@ body.lisa-squirrel{
 }
 
 
-// $recordstore: #1562bb;
 $recordstore: #31993d;
-// $recordstore-sub: #efeeec;
 $recordstore-sub: #efefef;
-$recordstore-alt: #efefef;
 
-.recordstore {
+body.recordstore {
   background-color:$recordstore;
   color:$recordstore-sub;
+  background: url(/images/recordstore/rs-wallpaper.jpg) $recordstore no-repeat top right;
+  background-size: contain;
   .alt-section-start{
     background: url(/images/recordstore/recordstore-bg-2.jpg) $recordstore-sub no-repeat top center !important;
     background-size: contain!important;
@@ -631,7 +634,7 @@ $recordstore-alt: #efefef;
   }
   ul.contribute{
     li {
-        background-color:$recordstore-alt;
+        background-color:$recordstore-sub;
         color: $recordstore;
     }
   }
@@ -651,10 +654,19 @@ $recordstore-alt: #efefef;
   }
   @media (min-width: 800px){
     .gallery-col-2 {
-        grid-gap: 5%;
+        grid-gap: 6em 4em;
         max-width: 1100px;
         margin: auto;
     }
+  }
+  @media (max-width: 800px){
+    .grid [class*='col-']:last-of-type {
+      margin-bottom: 0;
+      margin-top: 20vh;
+    }
+    // make the wallpaper look prettier on mobile 
+    background-position: top right;
+    background-size: 250%;
   }
   section .card a{
     -webkit-text-fill-color: unset;
@@ -684,7 +696,7 @@ $recordstore-alt: #efefef;
     }
   }
   .alt-section{
-    background: $recordstore-alt;
+    background: $recordstore-sub;
     p, ul li, h4, ul ::marker, figcaption{
       color: $recordstore;
     }
@@ -692,11 +704,125 @@ $recordstore-alt: #efefef;
       -webkit-text-stroke: 1px $recordstore;
     }
     a{
-      color: $recordstore-alt !important;
+      color: $recordstore-sub !important;
     }
     .button{
-      background: $recordstore-alt;
+      background: $recordstore-sub;
       color: $recordstore!important;
+    }
+  }
+}
+
+
+
+
+$dirtyhit: #292929;
+$dirtyhit-sub: #f2f2f2;
+
+body.dirtyhit {
+  background-color:$dirtyhit;
+  color:$dirtyhit-sub;
+  background: url(/images/dirtyhit/DH-bg.jpg) $dirtyhit repeat;
+  // .alt-section-start{
+  //   background: url(/images/recordstore/recordstore-bg-2.jpg) $dirtyhit-sub no-repeat top center !important;
+  //   background-size: contain!important;
+  // }
+  // .alt-section-end{
+  //   background: url(/images/recordstore/recordstore-bg-1.jpg) $dirtyhitstore no-repeat top center !important;
+  //   background-size: contain!important;
+  // }
+  .alt-section img{
+    border-radius: 1em;
+  }
+  h2{
+    color:$dirtyhit-sub;
+  }
+  h3{
+    -webkit-text-stroke: 1px $dirtyhit-sub;
+  }
+  .sub-title {
+    -webkit-text-stroke: 1px $dirtyhit-sub;
+  }
+  ul.contribute{
+    li {
+        background-color:$dirtyhit-sub;
+        color: $dirtyhit;
+    }
+  }
+  // a {
+  //   background: linear-gradient(to right, #b9b9b9, #9e9e9e 50%, #cfff00 50%)!important;
+  // }
+  // .recordstore-menu-ani img{
+  //   max-width: 450px;
+  //   margin: auto;
+  // }
+  .gallery-col-2 img {
+    filter: grayscale(100%);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    &:hover{
+        filter: grayscale(0%);
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+    }
+  }
+  @media (min-width: 800px){
+    .gallery-col-2 {
+        // grid-gap: 6em 4em;
+        // max-width: 1100px;
+        margin: auto;
+    }
+  }
+  @media (max-width: 800px){
+    .grid [class*='col-']:last-of-type {
+      margin-bottom: 0;
+      margin-top: 20vh;
+    }
+    // make the wallpaper look prettier on mobile 
+    background-position: top right;
+    background-size: 250%;
+  }
+  section .card a{
+    -webkit-text-fill-color: unset;
+    color: $dirtyhit!important;
+  }
+  // .grid {
+  //   position: relative;
+  // }
+  .vinyl {
+    width: 95%;
+    max-width: 1300px;
+    top: -40vw;
+    position: absolute;
+    left: -40%;
+    transform: translate(-50%);
+  }
+  .sub-title{
+    -webkit-text-stroke: 1px $dirtyhit-sub;
+    @media (max-width: 800px){
+      color:$dirtyhit-sub;
+      -webkit-text-stroke:transparent;
+    }
+    @media (min-width: 800px){
+      .col-2-text {
+        padding: 5%;
+      }
+    }
+  }
+  .alt-section{
+    background: $dirtyhit-sub;
+    p, ul li, h4, ul ::marker, figcaption{
+      color: $dirtyhit;
+    }
+    h3{
+      -webkit-text-stroke: 1px $dirtyhit;
+    }
+    a{
+      color: $dirtyhit-sub !important;
+    }
+    .button{
+      background: $dirtyhit-sub;
+      color: $dirtyhit!important;
     }
   }
 }
