@@ -94,28 +94,35 @@ body.home {
     }
     .rotatingText {
         margin: 0;
-        font-family: $title;
         line-height: 1.5;
         position: absolute;
         top: 12vh;
-        left: 50%;
-        transform: translate(-50%);
-        width: 90%;
+        left: 10%;
+        width: 50%;
         max-width: 1000px;
-        margin: 10vh .5em;
+        margin: 20vh .5em;
+        color: $secondary;
+        font-size: 2.5em;
         @media (max-width: 1000px) {
             width: 80%;
         }
         @media (min-width: 1400px) {
-            width: 90%;
-            max-width: 1400px;
-            margin: 5vh 5vw;
-            text-align: left;
-            font-size: 6.5em;
+          width: 45%;
+          max-width: 1400px;
+          margin: 20vh 5vw;
+          text-align: left;
+          font-size: 3em;
+          font-weight: 700;
+
+            // width: 50%;
+            // max-width: 1400px;
+            // margin: 5vh 5vw;
+            // text-align: left;
+            // font-size: 4.5em;
         }
     }
     .rotatingText-adjective {
-        font-family: $title;
+        // font-family: $title;
         text-align: left;
         font-style: normal;
         left: 0;
@@ -130,40 +137,24 @@ body.home {
         animation-name: rotate;
         animation-duration: 1.5s;
         &:nth-of-type(1) {
-            animation-delay: 0.5s;
+            animation-delay: .5s;
         }
         &:nth-of-type(2) {
-            animation-delay: 2s;
+            animation-delay: 2.5s;
         }
         &:nth-of-type(3) {
-            animation-delay: 3.5s;
+            animation-delay: 4.5s;
         }
         &:nth-of-type(4) {
-            animation-delay: 5s;
+            animation-delay: 6.5s;
         }
         &:nth-of-type(5) {
             animation-name: rotate-last;
             animation-duration: 1.5s;
-            animation-delay: 6.5s;
+            animation-delay: 8.5s;
             animation-fill-mode: forwards;
         }
     }
-    // .rotatingText-adjective:nth-of-type(2) {
-    //   animation-name: rotate;
-    //   animation-duration: 1.5s;
-    //   animation-delay: 1.75s;
-    // }
-    // .rotatingText-adjective:nth-of-type(3) {
-    //   animation-name: rotate;
-    //   animation-duration: 1.5s;
-    //   animation-delay: 3s;
-    // }
-    // .rotatingText-adjective:nth-of-type(5) {
-    //   animation-name: rotate-last;
-    //   animation-duration: 1.5s;
-    //   animation-delay: 4.25s;
-    //   animation-fill-mode: forwards;
-    // }
     @keyframes rotate {
         0% {
             opacity: 0;
@@ -226,7 +217,7 @@ body.home {
         -webkit-animation-iteration-count: infinite;
     }
     #foreground {
-        background: url(/images/home/smalls.png) repeat 35% 35%;
+        background: url(/images/home/small.png) repeat 35% 35%;
         position: absolute;
         top: 0;
         left: 0;
@@ -270,12 +261,12 @@ body.home {
     background-color: #45b152;
   }
 
-  .samsmith {
-      background-image: url(/images/sam/sam1.jpg);
-  }
+  // .samsmith {
+  //     background-image: url(/images/sam/sam1.jpg);
+  // }
 
   .islandrecords {
-      background-image: url(/images/home/island/island1.jpg);
+      background-image: url(/images/home/island.jpg);
       overflow: hidden;
 }
 }
@@ -302,18 +293,28 @@ body.home {
 }
 
 .python {
-    background-image: url(/images/home/Artboard\ 3d.jpg);
+    background-image: url(/images/home/montypython.jpg);
     background-size: cover;
 }
 
-.move-area {
-    /*normally use body*/
-    // width: 50vw;
-    // height: 50vh;
-    // padding: 10% 45%;
+.lisa-home{
+  background: url(/images/home/lisa-blur.jpg);
+  img{
+    transition: all 0.5s ease;
+    &:hover{
+    opacity: 0;
+    transition: all 0.5s ease;
+    }
+  }
 }
+// .move-area {
+//     /*normally use body*/
+//     // width: 50vw;
+//     // height: 50vh;
+//     // padding: 10% 45%;
+// }
 
-.\.face {
+.face {
     // padding: 0.75vw 25%;
     display: block;
     position: relative;
@@ -346,6 +347,12 @@ body.home {
     border: 0.3em solid #654734bf;
 }
 
+// @media (max-width:800px){
+  .col.python.move-area{
+    display: none;
+  }
+// }
+
 @media (min-width: 1400px) {
     .home .intro {
         background-size: 105%;
@@ -364,6 +371,6 @@ body.home {
     }
 
     .intro h2 {
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
 }

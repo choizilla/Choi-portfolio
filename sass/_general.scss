@@ -360,6 +360,9 @@ section.browser-mockup-section {
         overflow-y: scroll;
         max-height: 75vh;
     }
+    .mockup-container {
+      margin-bottom: 10em;
+    }
     .mockup ::-webkit-scrollbar {
         width: 0;
     }
@@ -571,38 +574,6 @@ body.lisa-squirrel{
   }
 }
 
-// comparision shots
-.new-design, .old-design {
-  img{
-    border-radius: 1em;
-  }
-  position: relative;
-  &:before{
-    content: " ";
-    width: 12vh;
-    height: 12vh;
-    position: absolute;
-    right: 1em;
-    top: -2em;
-  }
-}
-
-.old-design{
-  margin: 4em 0 0;
-  &:before{
-    background: url(/images/original-badge.png) no-repeat;
-    background-size: cover;
-  }
-}
-
-.new-design{
-  margin: 1em 0;
-  &:before{
-    background: url(/images/new-badge-blue.png) no-repeat;
-    background-size: cover;
-  }
-}
-
 
 $recordstore: #31993d;
 $recordstore-sub: #efefef;
@@ -676,11 +647,11 @@ body.recordstore {
   //   position: relative;
   // }
   .vinyl {
-    width: 95%;
+    width: 37vw;
     max-width: 1300px;
-    top: -40vw;
+    top: 21vw;
     position: absolute;
-    left: -40%;
+    left: -14vw;
     transform: translate(-50%);
   }
   .sub-title{
@@ -722,17 +693,32 @@ $dirtyhit-sub: #f2f2f2;
 body.dirtyhit {
   background-color:$dirtyhit;
   color:$dirtyhit-sub;
-  background: url(/images/dirtyhit/DH-bg.jpg) $dirtyhit repeat;
-  // .alt-section-start{
-  //   background: url(/images/recordstore/recordstore-bg-2.jpg) $dirtyhit-sub no-repeat top center !important;
-  //   background-size: contain!important;
-  // }
-  // .alt-section-end{
-  //   background: url(/images/recordstore/recordstore-bg-1.jpg) $dirtyhitstore no-repeat top center !important;
-  //   background-size: contain!important;
-  // }
+  // border: 5px solid #43a09b;
+  // background: url(/images/dirtyhit/DH-bg.jpg) $dirtyhit repeat;
+  background: url(/images/dirtyhit/pexels-photo-2317711.jpg) $dirtyhit no-repeat;
+  background-attachment: fixed;
+  // background-size: cover;
+  .alt-section-start{
+    background: url(/images/dirtyhit/dh-alt-bg-start.png) no-repeat top center !important;
+    background-size: contain!important;
+  }
+  .alt-section-end{
+    background: url(/images/dirtyhit/dh-alt-bg-end.png) no-repeat bottom center !important;
+    background-size: contain!important;
+  }
   .alt-section img{
     border-radius: 1em;
+  }
+  .animations{ 
+    img{
+      border-radius: 1em;
+      max-width: 400px;
+      margin-top: 5em;
+      margin: 5em auto 0;
+    }
+    figcaption{
+      text-align: center;
+    }
   }
   h2{
     color:$dirtyhit-sub;
@@ -778,9 +764,9 @@ body.dirtyhit {
       margin-bottom: 0;
       margin-top: 20vh;
     }
-    // make the wallpaper look prettier on mobile 
-    background-position: top right;
-    background-size: 250%;
+    // // make the wallpaper look prettier on mobile 
+    // background-position: top right;
+    // background-size: 250%;
   }
   section .card a{
     -webkit-text-fill-color: unset;
@@ -789,14 +775,6 @@ body.dirtyhit {
   // .grid {
   //   position: relative;
   // }
-  .vinyl {
-    width: 95%;
-    max-width: 1300px;
-    top: -40vw;
-    position: absolute;
-    left: -40%;
-    transform: translate(-50%);
-  }
   .sub-title{
     -webkit-text-stroke: 1px $dirtyhit-sub;
     @media (max-width: 800px){
@@ -810,7 +788,7 @@ body.dirtyhit {
     }
   }
   .alt-section{
-    background: $dirtyhit-sub;
+    background: $dirtyhit-sub!important;
     p, ul li, h4, ul ::marker, figcaption{
       color: $dirtyhit;
     }
@@ -824,5 +802,78 @@ body.dirtyhit {
       background: $dirtyhit-sub;
       color: $dirtyhit!important;
     }
+  }
+}
+
+$samsmith: #333;
+$samsmith-sub:  #f8f1e1;
+body.samsmith{
+  background-color: $samsmith;
+  color: $samsmith-sub;
+  border: 5px solid $samsmith-sub;
+  h2{
+    color: $samsmith-sub;
+  }
+  #scroll-text{
+    background-color: $samsmith;
+  }
+  section.browser-mockup-section .mockup {
+    border: solid 10px #1f1f1f;
+    border-top-width: 45px;
+  }
+}
+
+
+$decca: #000000;
+$decca-sub:  #f8f1e1;
+body.decca{
+  background-color: $decca;
+  color: $decca-sub;
+  border: 5px solid $decca-sub;
+  h2{
+    color: $samsmith-sub;
+  }
+  .sub-title{
+    -webkit-text-stroke: 1px $decca-sub;
+  }
+  #scroll-text{
+    background-color: $decca;
+  }
+}
+
+
+$island-pink:#ffbaf3;
+$island-yellow:#ffd405;
+$island-blue: #3a71b4;
+$island-red:#de2c2d;
+$island: #000;
+
+body.islandrecords{
+  background-color: $island-yellow;
+  border-top: 10px solid $island-pink;
+  border-right: 10px solid $island-blue;
+  border-left: 10px solid $island-red;
+  border-bottom: 10px solid $island-pink;
+  color: $island;
+  h2{
+    color: $island;
+  }
+  .sub-title{
+    -webkit-text-stroke: 1px $island;
+  }
+  a{
+    position: inherit;
+    color: $island-red;
+    background: none;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-position: unset;
+    transition: unset;
+    text-decoration: none;
+  }
+  button{
+    background-color: $island-blue;
+    color:$island-yellow;
   }
 }
