@@ -22,6 +22,8 @@ header {
         li {
             margin: 0;
             line-height: 1.2;
+            font-size: .8em;
+            padding-left:0;
         }
     }
     .logo {
@@ -68,14 +70,12 @@ header {
     }
     input#nav-toggle:checked~nav {
         min-height: 100vh;
-        // border-top: 1px solid #ffffff;
-        padding-top: 10vh;
-        // margin-top: 24px;
+        padding-top: 20vh;
         background: $primary;
         margin: 0 auto;
         width: 100%;
-        // max-width: 500px;
         height: 100vh;
+        box-sizing: border-box;
     }
     a {
         font-size: 4em;
@@ -83,7 +83,7 @@ header {
         padding: $baseline*0.5;
         text-decoration: none;
         // color: $light;
-        padding: 0.5em $baseline*2;
+        padding: 0.5em 0;
         // &:hover {
         //     color: darken($light, 20%);
         // }

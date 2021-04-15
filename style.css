@@ -69,7 +69,7 @@ h2 { font-family: "Millik"; font-size: 8em; line-height: 1.2; color: #cfff00; ma
 
 h5 { text-transform: uppercase; letter-spacing: 2px; font-size: .9em; text-align: center; margin: 5em 0 0; }
 
-a { color: #cfff00; word-wrap: break-word; position: relative; color: #cfff00; background: linear-gradient(to right, #000000, #000000 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
+a { color: #cfff00; word-wrap: break-word; position: relative; color: #cfff00; background: linear-gradient(to right, #0b3139, #092a31 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
 a:hover { background-position: 0 100%; }
 
 h3 { font-family: "Millik"; font-size: 5em; line-height: 1.2; margin-top: 1.5em; margin-bottom: 1em; padding-right: 0; -webkit-text-stroke: 1px black; color: transparent; }
@@ -107,7 +107,8 @@ footer ul li { font-size: 19px; line-height: 22px; margin: 12px 0; }
 small { font-size: .7em; line-height: 18px; display: block; color: #ffffff; margin: .5em 0; }
 
 span.call-to-action, a.button, button, input[type=button] { font-size: 24px; line-height: 30px; }
-span.call-to-action a, a.button a, button a, input[type=button] a { color: #07829c; text-decoration: none; }
+span.call-to-action a, a.button a, button a, input[type=button] a { color: #07829c; text-decoration: none; color: black; word-wrap: unset; position: unset; background: unset; background-clip: unset; -webkit-background-clip: unset; -webkit-text-fill-color: unset; background-size: unset; background-position: unset; transition: unset; text-decoration: unset; }
+span.call-to-action:hover, a.button:hover, button:hover, input[type=button]:hover { background: #b0da01; }
 
 .strike { text-decoration: line-through; padding: 0 .2em; font-size: 19px; }
 
@@ -233,6 +234,14 @@ section.browser-mockup-section .mockup:hover { transform: rotateX(-10deg) rotate
 
 .projects ul li { list-style: none; }
 
+body.about, body.contact { min-height: 100vh; background-image: url(/images/neon-rip.png); background-repeat: no-repeat; background-position: bottom; background-size: auto; }
+
+section#biography { margin-bottom: 10em; }
+
+.soon { background-image: url(/images/comingsoon.jpg); }
+.soon img { transition: all 0.5s ease; }
+.soon img:hover { opacity: 0; transition: all 0.5s ease; }
+
 body.lisa-squirrel { color: #333; background-color: #ebe8d7; background-image: url(/images/lisa-squirrel/lisa-bg.jpg); background-size: contain; background-repeat: no-repeat; border: 5px solid #2764ac; }
 body.lisa-squirrel .button { background: #2764ac; border: 0; padding: 0.5em 2em; font-family: inherit; border-radius: 3em; margin: .5em 0; display: block; color: #ebe8d7; font-size: 1em; display: inline-block; }
 @media (max-width: 800px) { body.lisa-squirrel { background-size: 200%; background-position: top right; } }
@@ -276,6 +285,11 @@ body.recordstore .alt-section h3 { -webkit-text-stroke: 1px #31993d; }
 body.recordstore .alt-section a { color: #efefef !important; }
 body.recordstore .alt-section .button { background: #efefef; color: #31993d !important; }
 
+body.ourplanet { background-color: #31993d; background-image: url(/images/ourplanet/rainforest.jpg); background-size: cover; background-attachment: fixed; color: white; }
+body.ourplanet h2 { color: white; }
+body.ourplanet .sub-title { -webkit-text-stroke: 1px #fff; }
+body.ourplanet #scroll-text { background: #407808; }
+
 body.dirtyhit { background-color: #292929; color: #f2f2f2; background: url(/images/dirtyhit/pexels-photo-2317711.jpg) #292929 no-repeat; background-attachment: fixed; }
 body.dirtyhit .alt-section-start { background: url(/images/dirtyhit/dh-alt-bg-start.png) no-repeat top center !important; background-size: contain !important; }
 body.dirtyhit .alt-section-end { background: url(/images/dirtyhit/dh-alt-bg-end.png) no-repeat bottom center !important; background-size: contain !important; }
@@ -294,30 +308,38 @@ body.dirtyhit section .card a { -webkit-text-fill-color: unset; color: #292929 !
 body.dirtyhit .sub-title { -webkit-text-stroke: 1px #f2f2f2; }
 @media (max-width: 800px) { body.dirtyhit .sub-title { color: #f2f2f2; -webkit-text-stroke: transparent; } }
 @media (min-width: 800px) { body.dirtyhit .sub-title .col-2-text { padding: 5%; } }
+body.dirtyhit section.browser-mockup-section .mockup { border: solid 10px rgba(255, 255, 255, 0.5); border-top-width: 45px; }
 body.dirtyhit .alt-section { background: #f2f2f2 !important; }
 body.dirtyhit .alt-section p, body.dirtyhit .alt-section ul li, body.dirtyhit .alt-section h4, body.dirtyhit .alt-section ul ::marker, body.dirtyhit .alt-section figcaption { color: #292929; }
 body.dirtyhit .alt-section h3 { -webkit-text-stroke: 1px #292929; }
 body.dirtyhit .alt-section a { color: #f2f2f2 !important; }
 body.dirtyhit .alt-section .button { background: #f2f2f2; color: #292929 !important; }
 
-body.samsmith { background-color: #333; color: #f8f1e1; border: 5px solid #f8f1e1; }
+body.samsmith { background-color: #333; color: #f8f1e1; border: 5px solid #f8f1e1; background-image: url(/images/sam/flowers-bg.jpg); background-repeat: no-repeat; background-position: top right; background-size: 350px; background-attachment: fixed; }
 body.samsmith h2 { color: #f8f1e1; }
 body.samsmith #scroll-text { background-color: #333; }
 body.samsmith section.browser-mockup-section .mockup { border: solid 10px #1f1f1f; border-top-width: 45px; }
+@media (max-width: 800px) { body.samsmith { background-attachment: unset; background-size: 50%; } }
 
 body.decca { background-color: #000000; color: #f8f1e1; border: 5px solid #f8f1e1; }
 body.decca h2 { color: #f8f1e1; }
+body.decca h3 { -webkit-text-stroke: 1px #f8f1e1; }
 body.decca .sub-title { -webkit-text-stroke: 1px #f8f1e1; }
 body.decca #scroll-text { background-color: #000000; }
+body.decca section.browser-mockup-section .mockup { border: solid 10px rgba(255, 255, 255, 0.2); border-top-width: 45px; }
 
-body.islandrecords { background-color: #ffd405; border-top: 10px solid #ffbaf3; border-right: 10px solid #3a71b4; border-left: 10px solid #de2c2d; border-bottom: 10px solid #ffbaf3; color: #000; }
+body.islandrecords { background-color: #ffd405; background-image: url(/images/island-records/palm.jpg); background-repeat: no-repeat; background-size: 50%; background-position: top right; border-top: 10px solid #ffbaf3; border-right: 10px solid #3a71b4; border-left: 10px solid #de2c2d; border-bottom: 10px solid #ffbaf3; color: #000; }
 body.islandrecords h2 { color: #000; }
 body.islandrecords .sub-title { -webkit-text-stroke: 1px #000; }
 body.islandrecords a { position: inherit; color: #de2c2d; background: none; background-clip: unset; -webkit-background-clip: unset; -webkit-text-fill-color: unset; background-position: unset; transition: unset; text-decoration: none; }
 body.islandrecords button { background-color: #3a71b4; color: #ffd405; }
+@media (max-width: 800px) { body.islandrecords .sub-title { font-size: 2em; color: #000000; -webkit-text-stroke: unset; }
+  body.islandrecords body.islandrecords .sub-title { -webkit-text-stroke: unset; }
+  body.islandrecords .intro { background-size: auto !important; height: unset; }
+  body.islandrecords section.intro { min-height: unset; } }
 
 header { font-family: "Millik"; background-color: #cfff00; padding: 0; position: fixed; display: block; width: 100%; min-height: 72px; box-sizing: border-box; z-index: 10; max-height: 100%; overflow-y: visible; background-color: transparent; background-repeat: no-repeat; background-position: center top -60px; background-size: 120px; color: #ffffff; margin-top: 0; top: 0; z-index: 9999; }
-header ul li { margin: 0; line-height: 1.2; }
+header ul li { margin: 0; line-height: 1.2; font-size: .8em; padding-left: 0; }
 header .logo { padding: 6px; position: absolute; width: 10em; height: 10em; background-image: url(/images/choi-logo.png); background-color: transparent; background-size: 90%; background-repeat: no-repeat; background-position: center; top: 1em; right: -5em; transition: all .2s ease-in-out; }
 header .logo:hover { background-image: url(/images/logo-menu.png); background-size: contain; transition: all .2s ease-in-out; }
 header span.title { font-size: 20px; line-height: 24px; padding-left: 0; }
@@ -325,8 +347,8 @@ header label { font-size: 1.5em; }
 header label span { display: inline-block; width: 14px; }
 header input#nav-toggle { display: none; }
 header input#nav-toggle:not(:checked) ~ nav { max-height: 0; border-top: none; padding-top: 0; margin-top: 0; }
-header input#nav-toggle:checked ~ nav { min-height: 100vh; padding-top: 10vh; background: #07829c; margin: 0 auto; width: 100%; height: 100vh; }
-header a { font-size: 4em; line-height: 1.5; padding: 12px; text-decoration: none; padding: 0.5em 48px; }
+header input#nav-toggle:checked ~ nav { min-height: 100vh; padding-top: 20vh; background: #07829c; margin: 0 auto; width: 100%; height: 100vh; box-sizing: border-box; }
+header a { font-size: 4em; line-height: 1.5; padding: 12px; text-decoration: none; padding: 0.5em 0; }
 header nav { max-height: 0; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; overflow: hidden; }
 header nav a { text-align: center; color: #cfff00 !important; }
 

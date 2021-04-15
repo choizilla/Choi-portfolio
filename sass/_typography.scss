@@ -89,7 +89,8 @@ a {
     // display: inline-block;
     color: $secondary;
     // overflow: hidden;
-    background: linear-gradient(to right, $dark, $dark 50%, $secondary 50%);
+    // background: linear-gradient(to right, $dark, $dark 50%, $secondary 50%);
+    background: linear-gradient(to right, #0b3139, #092a31 50%, #cfff00 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -268,8 +269,22 @@ input[type=button] {
     font-size: 24px;
     line-height: 30px;
     a {
-        color: $primary;
-        text-decoration: none;
+      color: $primary;
+      text-decoration: none;
+      color: black;
+      word-wrap: unset;
+      position: unset;
+      background: unset;
+      background-clip: unset;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: unset;
+      background-size: unset;
+      background-position: unset;
+      transition: unset;
+      text-decoration: unset;
+    }
+    &:hover{
+      background: #b0da01;
     }
 }
 

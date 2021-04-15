@@ -3,4 +3,4 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
-  Content-Security-Policy: default-src 'self'; frame-src js.stripe.com; media-src douglassquirrel.s3.amazonaws.com; script-src 'self' ajax.googleapis.com js.stripe.com; style-src 'self' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data:
+  Content-Security-Policy: default-src 'self'; style-src 'self' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self' https://code.jquery.com  cdnjs.cloudflare.com; img-src 'self' media.giphy.com data:
