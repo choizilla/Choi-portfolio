@@ -23,7 +23,7 @@ header {
             margin: 0;
             line-height: 1.2;
             font-size: .8em;
-            padding-left:0;
+            padding-left: 0;
         }
     }
     .logo {
@@ -31,7 +31,7 @@ header {
         position: absolute;
         width: 10em;
         height: 10em;
-        background-image: url(/images/choi-logo.png);
+        background-image: url(/src/images/global/choi-logo.png);
         background-color: transparent;
         background-size: 90%;
         background-repeat: no-repeat;
@@ -40,7 +40,7 @@ header {
         right: -5em;
         transition: all .2s ease-in-out;
         &:hover {
-            background-image: url(/images/logo-menu.png);
+            background-image: url(/src/images/global/logo-menu.png);
             background-size: contain;
             transition: all .2s ease-in-out;
         }

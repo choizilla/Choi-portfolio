@@ -34,7 +34,7 @@ body.home {
         background-size: auto;
         background-position: center;
         height: 95vh;
-        background-image: url(/images/home/pexels-saph-photography-2929887copy.jpg);
+        background-image: url(/src/images/home/pexels-saph-photography-2929887copy.jpg);
         background-size: cover;
         background-color: #07829c;
         overflow: hidden;
@@ -42,45 +42,42 @@ body.home {
         -moz-animation: AnimationName 20s ease infinite;
         animation: AnimationName 20s ease infinite;
         @-webkit-keyframes AnimationName {
-          0% {
-            background-position: 92% 100%
-          }
-          50% {
-              
-              background-position: 9% 0%
-          }
-          100% {
-            background-position: 92% 100%
-          }
+            0% {
+                background-position: 92% 100%
+            }
+            50% {
+                background-position: 9% 0%
+            }
+            100% {
+                background-position: 92% 100%
+            }
         }
         @-moz-keyframes AnimationName {
-          0% {
-            background-position: 92% 100%
-          }
-          50% {
-              
-              background-position: 9% 0%
-          }
-          100% {
-            background-position: 92% 100%
-          }
+            0% {
+                background-position: 92% 100%
+            }
+            50% {
+                background-position: 9% 0%
+            }
+            100% {
+                background-position: 92% 100%
+            }
         }
         @keyframes AnimationName {
-          0% {
-            background-position: 92% 100%
-          }
-          50% {
-              
-              background-position: 9% 0%
-          }
-          100% {
-            background-position: 92% 100%
-          }
+            0% {
+                background-position: 92% 100%
+            }
+            50% {
+                background-position: 9% 0%
+            }
+            100% {
+                background-position: 92% 100%
+            }
         }
-      }
+    }
     h2 {
-      // text-shadow: 1px 1px 10px #918492;
-      font-size: 5em;
+        // text-shadow: 1px 1px 10px #918492;
+        font-size: 5em;
     }
     h1 {
         font-size: 30px;
@@ -107,13 +104,12 @@ body.home {
             width: 80%;
         }
         @media (min-width: 1400px) {
-          width: 45%;
-          max-width: 1400px;
-          margin: 20vh 5vw;
-          text-align: left;
-          font-size: 3em;
-          font-weight: 700;
-
+            width: 45%;
+            max-width: 1400px;
+            margin: 20vh 5vw;
+            text-align: left;
+            font-size: 3em;
+            font-weight: 700;
             // width: 50%;
             // max-width: 1400px;
             // margin: 5vh 5vw;
@@ -188,7 +184,7 @@ body.home {
 }
 
 .blueplanet {
-    background-image: url(/images/home/ourplanet.jpg);
+    background-image: url(/src/images/home/ourplanet.jpg);
     background-size: cover;
     // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
@@ -204,7 +200,7 @@ body.home {
         }
     }
     #midground {
-        background: url(/images/home/midground.png) repeat 20% 20%;
+        background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%;
         position: absolute;
         top: 0;
         left: 0;
@@ -217,7 +213,7 @@ body.home {
         -webkit-animation-iteration-count: infinite;
     }
     #foreground {
-        background: url(/images/home/small.png) repeat 35% 35%;
+        background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%;
         position: absolute;
         top: 0;
         left: 0;
@@ -229,13 +225,13 @@ body.home {
         -webkit-animation-timing-function: linear;
         -webkit-animation-iteration-count: infinite;
     }
-    .tile-logo{
-      z-index: 400;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+    .tile-logo {
+        z-index: 400;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
 
@@ -257,18 +253,16 @@ body.home {
 }
 
 .home {
-  .recordstore{
-    background-color: #45b152;
-  }
-
-  // .samsmith {
-  //     background-image: url(/images/sam/sam1.jpg);
-  // }
-
-  .islandrecords {
-      background-image: url(/images/home/island.jpg);
-      overflow: hidden;
-}
+    .recordstore {
+        background-color: #45b152;
+    }
+    // .samsmith {
+    //     background-image: url(/src/images/sam/sam1.jpg);
+    // }
+    .islandrecords {
+        background-image: url(/src/images/home/island.jpg);
+        overflow: hidden;
+    }
 }
 
 .home-foot {
@@ -293,27 +287,27 @@ body.home {
 }
 
 .python {
-    background-image: url(/images/home/montypython.jpg);
+    background-image: url(/src/images/home/montypython.jpg);
     background-size: cover;
 }
 
-.lisa-home{
-  background: url(/images/home/lisa-blur.jpg);
-  img{
-    transition: all 0.5s ease;
-    &:hover{
-    opacity: 0;
-    transition: all 0.5s ease;
+.lisa-home {
+    background: url(/src/images/home/lisa-blur.jpg);
+    img {
+        transition: all 0.5s ease;
+        &:hover {
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
     }
-  }
 }
+
 // .move-area {
 //     /*normally use body*/
 //     // width: 50vw;
 //     // height: 50vh;
 //     // padding: 10% 45%;
 // }
-
 .face {
     // padding: 0.75vw 25%;
     display: block;
@@ -348,11 +342,11 @@ body.home {
 }
 
 // @media (max-width:800px){
-  .col.python.move-area{
+.col.python.move-area {
     display: none;
-  }
-// }
+}
 
+// }
 @media (min-width: 1400px) {
     .home .intro {
         background-size: 105%;
@@ -370,8 +364,8 @@ body.home {
         background-size: cover;
     }
     .projects section ul {
-      columns: 2;
-      -webkit-columns: 2;
+        columns: 2;
+        -webkit-columns: 2;
     }
     // .intro h2 {
     //     font-size: 2.5em;

@@ -492,28 +492,28 @@ section.browser-mockup-section {
 }
 
 body.about,
-body.contact{
-  min-height: 100vh;
-  background-image: url(/images/neon-rip.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: auto;
+body.contact {
+    min-height: 100vh;
+    background-image: url(src/images/neon-rip.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
 }
 
 section#biography {
-  margin-bottom: 10em;
+    margin-bottom: 10em;
 }
 
 // coming soon animation
-.soon{
-  background-image: url(/images/comingsoon.jpg);
-  img{
-    transition: all 0.5s ease;
-    &:hover{
-    opacity: 0;
-    transition: all 0.5s ease;
+.soon {
+    background-image: url(src/images/comingsoon.jpg);
+    img {
+        transition: all 0.5s ease;
+        &:hover {
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
     }
-  }
 }
 
 // All lisa styling 
@@ -522,7 +522,7 @@ $lisa-sub: #ebe8d7;
 body.lisa-squirrel {
     color: #333;
     background-color: $lisa-sub;
-    background-image: url(/images/lisa-squirrel/lisa-bg.jpg);
+    background-image: url(src/images/lisa-squirrel/lisa-bg.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     border: 5px solid $lisa;
@@ -565,11 +565,11 @@ body.lisa-squirrel {
         }
     }
     .alt-section-start {
-        background: url(/images/lisa-squirrel/lisa-squirrel-alt-bg.jpg) $lisa no-repeat top center !important;
+        background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg.jpg) $lisa no-repeat top center !important;
         background-size: contain!important;
     }
     .alt-section-end {
-        background: url(/images/lisa-squirrel/lisa-squirrel-alt-bg-end.jpg) $lisa-sub no-repeat top center !important;
+        background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg-end.jpg) $lisa-sub no-repeat top center !important;
         background-size: contain!important;
     }
     section.browser-mockup-section .mockup {
@@ -607,14 +607,14 @@ $recordstore-sub: #efefef;
 body.recordstore {
     background-color: $recordstore;
     color: $recordstore-sub;
-    background: url(/images/recordstore/rs-wallpaper.jpg) $recordstore no-repeat top right;
+    background: url(src/images/recordstore/rs-wallpaper.jpg) $recordstore no-repeat top right;
     background-size: contain;
     .alt-section-start {
-        background: url(/images/recordstore/recordstore-bg-2.jpg) $recordstore-sub no-repeat top center !important;
+        background: url(src/images/recordstore/recordstore-bg-2.jpg) $recordstore-sub no-repeat top center !important;
         background-size: contain!important;
     }
     .alt-section-end {
-        background: url(/images/recordstore/recordstore-bg-1.jpg) $recordstore no-repeat top center !important;
+        background: url(src/images/recordstore/recordstore-bg-1.jpg) $recordstore no-repeat top center !important;
         background-size: contain!important;
     }
     .alt-section img {
@@ -717,7 +717,7 @@ body.recordstore {
 // Our planet 
 body.ourplanet {
     background-color: #31993d;
-    background-image: url(/images/ourplanet/rainforest.jpg);
+    background-image: url(src/images/ourplanet/rainforest.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -738,16 +738,16 @@ body.dirtyhit {
     background-color: $dirtyhit;
     color: $dirtyhit-sub;
     // border: 5px solid #43a09b;
-    // background: url(/images/dirtyhit/DH-bg.jpg) $dirtyhit repeat;
-    background: url(/images/dirtyhit/pexels-photo-2317711.jpg) $dirtyhit no-repeat;
+    // background: url(src/images/dirtyhit/DH-bg.jpg) $dirtyhit repeat;
+    background: url(src/images/dirtyhit/pexels-photo-2317711.jpg) $dirtyhit no-repeat;
     background-attachment: fixed;
     // background-size: cover;
     .alt-section-start {
-        background: url(/images/dirtyhit/dh-alt-bg-start.png) no-repeat top center !important;
+        background: url(src/images/dirtyhit/dh-alt-bg-start.png) no-repeat top center !important;
         background-size: contain!important;
     }
     .alt-section-end {
-        background: url(/images/dirtyhit/dh-alt-bg-end.png) no-repeat bottom center !important;
+        background: url(src/images/dirtyhit/dh-alt-bg-end.png) no-repeat bottom center !important;
         background-size: contain!important;
     }
     .alt-section img {
@@ -860,13 +860,11 @@ body.samsmith {
     background-color: $samsmith;
     color: $samsmith-sub;
     border: 5px solid $samsmith-sub;
-
-    background-image: url(/images/sam/flowers-bg.jpg);
+    background-image: url(src/images/sam/flowers-bg.jpg);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 350px;
     background-attachment: fixed;
-  
     h2 {
         color: $samsmith-sub;
     }
@@ -878,8 +876,8 @@ body.samsmith {
         border-top-width: 45px;
     }
     @media (max-width: 800px) {
-      background-attachment: unset;
-      background-size: 50%;
+        background-attachment: unset;
+        background-size: 50%;
     }
 }
 
@@ -905,11 +903,11 @@ body.decca {
         border: solid 10px rgba(255, 255, 255, .2);
         border-top-width: 45px;
     }
-    @media (max-width:800px){
-      .sub-title{
-      -webkit-text-stroke: transparent;
-      color:$decca-sub ;
-      }
+    @media (max-width:800px) {
+        .sub-title {
+            -webkit-text-stroke: transparent;
+            color: $decca-sub;
+        }
     }
 }
 
@@ -920,11 +918,10 @@ $island-red:#de2c2d;
 $island: #000;
 body.islandrecords {
     background-color: $island-yellow;
-    background-image: url(/images/island-records/palm.jpg);
+    background-image: url(src/images/island-records/palm.jpg);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: top right;
-
     border-top: 10px solid $island-pink;
     border-right: 10px solid $island-blue;
     border-left: 10px solid $island-red;
@@ -965,8 +962,7 @@ body.islandrecords {
             height: unset;
         }
         section.intro {
-          min-height: unset;
-      }
+            min-height: unset;
+        }
     }
 }
-

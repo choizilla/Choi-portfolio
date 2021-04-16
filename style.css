@@ -234,15 +234,15 @@ section.browser-mockup-section .mockup:hover { transform: rotateX(-10deg) rotate
 
 .projects ul li { list-style: none; }
 
-body.about, body.contact { min-height: 100vh; background-image: url(/images/neon-rip.png); background-repeat: no-repeat; background-position: bottom; background-size: auto; }
+body.about, body.contact { min-height: 100vh; background-image: url(src/images/neon-rip.png); background-repeat: no-repeat; background-position: bottom; background-size: auto; }
 
 section#biography { margin-bottom: 10em; }
 
-.soon { background-image: url(/images/comingsoon.jpg); }
+.soon { background-image: url(src/images/comingsoon.jpg); }
 .soon img { transition: all 0.5s ease; }
 .soon img:hover { opacity: 0; transition: all 0.5s ease; }
 
-body.lisa-squirrel { color: #333; background-color: #ebe8d7; background-image: url(/images/lisa-squirrel/lisa-bg.jpg); background-size: contain; background-repeat: no-repeat; border: 5px solid #2764ac; }
+body.lisa-squirrel { color: #333; background-color: #ebe8d7; background-image: url(src/images/lisa-squirrel/lisa-bg.jpg); background-size: contain; background-repeat: no-repeat; border: 5px solid #2764ac; }
 body.lisa-squirrel .button { background: #2764ac; border: 0; padding: 0.5em 2em; font-family: inherit; border-radius: 3em; margin: .5em 0; display: block; color: #ebe8d7; font-size: 1em; display: inline-block; }
 @media (max-width: 800px) { body.lisa-squirrel { background-size: 200%; background-position: top right; } }
 body.lisa-squirrel h2, body.lisa-squirrel h4 { color: #2764ac; }
@@ -250,8 +250,8 @@ body.lisa-squirrel h3 { -webkit-text-stroke: 1px #2764ac; }
 body.lisa-squirrel ul ::marker { color: #2764ac; }
 body.lisa-squirrel section a { -webkit-text-fill-color: unset; color: #2764ac !important; }
 body.lisa-squirrel ul.contribute li { background-color: #2764ac; color: #ebe8d7; }
-body.lisa-squirrel .alt-section-start { background: url(/images/lisa-squirrel/lisa-squirrel-alt-bg.jpg) #2764ac no-repeat top center !important; background-size: contain !important; }
-body.lisa-squirrel .alt-section-end { background: url(/images/lisa-squirrel/lisa-squirrel-alt-bg-end.jpg) #ebe8d7 no-repeat top center !important; background-size: contain !important; }
+body.lisa-squirrel .alt-section-start { background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg.jpg) #2764ac no-repeat top center !important; background-size: contain !important; }
+body.lisa-squirrel .alt-section-end { background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg-end.jpg) #ebe8d7 no-repeat top center !important; background-size: contain !important; }
 body.lisa-squirrel section.browser-mockup-section .mockup { border: solid 10px #d4d2c8; border-top-width: 45px; }
 body.lisa-squirrel #scroll-text { background: #2764ac; }
 body.lisa-squirrel .lisa-alt-section { background: #2764ac; }
@@ -260,9 +260,9 @@ body.lisa-squirrel .lisa-alt-section h3 { -webkit-text-stroke: 1px #ebe8d7; }
 body.lisa-squirrel .lisa-alt-section a { color: #f7a235 !important; }
 body.lisa-squirrel .lisa-alt-section .button { background: #da8a70; color: #ebe8d7 !important; }
 
-body.recordstore { background-color: #31993d; color: #efefef; background: url(/images/recordstore/rs-wallpaper.jpg) #31993d no-repeat top right; background-size: contain; }
-body.recordstore .alt-section-start { background: url(/images/recordstore/recordstore-bg-2.jpg) #efefef no-repeat top center !important; background-size: contain !important; }
-body.recordstore .alt-section-end { background: url(/images/recordstore/recordstore-bg-1.jpg) #31993d no-repeat top center !important; background-size: contain !important; }
+body.recordstore { background-color: #31993d; color: #efefef; background: url(src/images/recordstore/rs-wallpaper.jpg) #31993d no-repeat top right; background-size: contain; }
+body.recordstore .alt-section-start { background: url(src/images/recordstore/recordstore-bg-2.jpg) #efefef no-repeat top center !important; background-size: contain !important; }
+body.recordstore .alt-section-end { background: url(src/images/recordstore/recordstore-bg-1.jpg) #31993d no-repeat top center !important; background-size: contain !important; }
 body.recordstore .alt-section img { border-radius: 1em; }
 body.recordstore h2 { color: #efefef; }
 body.recordstore h3 { -webkit-text-stroke: 1px #efefef; }
@@ -285,14 +285,14 @@ body.recordstore .alt-section h3 { -webkit-text-stroke: 1px #31993d; }
 body.recordstore .alt-section a { color: #efefef !important; }
 body.recordstore .alt-section .button { background: #efefef; color: #31993d !important; }
 
-body.ourplanet { background-color: #31993d; background-image: url(/images/ourplanet/rainforest.jpg); background-size: cover; background-attachment: fixed; color: white; }
+body.ourplanet { background-color: #31993d; background-image: url(src/images/ourplanet/rainforest.jpg); background-size: cover; background-attachment: fixed; color: white; }
 body.ourplanet h2 { color: white; }
 body.ourplanet .sub-title { -webkit-text-stroke: 1px #fff; }
 body.ourplanet #scroll-text { background: #407808; }
 
-body.dirtyhit { background-color: #292929; color: #f2f2f2; background: url(/images/dirtyhit/pexels-photo-2317711.jpg) #292929 no-repeat; background-attachment: fixed; }
-body.dirtyhit .alt-section-start { background: url(/images/dirtyhit/dh-alt-bg-start.png) no-repeat top center !important; background-size: contain !important; }
-body.dirtyhit .alt-section-end { background: url(/images/dirtyhit/dh-alt-bg-end.png) no-repeat bottom center !important; background-size: contain !important; }
+body.dirtyhit { background-color: #292929; color: #f2f2f2; background: url(src/images/dirtyhit/pexels-photo-2317711.jpg) #292929 no-repeat; background-attachment: fixed; }
+body.dirtyhit .alt-section-start { background: url(src/images/dirtyhit/dh-alt-bg-start.png) no-repeat top center !important; background-size: contain !important; }
+body.dirtyhit .alt-section-end { background: url(src/images/dirtyhit/dh-alt-bg-end.png) no-repeat bottom center !important; background-size: contain !important; }
 body.dirtyhit .alt-section img { border-radius: 1em; }
 body.dirtyhit .animations img { border-radius: 1em; max-width: 400px; margin-top: 5em; margin: 5em auto 0; }
 body.dirtyhit .animations figcaption { text-align: center; }
@@ -315,7 +315,7 @@ body.dirtyhit .alt-section h3 { -webkit-text-stroke: 1px #292929; }
 body.dirtyhit .alt-section a { color: #f2f2f2 !important; }
 body.dirtyhit .alt-section .button { background: #f2f2f2; color: #292929 !important; }
 
-body.samsmith { background-color: #333; color: #f8f1e1; border: 5px solid #f8f1e1; background-image: url(/images/sam/flowers-bg.jpg); background-repeat: no-repeat; background-position: top right; background-size: 350px; background-attachment: fixed; }
+body.samsmith { background-color: #333; color: #f8f1e1; border: 5px solid #f8f1e1; background-image: url(src/images/sam/flowers-bg.jpg); background-repeat: no-repeat; background-position: top right; background-size: 350px; background-attachment: fixed; }
 body.samsmith h2 { color: #f8f1e1; }
 body.samsmith #scroll-text { background-color: #333; }
 body.samsmith section.browser-mockup-section .mockup { border: solid 10px #1f1f1f; border-top-width: 45px; }
@@ -329,7 +329,7 @@ body.decca #scroll-text { background-color: #000000; }
 body.decca section.browser-mockup-section .mockup { border: solid 10px rgba(255, 255, 255, 0.2); border-top-width: 45px; }
 @media (max-width: 800px) { body.decca .sub-title { -webkit-text-stroke: transparent; color: #f8f1e1; } }
 
-body.islandrecords { background-color: #ffd405; background-image: url(/images/island-records/palm.jpg); background-repeat: no-repeat; background-size: 50%; background-position: top right; border-top: 10px solid #ffbaf3; border-right: 10px solid #3a71b4; border-left: 10px solid #de2c2d; border-bottom: 10px solid #ffbaf3; color: #000; }
+body.islandrecords { background-color: #ffd405; background-image: url(src/images/island-records/palm.jpg); background-repeat: no-repeat; background-size: 50%; background-position: top right; border-top: 10px solid #ffbaf3; border-right: 10px solid #3a71b4; border-left: 10px solid #de2c2d; border-bottom: 10px solid #ffbaf3; color: #000; }
 body.islandrecords h2 { color: #000; }
 body.islandrecords .sub-title { -webkit-text-stroke: 1px #000; }
 body.islandrecords a { position: inherit; color: #de2c2d; background: none; background-clip: unset; -webkit-background-clip: unset; -webkit-text-fill-color: unset; background-position: unset; transition: unset; text-decoration: none; }
@@ -341,8 +341,8 @@ body.islandrecords button { background-color: #3a71b4; color: #ffd405; }
 
 header { font-family: "Millik"; background-color: #cfff00; padding: 0; position: fixed; display: block; width: 100%; min-height: 72px; box-sizing: border-box; z-index: 10; max-height: 100%; overflow-y: visible; background-color: transparent; background-repeat: no-repeat; background-position: center top -60px; background-size: 120px; color: #ffffff; margin-top: 0; top: 0; z-index: 9999; }
 header ul li { margin: 0; line-height: 1.2; font-size: .8em; padding-left: 0; }
-header .logo { padding: 6px; position: absolute; width: 10em; height: 10em; background-image: url(/images/choi-logo.png); background-color: transparent; background-size: 90%; background-repeat: no-repeat; background-position: center; top: 1em; right: -5em; transition: all .2s ease-in-out; }
-header .logo:hover { background-image: url(/images/logo-menu.png); background-size: contain; transition: all .2s ease-in-out; }
+header .logo { padding: 6px; position: absolute; width: 10em; height: 10em; background-image: url(/src/images/global/choi-logo.png); background-color: transparent; background-size: 90%; background-repeat: no-repeat; background-position: center; top: 1em; right: -5em; transition: all .2s ease-in-out; }
+header .logo:hover { background-image: url(/src/images/global/logo-menu.png); background-size: contain; transition: all .2s ease-in-out; }
 header span.title { font-size: 20px; line-height: 24px; padding-left: 0; }
 header label { font-size: 1.5em; }
 header label span { display: inline-block; width: 14px; }
@@ -372,7 +372,7 @@ body.home { background-color: #cfff00; }
 
 .home .sidetext { position: fixed; z-index: 9998; bottom: 25vh; width: 500px; /* after rotation this is the height */ margin-top: 250px; /* is 50% of width */ transform: rotate(270deg); transform-origin: 0% 0%; /* set to the upper-left corner */ -ms-transform: rotate(270deg); /* IE 9 */ -ms-transform-origin: 0% 0%; /* IE 9 */ -webkit-transform: rotate(270deg); /* Safari and Chrome */ -webkit-transform-origin: 0% 0%; /* Safari and Chrome */ }
 .home .sidetext p { font-size: .75em; letter-spacing: 5px; color: #d0ff00; text-transform: uppercase; margin: 0.5em; }
-.home .intro { background-size: auto; background-position: center; height: 95vh; background-image: url(/images/home/pexels-saph-photography-2929887copy.jpg); background-size: cover; background-color: #07829c; overflow: hidden; -webkit-animation: AnimationName 20s ease infinite; -moz-animation: AnimationName 20s ease infinite; animation: AnimationName 20s ease infinite; }
+.home .intro { background-size: auto; background-position: center; height: 95vh; background-image: url(/src/images/home/pexels-saph-photography-2929887copy.jpg); background-size: cover; background-color: #07829c; overflow: hidden; -webkit-animation: AnimationName 20s ease infinite; -moz-animation: AnimationName 20s ease infinite; animation: AnimationName 20s ease infinite; }
 @-webkit-keyframes AnimationName { 0% { background-position: 92% 100%; }
   50% { background-position: 9% 0%; }
   100% { background-position: 92% 100%; } }
@@ -404,27 +404,27 @@ body.home { background-color: #cfff00; }
         100% { opacity: 1; transform: translate3d(0, 0, 0); } }
 .home section:first-of-type { padding: 0; }
 
-.blueplanet { background-image: url(/images/home/ourplanet.jpg); background-size: cover; overflow: hidden; position: relative; }
+.blueplanet { background-image: url(/src/images/home/ourplanet.jpg); background-size: cover; overflow: hidden; position: relative; }
 @-webkit-keyframes STAR-MOVE { from { left: 0; top: 0; }
   to { left: -10000px; bottom: -20000px; } }
-.blueplanet #midground { background: url(/images/home/midground.png) repeat 20% 20%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 200; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 150s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
-.blueplanet #foreground { background: url(/images/home/small.png) repeat 35% 35%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 300; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 100s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
+.blueplanet #midground { background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 200; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 150s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
+.blueplanet #foreground { background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 300; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 100s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
 .blueplanet .tile-logo { z-index: 400; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 
 .container { background-size: contain; background-repeat: no-repeat; width: 100%; overflow: hidden; background-position: center; overflow: hidden; }
 .container img { margin: auto !important; }
 
 .home .recordstore { background-color: #45b152; }
-.home .islandrecords { background-image: url(/images/home/island.jpg); overflow: hidden; }
+.home .islandrecords { background-image: url(/src/images/home/island.jpg); overflow: hidden; }
 
 .home-foot { background-color: #07829c; color: #ffffff; padding: 5%; }
 .home-foot h2 { color: #ffffff; }
 .home-foot .project-list { background-color: #06768d; }
 .home-foot div { background-color: #07829c; }
 
-.python { background-image: url(/images/home/montypython.jpg); background-size: cover; }
+.python { background-image: url(/src/images/home/montypython.jpg); background-size: cover; }
 
-.lisa-home { background: url(/images/home/lisa-blur.jpg); }
+.lisa-home { background: url(/src/images/home/lisa-blur.jpg); }
 .lisa-home img { transition: all 0.5s ease; }
 .lisa-home img:hover { opacity: 0; transition: all 0.5s ease; }
 

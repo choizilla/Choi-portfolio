@@ -38,7 +38,8 @@
 </head>
 
 <body class="home">
-    <header id="header"></header><script src="loader.js"></script>
+    <header id="header"></header>
+    <script src="loader.js"></script>
     <!-- <div class="sidetext">
         <p>Choi&mdash;London&mdash;Digital Creative</p>
     </div> -->
@@ -56,78 +57,79 @@
 
         </div>
 
-        <div class="home-grid"> 
-          
-          <div class="col module">
-            <a href="/recordstore.html">
-              <div id="container" class="container recordstore">
-                  <div id="scene" class="scene">
-                      <div data-depth="1.00"><img src="images/recordstore/recordstore-vinyl.jpg"></div>
-                      <div data-depth="0.60"><img src="images/recordstore/recordstore-text.png"></div>
-                      <div data-depth="0.40"><img src="images/recordstore/recordstore-logo.png"></div>
-                  </div>
-              </div>
-            </a>
-          </div>
+        <div class="home-grid">
 
-          <div class="col lisa-home module">
-            <a href="/lisa-squirrel.html"><img src="images/home/lisa.jpg" alt="Lisa Squirrel"></a>
-          </div>
-
-          <div class="col module">
-            <a href="/dirtyhit.html">
-              <img id="mainImage" src="/images/home/dirty_hit_1.jpg"/>
-            </a>
-            <script type = "text/javascript">
-                var myImage = document.getElementById("mainImage");
-                var imageArray = ["/images/home/dirty_hit_1.jpg", "/images/home/dirty_hit_2.jpg", "/images/home/dirty_hit_3.jpg" ]
-                var imageIndex = 0;
-                function changeImage() {
-                myImage.setAttribute("src",imageArray[imageIndex]);
-                imageIndex++;
-                if (imageIndex >= imageArray.length) {
-                    imageIndex = 0;
-                }
-                }
-                setInterval(changeImage,1000);
-            </script>
-          </div>
-
-          <div class="col module">
-            <a href="/sam-smith.html"><img src="images/home/samsmith.jpg" alt="Sam Smith"></a>
-          </div>
-          <div class="col module">
-            <a href="/decca-records.html"> <img src="images/home/decca.jpg" alt="Thumbs-up sign"></a>
-          </div>
-
-            <div class="col module islandrecords">
-                <a href="/island-records.html"><img class="rotate" src="images/home/island2.png" alt="island records logo"></a>
+            <div class="col module">
+                <a href="/recordstore.html">
+                    <div id="container" class="container recordstore">
+                        <div id="scene" class="scene">
+                            <div data-depth="1.00"><img src="src/images/recordstore/recordstore-vinyl.jpg"></div>
+                            <div data-depth="0.60"><img src="src/images/recordstore/recordstore-text.png"></div>
+                            <div data-depth="0.40"><img src="src/images/recordstore/recordstore-logo.png"></div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-           
-              <div class="col module python move-area">
+            <div class="col lisa-home module">
+                <a href="/lisa-squirrel.html"><img src="src/images/home/lisa.jpg" alt="Lisa Squirrel"></a>
+            </div>
+
+            <div class="col module">
+                <a href="/dirtyhit.html">
+                    <img id="mainImage" src="/src/images/home/dirty_hit_1.jpg" />
+                </a>
+                <script type="text/javascript">
+                    var myImage = document.getElementById("mainImage");
+                    var imageArray = ["src/images/home/dirty_hit_1.jpg", "src/images/home/dirty_hit_2.jpg", "src/images/home/dirty_hit_3.jpg"]
+                    var imageIndex = 0;
+
+                    function changeImage() {
+                        myImage.setAttribute("src", imageArray[imageIndex]);
+                        imageIndex++;
+                        if (imageIndex >= imageArray.length) {
+                            imageIndex = 0;
+                        }
+                    }
+                    setInterval(changeImage, 1000);
+                </script>
+            </div>
+
+            <div class="col module">
+                <a href="/sam-smith.html"><img src="src/images/home/samsmith.jpg" alt="Sam Smith"></a>
+            </div>
+            <div class="col module">
+                <a href="/decca-records.html"> <img src="src/images/home/decca.jpg" alt="Thumbs-up sign"></a>
+            </div>
+
+            <div class="col module islandrecords">
+                <a href="/island-records.html"><img class="rotate" src="src/images/home/island2.png" alt="island records logo"></a>
+            </div>
+
+
+            <div class="col module python move-area">
                 <div class='face'>
                     <div class='eye'></div>
                     <div class='eye'></div>
                 </div>
-               
+
             </div>
-            
-              <div class="col module blueplanet">
+
+            <div class="col module blueplanet">
                 <div class="tile-logo">
-                  <a href="/our-planet.html">
-                    <img src="images/home/ourplanet-logo.png" alt="Our Planet">
-                  </a>
+                    <a href="/our-planet.html">
+                        <img src="src/images/home/ourplanet-logo.png" alt="Our Planet">
+                    </a>
                 </div>
                 <div id="midground"></div>
                 <div id="foreground"></div>
-              </div>
-         
-            
-            <div class="col module soon"><img src="images/home/hiphop.jpg" alt="Hip Hop Store"></div>
-            <div class="col module soon"><img src="images/home/ronnie.jpg" alt="Ronnie Wood Store"></div>
-            <div class="col module soon"><img src="images/home/rollingstones.jpg" alt="Rolling Stones Store"></div>
-            <div class="col module soon"><img src="images/home/douglas.jpg" alt="Douglas Squirrel website"></div>
+            </div>
+
+
+            <div class="col module soon"><img src="src/images/home/hiphop.jpg" alt="Hip Hop Store"></div>
+            <div class="col module soon"><img src="src/images/home/ronnie.jpg" alt="Ronnie Wood Store"></div>
+            <div class="col module soon"><img src="src/images/home/rollingstones.jpg" alt="Rolling Stones Store"></div>
+            <div class="col module soon"><img src="src/images/home/douglas.jpg" alt="Douglas Squirrel website"></div>
 
             <div class="home-foot">
                 <h2><a href="/projects.html">Clients</a></h3>
