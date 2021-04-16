@@ -369,8 +369,11 @@ body.home {
         animation: AnimationName 120s ease infinite!important;
         background-size: cover;
     }
-
-    .intro h2 {
-        font-size: 2.5em;
+    .projects section ul {
+      columns: 2;
+      -webkit-columns: 2;
     }
+    // .intro h2 {
+    //     font-size: 2.5em;
+    // }
 }

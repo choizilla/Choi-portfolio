@@ -1,0 +1,20 @@
+{
+  "name": "Choi-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eyescript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choizilla/Choi-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choizilla/Choi-portfolio/issues"
+  },
+  "homepage": "https://github.com/choizilla/Choi-portfolio#readme"
+}

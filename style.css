@@ -151,7 +151,7 @@ section.prefooter a { color: #ffffff; }
 section.prefooter a:hover { color: #e6e6e6; }
 section.prefooter img { width: 30%; margin: 0 35% 24px 35% !important; }
 section.copyright { padding: 12px; }
-section.intro { background: url("images/generic-banner.png") center 96px no-repeat; background-size: 100%; }
+section.intro { background-size: 100%; }
 section.intro nav { text-align: center; padding: 24px 0; }
 section.intro nav a { font-size: 24px; line-height: 36px; color: #07829c; text-decoration: none; padding: 0 18px; white-space: nowrap; }
 section.intro nav a:hover { color: #03313a; }
@@ -327,6 +327,7 @@ body.decca h3 { -webkit-text-stroke: 1px #f8f1e1; }
 body.decca .sub-title { -webkit-text-stroke: 1px #f8f1e1; }
 body.decca #scroll-text { background-color: #000000; }
 body.decca section.browser-mockup-section .mockup { border: solid 10px rgba(255, 255, 255, 0.2); border-top-width: 45px; }
+@media (max-width: 800px) { body.decca .sub-title { -webkit-text-stroke: transparent; color: #f8f1e1; } }
 
 body.islandrecords { background-color: #ffd405; background-image: url(/images/island-records/palm.jpg); background-repeat: no-repeat; background-size: 50%; background-position: top right; border-top: 10px solid #ffbaf3; border-right: 10px solid #3a71b4; border-left: 10px solid #de2c2d; border-bottom: 10px solid #ffbaf3; color: #000; }
 body.islandrecords h2 { color: #000; }
@@ -438,4 +439,15 @@ body.home { background-color: #cfff00; }
 @media (min-width: 1400px) { .home .intro { background-size: 105%; } }
 @media (max-width: 800px) { .vinyl { display: none; }
   .intro { -webkit-animation: AnimationName 120s ease infinite !important; -moz-animation: AnimationName 120s ease infinite !important; animation: AnimationName 120s ease infinite !important; background-size: cover; }
-  .intro h2 { font-size: 2.5em; } }
+  .projects section ul { columns: 2; -webkit-columns: 2; } }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.module { transform-origin: center center; }
+.module.off-screen-top { transform: translateY(-150px); }
+.module.off-screen-bottom { transform: translateY(150px); }
+
+.come-in { transform: translateY(0); transition: transform 0.8s ease-out; }
+
+.come-in:nth-child(odd) { transition-duration: 0.5s; }
+
+.already-visible { transform: translateY(0); transition: none; }

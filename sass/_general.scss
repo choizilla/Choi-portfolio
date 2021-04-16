@@ -142,7 +142,7 @@ section {
         padding: $baseline*0.5;
     }
     &.intro {
-        background: url("images/generic-banner.png") center $baseline*4 no-repeat;
+        // background: url("images/generic-banner.png") center $baseline*4 no-repeat;
         background-size: 100%;
         nav {
             text-align: center;
@@ -808,9 +808,6 @@ body.dirtyhit {
             margin-bottom: 0;
             margin-top: 20vh;
         }
-        // // make the wallpaper look prettier on mobile 
-        // background-position: top right;
-        // background-size: 250%;
     }
     section .card a {
         -webkit-text-fill-color: unset;
@@ -908,6 +905,12 @@ body.decca {
         border: solid 10px rgba(255, 255, 255, .2);
         border-top-width: 45px;
     }
+    @media (max-width:800px){
+      .sub-title{
+      -webkit-text-stroke: transparent;
+      color:$decca-sub ;
+      }
+    }
 }
 
 $island-pink:#ffbaf3;
@@ -966,3 +969,4 @@ body.islandrecords {
       }
     }
 }
+
