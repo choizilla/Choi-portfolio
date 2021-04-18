@@ -84,7 +84,7 @@ div.card {
             columns: 3;
             -webkit-columns: 3;
             -moz-columns: 3;
-            margin: 2em 0;
+            margin: 2em 0 8em;
             li {
                 padding-left: 0;
                 font-size: 15px;
@@ -95,6 +95,20 @@ div.card {
                 &:first-of-type {
                     margin-top: 0;
                 }
+            }
+        }
+    }
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        @media (max-width: 800px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        img {
+            transition: transform .2s;
+            &:hover {
+                transition: transform .2s;
+                transform: scale(1.5);
             }
         }
     }
@@ -332,7 +346,7 @@ section.intro {
 
 section.browser-mockup-section {
     position: relative;
-    padding: 2em 0;
+    padding: 2em ;
     overflow: hidden;
     h4 {
         text-align: center;
@@ -494,7 +508,7 @@ section.browser-mockup-section {
 body.about,
 body.contact {
     min-height: 100vh;
-    background-image: url(src/images/neon-rip.png);
+    background-image: url(src/images/global/neon-rip.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: auto;
@@ -506,7 +520,7 @@ section#biography {
 
 // coming soon animation
 .soon {
-    background-image: url(src/images/comingsoon.jpg);
+    background-image: url(src/images/global/comingsoon.jpg);
     img {
         transition: all 0.5s ease;
         &:hover {
@@ -658,7 +672,7 @@ body.recordstore {
     }
     @media (max-width: 800px) {
         .grid [class*='col-']:last-of-type {
-            margin-bottom: 0;
+            margin-bottom: 10vh;
             margin-top: 20vh;
         }
         // make the wallpaper look prettier on mobile 
@@ -805,7 +819,7 @@ body.dirtyhit {
     }
     @media (max-width: 800px) {
         .grid [class*='col-']:last-of-type {
-            margin-bottom: 0;
+            margin-bottom: 10vh;
             margin-top: 20vh;
         }
     }

@@ -1,9 +1,7 @@
 @charset "UTF-8";
 @font-face {
-    // font-family: 'Ladybird-Light';
-    // src: url('Trial-Ladybird-Light.woff') format('woff'); /* IE9 Compat Modes */
     font-family: 'Millik';
-    src: url('Millik.woff') format('woff');
+    src: url('/src/font/millik.woff') format('woff');
     /* IE9 Compat Modes */
     // font-family: 'tenebras';
     // src: url('tenebras-trial.woff') format('woff'); /* IE9 Compat Modes */
@@ -133,6 +131,12 @@ H4 {
     &.mockup-title {
         text-align: center;
     }
+  @media (max-width: 800px){
+    &.project-url{
+      font-size: 1em;
+      letter-spacing: 3px;
+    }
+  }
 }
 
 .sub-title {
@@ -295,7 +299,7 @@ input[type=button] {
 }
 
 @media (max-width: 1000px) {
-    h3 {
+    h1, h2, h3 {
         hyphens: auto;
     }
 }

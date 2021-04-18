@@ -286,9 +286,10 @@ body.home {
     }
 }
 
+// hiding python until it's ready 
 .python {
-    background-image: url(/src/images/home/montypython.jpg);
-    background-size: cover;
+    // background-image: url(/src/images/home/montypython.jpg);
+    // background-size: cover;
 }
 
 .lisa-home {
@@ -342,9 +343,9 @@ body.home {
 }
 
 // @media (max-width:800px){
-.col.python.move-area {
-    display: none;
-}
+// .col.python.move-area {
+//     display: none;
+// }
 
 // }
 @media (min-width: 1400px) {
@@ -358,16 +359,17 @@ body.home {
         display: none;
     }
     .intro {
-        -webkit-animation: AnimationName 120s ease infinite!important;
-        -moz-animation: AnimationName 120s ease infinite!important;
-        animation: AnimationName 120s ease infinite!important;
-        background-size: cover;
+        // -webkit-animation: AnimationName 120s ease infinite!important;
+        // -moz-animation: AnimationName 120s ease infinite!important;
+        // animation: AnimationName 120s ease infinite!important;
+        // background-size: cover;
+        background-image:none!important;
+    }
+    .home .rotatingText{
+      top: 3vh;
     }
     .projects section ul {
         columns: 2;
         -webkit-columns: 2;
     }
-    // .intro h2 {
-    //     font-size: 2.5em;
-    // }
 }
