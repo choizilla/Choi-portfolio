@@ -35,67 +35,53 @@ body.home {
         background-size: auto;
         background-position: center;
         height: 95vh;
-        background-image: url(/src/images/home/pexels-saph-photography-2929887copy.jpg);
+        // background-image: url(/src/images/home/pexels-saph-photography-2929887copy.jpg);
+        background-image: url(/src/images/home/pexels-zack-jarosz-1727658.jpg);
         background-size: cover;
         background-color: #07829c;
         overflow: hidden;
         -webkit-animation: AnimationName 20s ease infinite;
         -moz-animation: AnimationName 20s ease infinite;
         animation: AnimationName 20s ease infinite;
-
-      .texture{
-        position: absolute;
-        left: 0;
-        top: 10vh;
-        width: 100%;
-        @media (max-width: 800px){
-        display: none;
-        }
-        @media (max-width: 1400px){
-          top: 20vh;
-        }
-        @media (max-width: 1000px){
-          top: 40vh;
-        }
-
       }
+      
         @-webkit-keyframes AnimationName {
-            0% {
-                background-position: 92% 100%
-            }
-            50% {
-                background-position: 9% 0%
-            }
-            100% {
-                background-position: 92% 100%
-            }
+          0% {
+            background-position: 10% 70%;
+          }
+          50% {
+              background-position: 50% 50%;
+          }
+          100% {
+              background-position: 10% 70%;
+          }
         }
         @-moz-keyframes AnimationName {
-            0% {
-                background-position: 92% 100%
-            }
-            50% {
-                background-position: 9% 0%
-            }
-            100% {
-                background-position: 92% 100%
-            }
+          0% {
+            background-position: 10% 70%;
+          }
+          50% {
+              background-position: 50% 50%;
+          }
+          100% {
+              background-position: 10% 70%;
+          }
         }
         @keyframes AnimationName {
-            0% {
-                background-position: 92% 100%
-            }
-            50% {
-                background-position: 9% 0%
-            }
-            100% {
-                background-position: 92% 100%
-            }
+          0% {
+            background-position: 10% 70%;
+          }
+          50% {
+              background-position: 50% 50%;
+          }
+          100% {
+              background-position: 10% 70%;
+          }
         }
-    }
+    
     h2 {
         // text-shadow: 1px 1px 10px #918492;
-        font-size: 5em;
+        font-size: 10vw;
     }
     h1 {
         font-size: 30px;
@@ -106,35 +92,58 @@ body.home {
     }
     .col {
         background-size: cover;
+        min-height: 49vw;
     }
     .rotatingText {
         margin: 0;
         line-height: 1.5;
         position: absolute;
         top: 12vh;
-        left: 10%;
+        right: 10%;
         width: 50%;
-        max-width: 1000px;
-        margin: 20vh .5em;
+        max-width: 650px;
+        margin: 15vh .5em;
         color: $secondary;
-        font-size: 2.2em;
+        h3 {
+          // font-size: $baseline*6;
+          font-size: 15vw;
+          line-height: 1;
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-right: 0;
+          -webkit-text-stroke: 1px $secondary;
+          color: transparent;
+        }
+        h4{
+          font-size: 2.2em;
+          margin: 0;
+          padding-left: 1em;
+          text-shadow: 1px 1px 10px black;
+        }
         @media (max-width: 1000px) {
           width: 80%;
-          font-size: 2.5em;
-      }
-        @media (max-width: 800px) {
-          width: 80%;
-          font-size: 2em;
-      }
-
-        @media (min-width: 1400px) {
-            width: 45%;
-            max-width: 1400px;
-            // margin: 20vh 5vw;
-            text-align: left;
-            font-size: 3em;
-            font-weight: 700;
+          h4{
+            font-size: 3.5vw;
+          }
         }
+        @media (max-width: 800px) {
+          h4{
+            width: 100%;
+            font-size: 1.7em;;
+          }
+          h3 {
+            font-size: $baseline*5;
+          }
+        }
+
+        // @media (min-width: 1400px) {
+        //     width: 45%;
+        //     max-width: 1400px;
+        //     // margin: 20vh 5vw;
+        //     text-align: left;
+        //     font-size: 3em;
+        //     font-weight: 700;
+        // }
     }
     .rotatingText-adjective {
         // font-family: $title;
@@ -143,6 +152,7 @@ body.home {
         left: 0;
         margin-bottom: 0;
         margin-top: 50px;
+        padding-left: 1em;
         opacity: 0;
         position: absolute;
         right: 0;
@@ -288,13 +298,7 @@ body.home {
     background-color: $primary;
     color: $light;
     padding: 5%;
-    // margin: 0.5em;
-    // height: 50%;
-    // grid-template-rows: repeat(2, 100%);
-    // display: grid;
     h2 {
-        // margin: 7vw;
-        // text-align: center;
         color: $light;
     }
     .project-list {
@@ -377,25 +381,128 @@ body.home {
         display: none;
     }
     .home .rotatingText {
-        top: 3vh;
+        top: 25vh;
+        margin: 20vh .5em
     }
     .clients section ul {
         columns: 2;
         -webkit-columns: 2;
     }
     .home .intro {
-      background-size: auto;
-      background-position: bottom right;
-      background-size: contain;
+      background-size: cover;
+      background-position: top left -150px;
+      // background-position-x: left -150px;
+      // background-position-y: top;
       overflow: hidden;
       -webkit-animation: unset;
       -moz-animation: unset;
       animation: unset;
       background-repeat: no-repeat;
-      height: 80vh;
-      height: 70vh;
+      height: 90vh;
   }
-  .home .rotatingText {
-    margin: 10vh .5em
+}
+
+
+.hiphop{
+  background-image: url(/src//images/home/hiphop.jpg);
+}
+.ronnie{
+  background-image: url(/src//images/home/ronnie.jpg);
+}
+.stones{
+  background-image: url(/src//images/home/stones.jpg);
+}
+.rolling{
+  background-image: url(/src//images/home/rollingstones.jpg);
+}
+.douglas{
+  background-image: url(/src//images/home/douglas.jpg);
+}
+.mumford{
+  background-image: url(/src//images/home/mumford.jpg);
+}
+.billie{
+  background-image: url(/src//images/home/billie.jpg);
+}
+.weeknd{
+  background-image: url(/src//images/home/theweeknd.jpg);
+}
+.sportsteam{
+  background-image: url(/src//images/home/sportsteam.jpg);
+}
+.the1975{
+  background-image: url(/src//images/home/1975.jpg);
+}
+.motown{
+  background-image: url(/src//images/home/motown.jpg);
+}
+.montypython{
+  background-image: url(/src//images/home/montypython-1.jpg);
+}
+
+// Coming soon sign 
+.rollinghover {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  &:hover {
+    opacity: 100;
+    transition: all .2s ease-in-out;
+  }
+}
+
+.soon {
+  overflow: hidden;
+}
+
+.marquee {
+  position: absolute;
+  overflow: hidden;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  background: #cfff00;
+  color: #000000;
+  -ms-transform-origin: 15px 0;
+  -webkit-transform-origin: 15px 0;
+  transform-origin: 15px 0;
+  -ms-transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+  left: 25%;
+  bottom: -50%;
+}
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 5s linear infinite;
+  animation-play-state: paused;
+  // animation-play-state: running;
+}
+
+.marquee span {
+  font-size: 5vw;
+  padding: 0 2vw;
+  font-family: $title;
+  @media(max-width:800px){
+    font-size: 2em;
+  }
+}
+
+
+.rollinghover:hover .marquee__inner {
+  animation-play-state: running;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translate3d(var(--move-initial), 0, 0);
+  }
+  100% {
+      transform: translate3d(var(--move-final), 0, 0);
   }
 }

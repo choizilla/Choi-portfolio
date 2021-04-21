@@ -3,4 +3,4 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
-  Content-Security-Policy: default-src 'self'; style-src 'self' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self' https://code.jquery.com  cdnjs.cloudflare.com googleapis.com js/vendor/jquery-1.9.1.min.js; img-src 'self' media.giphy.com data:
+  Content-Security-Policy: default-src 'self'; style-src 'self' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self' https://code.jquery.com  cdnjs.cloudflare.com https://ajax.googleapis.com/ googleapis.com js/vendor/jquery-1.9.1.min.js; img-src 'self' media.giphy.com data:
