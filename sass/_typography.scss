@@ -132,7 +132,7 @@ H4 {
         text-align: center;
     }
   @media (max-width: 800px){
-    &.project-url{
+    &.long-url{
       font-size: 1em;
       letter-spacing: 3px;
     }
@@ -300,6 +300,8 @@ input[type=button] {
 
 @media (max-width: 1000px) {
     h1, h2, h3 {
-        hyphens: auto;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
     }
 }

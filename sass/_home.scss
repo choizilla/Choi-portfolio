@@ -31,6 +31,7 @@ body.home {
         }
     }
     .intro {
+        position: relative;
         background-size: auto;
         background-position: center;
         height: 95vh;
@@ -41,6 +42,23 @@ body.home {
         -webkit-animation: AnimationName 20s ease infinite;
         -moz-animation: AnimationName 20s ease infinite;
         animation: AnimationName 20s ease infinite;
+
+      .texture{
+        position: absolute;
+        left: 0;
+        top: 10vh;
+        width: 100%;
+        @media (max-width: 800px){
+        display: none;
+        }
+        @media (max-width: 1400px){
+          top: 20vh;
+        }
+        @media (max-width: 1000px){
+          top: 40vh;
+        }
+
+      }
         @-webkit-keyframes AnimationName {
             0% {
                 background-position: 92% 100%
@@ -99,22 +117,23 @@ body.home {
         max-width: 1000px;
         margin: 20vh .5em;
         color: $secondary;
-        font-size: 2.5em;
+        font-size: 2.2em;
         @media (max-width: 1000px) {
-            width: 80%;
-        }
+          width: 80%;
+          font-size: 2.5em;
+      }
+        @media (max-width: 800px) {
+          width: 80%;
+          font-size: 2em;
+      }
+
         @media (min-width: 1400px) {
             width: 45%;
             max-width: 1400px;
-            margin: 20vh 5vw;
+            // margin: 20vh 5vw;
             text-align: left;
             font-size: 3em;
             font-weight: 700;
-            // width: 50%;
-            // max-width: 1400px;
-            // margin: 5vh 5vw;
-            // text-align: left;
-            // font-size: 4.5em;
         }
     }
     .rotatingText-adjective {
@@ -133,21 +152,21 @@ body.home {
         animation-name: rotate;
         animation-duration: 1.5s;
         &:nth-of-type(1) {
-            animation-delay: .5s;
+            animation-delay: 1.5s;
         }
         &:nth-of-type(2) {
-            animation-delay: 2.5s;
+            animation-delay: 3.5s;
         }
         &:nth-of-type(3) {
-            animation-delay: 4.5s;
+            animation-delay: 5.5s;
         }
         &:nth-of-type(4) {
-            animation-delay: 6.5s;
+            animation-delay: 7.5s;
         }
         &:nth-of-type(5) {
             animation-name: rotate-last;
             animation-duration: 1.5s;
-            animation-delay: 8.5s;
+            animation-delay: 9.5s;
             animation-fill-mode: forwards;
         }
     }
@@ -346,7 +365,6 @@ body.home {
 // .col.python.move-area {
 //     display: none;
 // }
-
 // }
 @media (min-width: 1400px) {
     .home .intro {
@@ -358,18 +376,26 @@ body.home {
     .vinyl {
         display: none;
     }
-    .intro {
-        // -webkit-animation: AnimationName 120s ease infinite!important;
-        // -moz-animation: AnimationName 120s ease infinite!important;
-        // animation: AnimationName 120s ease infinite!important;
-        // background-size: cover;
-        background-image:none!important;
+    .home .rotatingText {
+        top: 3vh;
     }
-    .home .rotatingText{
-      top: 3vh;
-    }
-    .projects section ul {
+    .clients section ul {
         columns: 2;
         -webkit-columns: 2;
     }
+    .home .intro {
+      background-size: auto;
+      background-position: bottom right;
+      background-size: contain;
+      overflow: hidden;
+      -webkit-animation: unset;
+      -moz-animation: unset;
+      animation: unset;
+      background-repeat: no-repeat;
+      height: 80vh;
+      height: 70vh;
+  }
+  .home .rotatingText {
+    margin: 10vh .5em
+  }
 }
