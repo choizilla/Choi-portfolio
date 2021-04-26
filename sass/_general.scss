@@ -1079,12 +1079,18 @@ body.samsmith {
     h2 {
         color: $samsmith-sub;
     }
+    h3{
+      -webkit-text-stroke: 1px $samsmith-sub;
+    }
     #scroll-text {
         background-color: $samsmith;
     }
     section.browser-mockup-section .mockup {
         border: solid 10px #1f1f1f;
         border-top-width: 45px;
+    }
+    .card a{
+      -webkit-text-fill-color: unset;
     }
     @media (max-width: 800px) {
         background-attachment: unset;
@@ -1119,6 +1125,9 @@ body.decca {
             -webkit-text-stroke: transparent;
             color: $decca-sub;
         }
+    }
+    .card a{
+      -webkit-text-fill-color: unset;
     }
 }
 

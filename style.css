@@ -116,6 +116,7 @@ span.call-to-action:hover, a.button:hover, button:hover, input[type=button]:hove
 .strike { text-decoration: line-through; padding: 0 .2em; font-size: 19px; }
 
 @media (max-width: 1000px) { h1, h2, h3 { -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; } }
+@media (max-width: 800px) { h3 { font-size: 3em; } }
 body { background-color: #0a0a0a; border: 5px solid #cfff00; }
 
 img { width: 100%; display: block; }
@@ -388,8 +389,10 @@ body.dirtyhit #scroll-text { background: #151515; }
 
 body.samsmith { background-color: #333; color: #f8f1e1; border: 5px solid #f8f1e1; background-image: url(src/images/sam/flowers-bg.jpg); background-repeat: no-repeat; background-position: top right; background-size: 350px; background-attachment: fixed; }
 body.samsmith h2 { color: #f8f1e1; }
+body.samsmith h3 { -webkit-text-stroke: 1px #f8f1e1; }
 body.samsmith #scroll-text { background-color: #333; }
 body.samsmith section.browser-mockup-section .mockup { border: solid 10px #1f1f1f; border-top-width: 45px; }
+body.samsmith .card a { -webkit-text-fill-color: unset; }
 @media (max-width: 800px) { body.samsmith { background-attachment: unset; background-size: 50%; } }
 
 body.decca { background-color: #413958; color: #fff; border: 5px solid #fff; }
@@ -399,6 +402,7 @@ body.decca .sub-title { -webkit-text-stroke: 1px #fff; }
 body.decca #scroll-text { background-color: #413958; }
 body.decca section.browser-mockup-section .mockup { border: solid 10px rgba(255, 255, 255, 0.2); border-top-width: 45px; }
 @media (max-width: 800px) { body.decca .sub-title { -webkit-text-stroke: transparent; color: #fff; } }
+body.decca .card a { -webkit-text-fill-color: unset; }
 
 body.islandrecords { background-color: #ffd405; background-image: url(src/images/island-records/palm.jpg); background-repeat: no-repeat; background-size: 50%; background-position: top right; border-top: 10px solid #ffbaf3; border-right: 10px solid #3a71b4; border-left: 10px solid #de2c2d; border-bottom: 10px solid #ffbaf3; color: #000; }
 body.islandrecords h2 { color: #000; }
@@ -445,7 +449,7 @@ footer li { list-style: none; font-size: 2em; font-family: "Millik"; }
 
 body.home { background-color: #cfff00; }
 
-.home .sidetext { position: fixed; z-index: 9998; bottom: 25vh; width: 500px; /* after rotation this is the height */ margin-top: 250px; /* is 50% of width */ transform: rotate(270deg); transform-origin: 0% 0%; /* set to the upper-left corner */ -ms-transform: rotate(270deg); /* IE 9 */ -ms-transform-origin: 0% 0%; /* IE 9 */ -webkit-transform: rotate(270deg); /* Safari and Chrome */ -webkit-transform-origin: 0% 0%; /* Safari and Chrome */ }
+.home .sidetext { position: fixed; z-index: 9998; bottom: 15vh; width: 500px; /* after rotation this is the height */ margin-top: 250px; /* is 50% of width */ transform: rotate(270deg); transform-origin: 0% 0%; /* set to the upper-left corner */ -ms-transform: rotate(270deg); /* IE 9 */ -ms-transform-origin: 0% 0%; /* IE 9 */ -webkit-transform: rotate(270deg); /* Safari and Chrome */ -webkit-transform-origin: 0% 0%; /* Safari and Chrome */ }
 .home .sidetext p { font-size: .75em; letter-spacing: 5px; color: #d0ff00; text-transform: uppercase; margin: 0.5em; }
 .home .intro { position: relative; background-size: auto; background-position: center; height: 95vh; background-image: url(/src/images/home/pexels-zack-jarosz-1727658.jpg); background-size: cover; background-color: #07829c; overflow: hidden; -webkit-animation: AnimationName 20s ease infinite; -moz-animation: AnimationName 20s ease infinite; animation: AnimationName 20s ease infinite; }
 @-webkit-keyframes AnimationName { 0% { background-position: 10% 70%; }
@@ -513,7 +517,7 @@ body.home { background-color: #cfff00; }
 
 @media (min-width: 1400px) { .home .intro { background-size: 105%; } }
 @media (max-width: 800px) { .vinyl { display: none; }
-  .home .rotatingText { top: 25vh; margin: 20vh 0.5em; }
+  .home .rotatingText { top: 12vh; margin: 20vh 0.5em; }
   .clients section ul { columns: 2; -webkit-columns: 2; }
   .home .intro { background-size: cover; background-position: top left -150px; overflow: hidden; -webkit-animation: unset; -moz-animation: unset; animation: unset; background-repeat: no-repeat; height: 90vh; } }
 .hiphop { background-image: url(/src//images/home/hiphop.jpg); }
@@ -552,7 +556,7 @@ body.home { background-color: #cfff00; }
 .marquee span { font-size: 5vw; padding: 0 2vw; font-family: "Millik"; }
 @media (max-width: 800px) { .marquee span { font-size: 2em; } }
 
-.rollinghover:hover .marquee__inner { animation-play-state: running; }
+.rollinghover:active .marquee__inner, .rollinghover:hover .marquee__inner { animation-play-state: running; }
 
 @keyframes marquee { 0% { transform: translate3d(var(--move-initial), 0, 0); }
   100% { transform: translate3d(var(--move-final), 0, 0); } }

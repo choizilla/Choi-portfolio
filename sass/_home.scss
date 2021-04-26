@@ -6,7 +6,7 @@ body.home {
     .sidetext {
         position: fixed;
         z-index: 9998;
-        bottom: 25vh;
+        bottom: 15vh;
         width: 500px;
         /* after rotation this is the height */
         margin-top: 250px;
@@ -381,7 +381,7 @@ body.home {
         display: none;
     }
     .home .rotatingText {
-        top: 25vh;
+        top: 12vh;
         margin: 20vh .5em
     }
     .clients section ul {
@@ -391,8 +391,6 @@ body.home {
     .home .intro {
       background-size: cover;
       background-position: top left -150px;
-      // background-position-x: left -150px;
-      // background-position-y: top;
       overflow: hidden;
       -webkit-animation: unset;
       -moz-animation: unset;
@@ -493,7 +491,7 @@ body.home {
   }
 }
 
-
+.rollinghover:active .marquee__inner,
 .rollinghover:hover .marquee__inner {
   animation-play-state: running;
 }
