@@ -38,11 +38,28 @@ body.home {
         // background-image: url(/src/images/home/pexels-saph-photography-2929887copy.jpg);
         background-image: url(/src/images/home/pexels-zack-jarosz-1727658.jpg);
         background-size: cover;
-        background-color: #07829c;
+        background-color: $dark;
         overflow: hidden;
         -webkit-animation: AnimationName 20s ease infinite;
         -moz-animation: AnimationName 20s ease infinite;
         animation: AnimationName 20s ease infinite;
+          .github {
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px dashed $secondary;
+            top: 90vh;
+            position: absolute;
+            min-width: 300px;
+            left: 50%;
+            border-radius: 1em;
+            padding: .5em 1em 2em;
+            transform: translateX(-50%);
+            p, q {
+              font-size: 0.8em;
+              margin: 0.5em;
+              letter-spacing: 3px;
+          }
+        }
       }
       
         @-webkit-keyframes AnimationName {
@@ -396,7 +413,10 @@ body.home {
       -moz-animation: unset;
       animation: unset;
       background-repeat: no-repeat;
-      height: 90vh;
+      height: 100vh;
+      .github {
+        top: 95vh;
+      }
   }
 }
 
