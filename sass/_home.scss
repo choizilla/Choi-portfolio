@@ -35,6 +35,7 @@ body.home {
         background-size: auto;
         background-position: center;
         height: 95vh;
+        min-height: 600px;
         // background-image: url(/src/images/home/pexels-saph-photography-2929887copy.jpg);
         background-image: url(/src/images/home/pexels-zack-jarosz-1727658.jpg);
         background-size: cover;
@@ -47,16 +48,17 @@ body.home {
             text-align: center;
             text-transform: uppercase;
             border: 1px dashed $secondary;
-            top: 90vh;
+            bottom: -3.5vh;
             position: absolute;
             min-width: 300px;
             left: 50%;
             border-radius: 1em;
             padding: .5em 1em 2em;
             transform: translateX(-50%);
+            
             p, q {
               font-size: 0.8em;
-              margin: 0.5em;
+              margin: 0.2em 0.5em;
               letter-spacing: 3px;
           }
         }
@@ -95,10 +97,13 @@ body.home {
               background-position: 10% 70%;
           }
         }
-    
     h2 {
-        // text-shadow: 1px 1px 10px #918492;
-        font-size: 10vw;
+      font-size: 10vw;
+    }
+    .home-foot h2 {
+        @media (max-width:800px){
+          font-size: 10vh;
+        }
     }
     h1 {
         font-size: 30px;

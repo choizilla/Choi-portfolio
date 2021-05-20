@@ -71,7 +71,7 @@ h2 { font-family: "Millik"; font-size: 8em; line-height: 1.2; color: #cfff00; ma
 
 h5 { text-transform: uppercase; letter-spacing: 2px; font-size: .9em; text-align: center; margin: 5em 0 0; }
 
-a { color: #cfff00; word-wrap: break-word; position: relative; color: #cfff00; background: linear-gradient(to right, #696969, #696969 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
+a { color: #cfff00; word-wrap: break-word; position: relative; color: #cfff00; background: linear-gradient(to right, #c7c7c7, #c7c7c7 50%, #cfff00 50%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% 100%; background-position: 100%; transition: background-position 275ms ease; text-decoration: none; }
 a:hover { background-position: 0 100%; }
 
 h3 { font-family: "Millik"; font-size: 5em; line-height: 1.2; margin-top: 1.5em; margin-bottom: 1em; padding-right: 0; -webkit-text-stroke: 1px black; color: transparent; }
@@ -451,9 +451,9 @@ body.home { background-color: #cfff00; }
 
 .home .sidetext { position: fixed; z-index: 9998; bottom: 15vh; width: 500px; /* after rotation this is the height */ margin-top: 250px; /* is 50% of width */ transform: rotate(270deg); transform-origin: 0% 0%; /* set to the upper-left corner */ -ms-transform: rotate(270deg); /* IE 9 */ -ms-transform-origin: 0% 0%; /* IE 9 */ -webkit-transform: rotate(270deg); /* Safari and Chrome */ -webkit-transform-origin: 0% 0%; /* Safari and Chrome */ }
 .home .sidetext p { font-size: .75em; letter-spacing: 5px; color: #d0ff00; text-transform: uppercase; margin: 0.5em; }
-.home .intro { position: relative; background-size: auto; background-position: center; height: 95vh; background-image: url(/src/images/home/pexels-zack-jarosz-1727658.jpg); background-size: cover; background-color: #000000; overflow: hidden; -webkit-animation: AnimationName 20s ease infinite; -moz-animation: AnimationName 20s ease infinite; animation: AnimationName 20s ease infinite; }
-.home .intro .github { text-align: center; text-transform: uppercase; border: 1px dashed #cfff00; top: 90vh; position: absolute; min-width: 300px; left: 50%; border-radius: 1em; padding: .5em 1em 2em; transform: translateX(-50%); }
-.home .intro .github p, .home .intro .github q { font-size: 0.8em; margin: 0.5em; letter-spacing: 3px; }
+.home .intro { position: relative; background-size: auto; background-position: center; height: 95vh; min-height: 600px; background-image: url(/src/images/home/pexels-zack-jarosz-1727658.jpg); background-size: cover; background-color: #000000; overflow: hidden; -webkit-animation: AnimationName 20s ease infinite; -moz-animation: AnimationName 20s ease infinite; animation: AnimationName 20s ease infinite; }
+.home .intro .github { text-align: center; text-transform: uppercase; border: 1px dashed #cfff00; bottom: -3.5vh; position: absolute; min-width: 300px; left: 50%; border-radius: 1em; padding: .5em 1em 2em; transform: translateX(-50%); }
+.home .intro .github p, .home .intro .github q { font-size: 0.8em; margin: 0.2em 0.5em; letter-spacing: 3px; }
 @-webkit-keyframes AnimationName { 0% { background-position: 10% 70%; }
   50% { background-position: 50% 50%; }
   100% { background-position: 10% 70%; } }
@@ -464,6 +464,7 @@ body.home { background-color: #cfff00; }
   50% { background-position: 50% 50%; }
   100% { background-position: 10% 70%; } }
 .home h2 { font-size: 10vw; }
+@media (max-width: 800px) { .home .home-foot h2 { font-size: 10vh; } }
 .home h1 { font-size: 30px; line-height: 36px; border-bottom: 3px solid #0a0a0a; padding: 0 0 24px 0; margin: 0 0 24px 0; }
 .home .col { background-size: cover; min-height: 49vw; }
 .home .rotatingText { margin: 0; line-height: 1.5; position: absolute; top: 12vh; right: 10%; width: 50%; max-width: 650px; margin: 15vh .5em; color: #cfff00; }
