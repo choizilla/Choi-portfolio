@@ -490,12 +490,12 @@ body.home { background-color: #cfff00; }
         100% { opacity: 1; transform: translate3d(0, 0, 0); } }
 .home section:first-of-type { padding: 0; }
 
-.blueplanet { background-image: url(/src/images/home/ourplanet.jpg); background-size: cover; overflow: hidden; position: relative; }
+.choizilla-2 { background-size: cover; overflow: hidden; position: relative; }
 @-webkit-keyframes STAR-MOVE { from { left: 0; top: 0; }
   to { left: -10000px; bottom: -20000px; } }
-.blueplanet #midground { background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 200; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 150s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
-.blueplanet #foreground { background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 300; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 100s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
-.blueplanet .tile-logo { z-index: 400; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.choizilla-2 #midground { background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 200; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 150s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
+.choizilla-2 #foreground { background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 300; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 100s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
+.choizilla-2 .tile-logo { z-index: 400; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 
 .container { background-size: contain; background-repeat: no-repeat; width: 100%; overflow: hidden; background-position: center; overflow: hidden; }
 .container img { margin: auto !important; }
@@ -547,6 +547,26 @@ body.home { background-color: #cfff00; }
 .motown { background-image: url(/src//images/home/motown.jpg); }
 
 .montypython { background-image: url(/src//images/home/montypython-1.jpg); }
+
+.jrocknews { background-image: url(/src//images/home/jrocknews.jpg); }
+
+.decorte { background-image: url(/src//images/home/decorte.jpg); }
+
+.barbour { background-image: url(/src//images/home/barbour-wax-for-life.jpg); }
+
+.jrock-merch-1 { background-image: url(/src//images/home/jrocknews-merch-1.jpg); }
+
+.jrock-3 { background-image: url(/src//images/home/jrock-3.jpg); }
+
+.jrock-4 { background-image: url(/src//images/home/jrock-4.jpg); }
+
+.jrock-5 { background-image: url(/src//images/home/jrock-5.jpg); }
+
+.choizilla { background-image: url(/src//images/home/choizilla.jpg); }
+
+.choizilla-2 { background-image: url(/src//images/home/choizilla-2.jpg); }
+
+.agile { background-image: url(/src//images/home/agile.jpg); }
 
 .rollinghover { height: 100%; width: 100%; opacity: 0; transition: all .2s ease-in-out; }
 .rollinghover:hover { opacity: 100; transition: all .2s ease-in-out; }
