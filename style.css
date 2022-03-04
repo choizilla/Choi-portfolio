@@ -479,8 +479,7 @@ body.home { background-color: #cfff00; }
 .home .rotatingText-adjective:nth-of-type(1) { animation-delay: 1.5s; }
 .home .rotatingText-adjective:nth-of-type(2) { animation-delay: 3.5s; }
 .home .rotatingText-adjective:nth-of-type(3) { animation-delay: 5.5s; }
-.home .rotatingText-adjective:nth-of-type(4) { animation-delay: 7.5s; }
-.home .rotatingText-adjective:nth-of-type(5) { animation-name: rotate-last; animation-duration: 1.5s; animation-delay: 9.5s; animation-fill-mode: forwards; }
+.home .rotatingText-adjective:nth-of-type(4) { animation-name: rotate-last; animation-duration: 1.5s; animation-delay: 7.5s; animation-fill-mode: forwards; }
 @keyframes rotate { 0% { opacity: 0; transform: translate3d(0, 50px, 0); }
   20%,
         80% { opacity: 1; transform: translate3d(0, 0, 0); }
@@ -490,12 +489,20 @@ body.home { background-color: #cfff00; }
         100% { opacity: 1; transform: translate3d(0, 0, 0); } }
 .home section:first-of-type { padding: 0; }
 
-.choizilla-2 { background-size: cover; overflow: hidden; position: relative; }
+.ourplanet { background-image: url(/src/images/home/ourplanet.jpg); }
+.ourplanet #midground { background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%; }
+.ourplanet #foreground { background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%; }
+
+.douglas { background: #D15727; }
+.douglas #midground { background: url(/src/images/douglas-squirrel/leaves-A.png) repeat 20% 20%; }
+.douglas #foreground { background: url(/src/images/douglas-squirrel/leaves-B.png) repeat 35% 35%; }
+
+.snow { overflow: hidden; position: relative; background-size: cover; }
 @-webkit-keyframes STAR-MOVE { from { left: 0; top: 0; }
   to { left: -10000px; bottom: -20000px; } }
-.choizilla-2 #midground { background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 200; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 150s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
-.choizilla-2 #foreground { background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 300; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 100s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
-.choizilla-2 .tile-logo { z-index: 400; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.snow #midground { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 200; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 150s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
+.snow #foreground { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 300; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 100s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
+.snow .tile-logo { z-index: 400; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 
 .container { background-size: contain; background-repeat: no-repeat; width: 100%; overflow: hidden; background-position: center; overflow: hidden; }
 .container img { margin: auto !important; }

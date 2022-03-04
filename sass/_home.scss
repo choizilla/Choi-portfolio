@@ -193,12 +193,9 @@ body.home {
             animation-delay: 5.5s;
         }
         &:nth-of-type(4) {
-            animation-delay: 7.5s;
-        }
-        &:nth-of-type(5) {
             animation-name: rotate-last;
             animation-duration: 1.5s;
-            animation-delay: 9.5s;
+            animation-delay: 7.5s;
             animation-fill-mode: forwards;
         }
     }
@@ -234,12 +231,30 @@ body.home {
     padding: 0;
 }
 
-.choizilla-2 {
-    // background-image: url(/src/images/home/ourplanet.jpg);
-    background-size: cover;
-    // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+.ourplanet {
+  background-image: url(/src/images/home/ourplanet.jpg);
+    #midground {
+      background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%;
+    }
+    #foreground {
+        background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%;
+    }
+}
+
+.douglas {
+  background: #D15727;
+  #midground {
+    background: url(/src/images/douglas-squirrel/leaves-A.png) repeat 20% 20%;
+  }
+  #foreground {
+      background: url(/src/images/douglas-squirrel/leaves-B.png) repeat 35% 35%;
+  }
+}
+
+.snow{
     overflow: hidden;
     position: relative;
+    background-size: cover;
     @-webkit-keyframes STAR-MOVE {
         from {
             left: 0;
@@ -251,7 +266,7 @@ body.home {
         }
     }
     #midground {
-        background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%;
+        // background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%;
         position: absolute;
         top: 0;
         left: 0;
@@ -264,7 +279,7 @@ body.home {
         -webkit-animation-iteration-count: infinite;
     }
     #foreground {
-        background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%;
+        // background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%;
         position: absolute;
         top: 0;
         left: 0;
@@ -566,3 +581,4 @@ body.home {
       transform: translate3d(var(--move-final), 0, 0);
   }
 }
+
