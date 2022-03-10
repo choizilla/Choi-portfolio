@@ -134,4 +134,10 @@
     .home-grid{
         grid-template-columns: repeat(3,1fr);
     }
+    .home .col {
+        min-height: 33vw!important;
+    }
+    .home-foot h2{
+        font-size: 7vw!important;
+    }
 }
