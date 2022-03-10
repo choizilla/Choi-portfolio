@@ -1211,3 +1211,19 @@ body.islandrecords {
   }
 }
 
+.choi-lab{
+    section:first-of-type {
+        padding-top: 0;
+    }
+    .gallery-col-2 {
+        margin: 2em 0;
+    }
+    .labs {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+.center {
+    text-align: center!important;
+}

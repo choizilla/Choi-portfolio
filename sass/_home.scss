@@ -582,3 +582,34 @@ body.home {
   }
 }
 
+.folder-tile{
+  text-align: center;
+  margin: 5%;
+  .col-1-1{
+    margin-top: 15vw;
+  }
+  // .col-1-2 {
+  //   width: 39%!important;
+  //   float: left!important;
+  //   margin: 5%!important;
+
+  // }
+  p {
+    // font-size: 16px;
+    margin: 0.5em 0 1.5em 0;
+    color: $dark;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    background: black;
+    display: inline-block;
+    padding: 0.2em 0.5em 0;
+  }
+  a{
+    color: $dark!important;
+  }
+  img {
+    max-width: 150px;
+    margin: auto;
+  }
+}
