@@ -1230,3 +1230,112 @@ body.islandrecords {
 .center {
     text-align: center!important;
 }
+
+
+
+
+// All lisa styling 
+$douglas:#d15829;
+$douglas-sub: #f2f2f2;
+body.douglas-squirrel {
+    color: #333;
+    background-color: $douglas-sub;
+    background-image: url(src/images/lisa-squirrel/lisa-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 5px solid $douglas;
+    .grid {
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0 auto 24px auto;
+        padding: 0;
+        position: absolute;
+        z-index: 400;
+        width: 100%;
+        max-width: none;
+    }
+    .portfolio-page {
+        background: $douglas;
+        // background: #d15829;
+        min-height: 800px;
+        position: relative;
+        padding-top: 5em;
+        .col-1-1 img{
+            max-width: 1000px;
+        }
+    }
+    .button {
+        background: $douglas;
+        border: 0;
+        padding: 0.5em 2em;
+        font-family: inherit;
+        border-radius: 3em;
+        margin: .5em 0;
+        display: block;
+        color: $douglas-sub;
+        font-size: 1em;
+        display: inline-block;
+    }
+    @media (max-width: 800px) {
+        background-size: 200%;
+        background-position: top right;
+    }
+    h2,
+    h4 {
+        color: $lisa;
+    }
+    h3 {
+        -webkit-text-stroke: 1px $lisa;
+    }
+    ul {
+         ::marker {
+            color: #2764ac;
+        }
+    }
+    section a {
+        -webkit-text-fill-color: unset;
+        color: $douglas!important
+    }
+    ul.contribute {
+        li {
+            background-color: $douglas;
+            color: $douglas-sub;
+        }
+    }
+    .alt-section-start {
+        background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg.jpg) $douglas no-repeat top center !important;
+        background-size: contain!important;
+    }
+    .alt-section-end {
+        background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg-end.jpg) $douglas-sub no-repeat top center !important;
+        background-size: contain!important;
+    }
+    section.browser-mockup-section .mockup {
+      border: solid 10px rgba(255, 255, 255, .5);
+        border-top-width: 45px;
+    }
+    #scroll-text {
+        background: $lisa;
+    }
+    // Section where it changes colour to break it up a bit
+    .douglas-alt-section {
+        background: $douglas;
+        p,
+        ul li,
+        h4,
+        ul ::marker,
+        figcaption {
+            color: $douglas-sub;
+        }
+        h3 {
+            -webkit-text-stroke: 1px $douglas-sub;
+        }
+        a {
+            color: #f7a235 !important;
+        }
+        .button {
+            background: #da8a70;
+            color: $douglas-sub!important;
+        }
+    }
+}

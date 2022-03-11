@@ -244,7 +244,7 @@ body.home {
 .douglas {
   background: #D15727;
   #midground {
-    background: url(/src/images/douglas-squirrel/leaves-A.png) repeat 20% 20%;
+    background: url(/src/images/douglas-squirrel/leaves-A\ copy.png) repeat 20% 20%;
   }
   #foreground {
       background: url(/src/images/douglas-squirrel/leaves-B.png) repeat 35% 35%;
@@ -453,9 +453,9 @@ body.home {
 .rolling{
   background-image: url(/src//images/home/rollingstones.jpg);
 }
-.douglas{
-  background-image: url(/src//images/home/douglas.jpg);
-}
+// .douglas{
+//   background-image: url(/src//images/home/douglas.jpg);
+// }
 .mumford{
   background-image: url(/src//images/home/mumford.jpg);
 }
