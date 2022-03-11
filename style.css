@@ -424,6 +424,7 @@ body.islandrecords button a { color: #ffd405; }
 .choi-lab section:first-of-type { padding-top: 0; }
 .choi-lab .gallery-col-2 { margin: 2em 0; }
 .choi-lab .labs { max-width: 500px; margin: auto; }
+.choi-lab H4 { margin: 36px 0 24px; }
 
 .center { text-align: center !important; }
 
