@@ -434,7 +434,7 @@ body.douglas-squirrel .doug-ragged-intro { position: absolute; bottom: 0; left: 
 body.douglas-squirrel .doug-img { max-width: 400px; margin: auto; }
 body.douglas-squirrel .portfolio-page { background: #d15829; position: relative; padding-top: 2em; }
 @media (min-width: 800px) { body.douglas-squirrel .portfolio-page { min-height: 700px; } }
-@media (max-width: 800px) { body.douglas-squirrel .portfolio-page { min-height: 600px; } }
+@media (max-width: 800px) { body.douglas-squirrel .portfolio-page { min-height: 450px; } }
 body.douglas-squirrel .portfolio-page .col-1-1 img { max-width: 700px; }
 body.douglas-squirrel .button { background: #d15829; border: 0; padding: 0.5em 2em; font-family: inherit; border-radius: 3em; margin: .5em 0; display: block; color: #F4F0EE; font-size: 1em; display: inline-block; }
 @media (max-width: 800px) { body.douglas-squirrel { background-size: 200%; background-position: top right; } }
