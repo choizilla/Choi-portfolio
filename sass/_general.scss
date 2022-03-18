@@ -1270,7 +1270,7 @@ body.douglas-squirrel {
         background: $douglas;
         // background: #d15829;
         @media (min-width: 800px) {
-            min-height: 900px;
+            min-height: 700px;
         }
         @media (max-width: 800px) {
             min-height: 600px;
@@ -1300,6 +1300,9 @@ body.douglas-squirrel {
     h2,
     h4 {
         color: $douglas;
+    }
+    h2{
+        margin-top: -0.2em;
     }
     h3 {
         -webkit-text-stroke: 1px $douglas;
@@ -1353,9 +1356,13 @@ body.douglas-squirrel {
     #scroll-text {
         background: $douglas;
     }
+    .gallery-col-2{
+        margin-bottom: 0;
+    }
     // Section where it changes colour to break it up a bit
     .douglas-alt-section {
         background: $douglas;
+        
         p,
         ul li,
         h4,
@@ -1370,7 +1377,7 @@ body.douglas-squirrel {
             color: $douglas-sub!important;
         }
         a {
-            color:  $douglas !important;
+            color:  $douglas-sub !important;
         }
         .button {
             background: #da8a70;
