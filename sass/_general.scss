@@ -1243,7 +1243,7 @@ body.douglas-squirrel {
     // background-image: url(src/images/lisa-squirrel/lisa-bg.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    border: 5px solid $douglas;
+    border: 5px solid $douglas; 
     .grid.book {
         left: 50%;
         transform: translate(-50%);
@@ -1270,7 +1270,7 @@ body.douglas-squirrel {
         background: $douglas;
         // background: #d15829;
         @media (min-width: 800px) {
-            min-height: 700px;
+            min-height: 800px;
         }
         @media (max-width: 800px) {
             min-height: 450px;
