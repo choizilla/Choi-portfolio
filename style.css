@@ -428,26 +428,30 @@ body.islandrecords button a { color: #ffd405; }
 
 .center { text-align: center !important; }
 
-body.douglas-squirrel { color: #333; background-color: #f2f2f2; background-image: url(src/images/lisa-squirrel/lisa-bg.jpg); background-size: contain; background-repeat: no-repeat; border: 5px solid #d15829; }
-body.douglas-squirrel .grid { left: 50%; transform: translate(-50%); margin: 0 auto 24px auto; padding: 0; position: absolute; z-index: 400; width: 100%; max-width: none; }
-body.douglas-squirrel .portfolio-page { background: #d15829; min-height: 800px; position: relative; padding-top: 5em; }
-body.douglas-squirrel .portfolio-page .col-1-1 img { max-width: 1000px; }
-body.douglas-squirrel .button { background: #d15829; border: 0; padding: 0.5em 2em; font-family: inherit; border-radius: 3em; margin: .5em 0; display: block; color: #f2f2f2; font-size: 1em; display: inline-block; }
+body.douglas-squirrel { color: #9b8f8f; background-color: #F4F0EE; background-image: url(src/images/lisa-squirrel/lisa-bg.jpg); background-size: contain; background-repeat: no-repeat; border: 5px solid #d15829; }
+body.douglas-squirrel .grid.book { left: 50%; transform: translate(-50%); margin: 0 auto 24px auto; padding: 0; position: absolute; z-index: 400; width: 100%; max-width: none; }
+body.douglas-squirrel .doug-ragged-intro { position: absolute; bottom: 0; left: 0; z-index: 9000; }
+body.douglas-squirrel .portfolio-page { background: #d15829; position: relative; padding-top: 5em; }
+@media (min-width: 800px) { body.douglas-squirrel .portfolio-page { min-height: 900px; } }
+@media (max-width: 800px) { body.douglas-squirrel .portfolio-page { min-height: 600px; } }
+body.douglas-squirrel .portfolio-page .col-1-1 img { max-width: 800px; }
+body.douglas-squirrel .button { background: #d15829; border: 0; padding: 0.5em 2em; font-family: inherit; border-radius: 3em; margin: .5em 0; display: block; color: #F4F0EE; font-size: 1em; display: inline-block; }
 @media (max-width: 800px) { body.douglas-squirrel { background-size: 200%; background-position: top right; } }
-body.douglas-squirrel h2, body.douglas-squirrel h4 { color: #2764ac; }
-body.douglas-squirrel h3 { -webkit-text-stroke: 1px #2764ac; }
-body.douglas-squirrel ul ::marker { color: #2764ac; }
+body.douglas-squirrel h2, body.douglas-squirrel h4 { color: #d15829; }
+body.douglas-squirrel h3 { -webkit-text-stroke: 1px #d15829; }
+body.douglas-squirrel h4.quote { font-size: 22px; line-height: 1.5; text-transform: none; margin: 60px 0 12px; font-weight: 400; letter-spacing: 1px; font-style: italic; }
+body.douglas-squirrel ul ::marker { color: #d15829; }
 body.douglas-squirrel section a { -webkit-text-fill-color: unset; color: #d15829 !important; }
-body.douglas-squirrel ul.contribute li { background-color: #d15829; color: #f2f2f2; }
-body.douglas-squirrel .alt-section-start { background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg.jpg) #d15829 no-repeat top center !important; background-size: contain !important; }
-body.douglas-squirrel .alt-section-end { background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg-end.jpg) #f2f2f2 no-repeat top center !important; background-size: contain !important; }
+body.douglas-squirrel ul.contribute li { background-color: #d15829; color: #F4F0EE; }
+body.douglas-squirrel .alt-section-start { background: url(src/images/douglas-squirrel/doug-squirrel-alt-bg.jpg) #d15829 no-repeat top center !important; background-size: contain !important; }
+body.douglas-squirrel .alt-section-end { background: url(src/images/douglas-squirrel/doug-squirrel-alt-bg-end.jpg) #F4F0EE no-repeat top center !important; background-size: contain !important; }
 body.douglas-squirrel section.browser-mockup-section .mockup { border: solid 10px rgba(255, 255, 255, 0.5); border-top-width: 45px; }
-body.douglas-squirrel #scroll-text { background: #2764ac; }
+body.douglas-squirrel #scroll-text { background: #d15829; }
 body.douglas-squirrel .douglas-alt-section { background: #d15829; }
-body.douglas-squirrel .douglas-alt-section p, body.douglas-squirrel .douglas-alt-section ul li, body.douglas-squirrel .douglas-alt-section h4, body.douglas-squirrel .douglas-alt-section ul ::marker, body.douglas-squirrel .douglas-alt-section figcaption { color: #f2f2f2; }
-body.douglas-squirrel .douglas-alt-section h3 { -webkit-text-stroke: 1px #f2f2f2; }
+body.douglas-squirrel .douglas-alt-section p, body.douglas-squirrel .douglas-alt-section ul li, body.douglas-squirrel .douglas-alt-section h4, body.douglas-squirrel .douglas-alt-section ul ::marker, body.douglas-squirrel .douglas-alt-section figcaption { color: #d15829; }
+body.douglas-squirrel .douglas-alt-section h3 { -webkit-text-stroke: 1px #F4F0EE; }
 body.douglas-squirrel .douglas-alt-section a { color: #f7a235 !important; }
-body.douglas-squirrel .douglas-alt-section .button { background: #da8a70; color: #f2f2f2 !important; }
+body.douglas-squirrel .douglas-alt-section .button { background: #da8a70; color: #F4F0EE !important; }
 
 header { font-family: "Millik"; background-color: #cfff00; padding: 0; position: fixed; display: block; width: 100%; min-height: 72px; box-sizing: border-box; z-index: 10; max-height: 100%; overflow-y: visible; background-color: transparent; background-repeat: no-repeat; background-position: center top -60px; background-size: 120px; color: #ffffff; margin-top: 0; top: 0; z-index: 9999; }
 header ul li { margin: 0; line-height: 1.2; font-size: .8em; padding-left: 0; }
@@ -524,8 +528,8 @@ body.home { background-color: #cfff00; }
 .ourplanet #foreground { background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%; }
 
 .douglas { background: #D15727; }
-.douglas #midground { background: url(/src/images/douglas-squirrel/leaves-A\ copy.png) repeat 20% 20%; }
-.douglas #foreground { background: url(/src/images/douglas-squirrel/leaves-B.png) repeat 35% 35%; }
+.douglas #midground { background: url(/src/images/douglas-squirrel/leaves-B.png) repeat 20% 20%; }
+.douglas #foreground { background: url(/src/images/douglas-squirrel/leaves-A.png) repeat 35% 35%; }
 
 .snow { overflow: hidden; position: relative; background-size: cover; }
 @-webkit-keyframes STAR-MOVE { from { left: 0; top: 0; }

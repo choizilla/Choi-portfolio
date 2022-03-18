@@ -1234,17 +1234,17 @@ body.islandrecords {
 
 
 
-// All lisa styling 
+// All douglas styling 
 $douglas:#d15829;
-$douglas-sub: #f2f2f2;
+$douglas-sub: #F4F0EE;
 body.douglas-squirrel {
-    color: #333;
+    color: rgb(155, 143, 143);
     background-color: $douglas-sub;
     background-image: url(src/images/lisa-squirrel/lisa-bg.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     border: 5px solid $douglas;
-    .grid {
+    .grid.book {
         left: 50%;
         transform: translate(-50%);
         margin: 0 auto 24px auto;
@@ -1254,14 +1254,25 @@ body.douglas-squirrel {
         width: 100%;
         max-width: none;
     }
+    .doug-ragged-intro {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9000;
+    }
     .portfolio-page {
         background: $douglas;
         // background: #d15829;
-        min-height: 800px;
+        @media (min-width: 800px) {
+            min-height: 900px;
+        }
+        @media (max-width: 800px) {
+            min-height: 600px;
+        }
         position: relative;
         padding-top: 5em;
         .col-1-1 img{
-            max-width: 1000px;
+            max-width: 800px;
         }
     }
     .button {
@@ -1282,14 +1293,23 @@ body.douglas-squirrel {
     }
     h2,
     h4 {
-        color: $lisa;
+        color: $douglas;
     }
     h3 {
-        -webkit-text-stroke: 1px $lisa;
+        -webkit-text-stroke: 1px $douglas;
+    }
+    h4.quote{
+        font-size: 22px;
+        line-height: 1.5;
+        text-transform: none;
+        margin: 60px 0 12px;
+        font-weight: 400;
+        letter-spacing: 1px; 
+        font-style: italic;
     }
     ul {
          ::marker {
-            color: #2764ac;
+            color: $douglas;
         }
     }
     section a {
@@ -1303,11 +1323,11 @@ body.douglas-squirrel {
         }
     }
     .alt-section-start {
-        background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg.jpg) $douglas no-repeat top center !important;
+        background: url(src/images/douglas-squirrel/doug-squirrel-alt-bg.jpg) $douglas no-repeat top center !important;
         background-size: contain!important;
     }
     .alt-section-end {
-        background: url(src/images/lisa-squirrel/lisa-squirrel-alt-bg-end.jpg) $douglas-sub no-repeat top center !important;
+        background: url(src/images/douglas-squirrel/doug-squirrel-alt-bg-end.jpg) $douglas-sub no-repeat top center !important;
         background-size: contain!important;
     }
     section.browser-mockup-section .mockup {
@@ -1315,7 +1335,7 @@ body.douglas-squirrel {
         border-top-width: 45px;
     }
     #scroll-text {
-        background: $lisa;
+        background: $douglas;
     }
     // Section where it changes colour to break it up a bit
     .douglas-alt-section {
@@ -1325,7 +1345,7 @@ body.douglas-squirrel {
         h4,
         ul ::marker,
         figcaption {
-            color: $douglas-sub;
+            color: $douglas;
         }
         h3 {
             -webkit-text-stroke: 1px $douglas-sub;
