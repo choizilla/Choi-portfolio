@@ -92,14 +92,28 @@
   .gallery-col-2 {
     padding: 6em 0;
   }
+  .gallery-col-3{
+    padding: 6em 0;
+    grid-gap: 2em;
+    img {
+        padding: 1em;
+    }
+  }
 }
 
 @media (min-width: $mobile) {
   .gallery-col-2 {
     display: grid;
-    grid-gap: 0;
+    grid-gap: 2em;
     grid-template-columns: repeat(2,1fr);
     margin: 10em 0;
+  }
+  .gallery-col-3 {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3,1fr);
+    margin: 10em 0;
+    padding:2em;
   }
 }
 

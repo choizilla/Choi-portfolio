@@ -1297,6 +1297,21 @@ body.douglas-squirrel {
         background-size: 200%;
         background-position: top right;
     }
+    .grid.wide.about {
+        border-top: 2px dotted $douglas;
+        margin-top: 6em;
+        @media (min-width: 800px){
+            .gallery-col-2 {
+                margin: 6em 0;
+            }
+        }
+    }
+    p{
+        color: #333;
+    }
+    .sub-title{
+        color:transparent;
+    }
     h2,
     h4 {
         color: $douglas;
