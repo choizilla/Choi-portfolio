@@ -454,6 +454,7 @@ body.douglas-squirrel .sub-title { -webkit-text-stroke: 1px #d15829 !important; 
 body.douglas-squirrel ul ::marker { color: #d15829; }
 body.douglas-squirrel section a { -webkit-text-fill-color: unset; color: #d15829 !important; }
 body.douglas-squirrel ul.contribute li { background-color: #d15829; color: #F4F0EE; }
+body.douglas-squirrel .gallery-col-2 { margin: 6em 0; }
 body.douglas-squirrel .alt-section-start { background: url(src/images/douglas-squirrel/doug-squirrel-alt-bg.jpg) #d15829 no-repeat top center !important; background-size: contain !important; }
 body.douglas-squirrel .alt-section-end { background: url(src/images/douglas-squirrel/doug-squirrel-alt-bg-end.jpg) #F4F0EE no-repeat top center !important; background-size: contain !important; }
 body.douglas-squirrel section.browser-mockup-section .mockup { border: solid 10px rgba(255, 255, 255, 0.5); border-top-width: 45px; }
