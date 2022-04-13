@@ -609,6 +609,8 @@ body.home { background-color: #cfff00; }
 
 .jrock-merch-1 { background-image: url(/src//images/home/jrocknews-merch-1.jpg); }
 
+.jrock-1 { background-image: url(/src//images/home/jrocknews-merch-1.jpg); }
+
 .jrock-3 { background-image: url(/src//images/home/jrock-3.jpg); }
 
 .jrock-4 { background-image: url(/src//images/home/jrock-4.jpg); }
@@ -619,7 +621,14 @@ body.home { background-color: #cfff00; }
 
 .choizilla-2 { background-image: url(/src//images/home/choizilla-2.jpg); }
 
+.choizilla3 { background-image: url(/src//images/home/egg-shirt.jpg); }
+
+.choizilla4 { background-image: url(/src//images/home/star-shirt.jpg); }
+
 .agile { background-image: url(/src//images/home/agile.jpg); }
+
+.shop { opacity: 0; transition: all .2s ease-in-out; }
+.shop:hover { opacity: 1; transition: all .2s ease-in-out; }
 
 .rollinghover { height: 100%; width: 100%; opacity: 0; transition: all .2s ease-in-out; }
 .rollinghover:hover { opacity: 100; transition: all .2s ease-in-out; }
@@ -637,7 +646,7 @@ body.home { background-color: #cfff00; }
 
 @keyframes marquee { 0% { transform: translate3d(var(--move-initial), 0, 0); }
   100% { transform: translate3d(var(--move-final), 0, 0); } }
-.folder-tile { text-align: center; margin: 5%; }
+.folder-tile { text-align: center; }
 .folder-tile .col-1-1 { margin-top: 15vw; }
 .folder-tile p { margin: 0.5em 0 1.5em 0; color: #000000; font-weight: 600; text-transform: uppercase; text-align: center; background: black; display: inline-block; padding: 0.2em 0.5em 0; }
 .folder-tile a { color: #000000 !important; }

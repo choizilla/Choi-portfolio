@@ -492,6 +492,9 @@ body.home {
   background-image: url(/src//images/home/jrocknews-merch-1.jpg);
 }
 
+.jrock-1{
+  background-image: url(/src//images/home/jrocknews-merch-1.jpg);
+}
 .jrock-3{
   background-image: url(/src//images/home/jrock-3.jpg);
 }
@@ -510,8 +513,28 @@ body.home {
   background-image: url(/src//images/home/choizilla-2.jpg);
 }
 
+.choizilla3{
+  background-image: url(/src//images/home/egg-shirt.jpg);
+}
+
+.choizilla4{
+  background-image: url(/src//images/home/star-shirt.jpg);
+}
+
+
+
 .agile{
   background-image: url(/src//images/home/agile.jpg);
+}
+
+
+.shop{
+  opacity: 0;
+  transition: all .2s ease-in-out;
+    &:hover{
+      opacity: 1;
+      transition: all .2s ease-in-out;
+    }
 }
 
 
@@ -584,7 +607,6 @@ body.home {
 
 .folder-tile{
   text-align: center;
-  margin: 5%;
   .col-1-1{
     margin-top: 15vw;
   }
