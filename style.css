@@ -136,8 +136,6 @@ figure { margin: 2em 0 1em; }
 
 .external-img { width: 8px; margin-bottom: auto; padding: 0 0 0.2em 0.1em; display: inline; margin: 0; }
 
-video { width: 100%; margin: 24px 0 !important; display: block; background: #ffffff; }
-
 hr { border: none; background-color: #ffffff; height: 3px; width: 20%; margin: 80px 80% 0 0; float: left; }
 
 .card-holder { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 5%; }
@@ -651,6 +649,10 @@ body.home { background-color: #cfff00; }
 .folder-tile p { margin: 0.5em 0 1.5em 0; color: #000000; font-weight: 600; text-transform: uppercase; text-align: center; background: black; display: inline-block; padding: 0.2em 0.5em 0; }
 .folder-tile a { color: #000000 !important; }
 .folder-tile img { max-width: 150px; margin: auto; }
+
+.decorte-portfolio-page { min-height: 90vh; }
+
+#background-video { width: 100vw; height: 100vh; object-fit: cover; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: -1; }
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
