@@ -465,6 +465,22 @@ body.douglas-squirrel .douglas-alt-section h4 { color: #F4F0EE !important; }
 body.douglas-squirrel .douglas-alt-section a { color: #F4F0EE !important; }
 body.douglas-squirrel .douglas-alt-section .button { background: #da8a70; color: #F4F0EE !important; }
 
+body.twoset { border: none; background-image: url(/src/images/twoset/asa-akmelia-U15ZuWxjxYc-unsplash.jpg); background-size: cover; background-color: #000000; overflow: hidden; animation: AnimationName 50s ease infinite; }
+body.twoset img.rotate.twoset-vinyl { position: absolute; left: 56vh; max-width: 25vw; top: 31vh; }
+body.twoset img { z-index: 9990; }
+body.twoset #midground { background: url(/src/images/twoset/petal-A.png) repeat 10% 10%; background-size: 30%; }
+body.twoset #foreground { background: url(/src/images/twoset/petal-B.png) repeat 35% 35%; background-size: 35%; }
+body.twoset .col-1-1 { max-width: 50vw; }
+@-webkit-keyframes AnimationName { 0% { background-position: 0% 70%; }
+  50% { background-position: 50% 50%; }
+  100% { background-position: 100% 70%; } }
+.snow { overflow: hidden; position: relative; background-size: cover; }
+@-webkit-keyframes STAR-MOVE { from { left: 0; top: 0; }
+  to { left: -10000px; bottom: -20000px; } }
+.snow #midground { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 200; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 150s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
+.snow #foreground { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 300; -webkit-animation-name: STAR-MOVE; -webkit-animation-duration: 100s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; }
+.snow .tile-logo { z-index: 400; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+
 header { font-family: "Millik"; background-color: #cfff00; padding: 0; position: fixed; display: block; width: 100%; min-height: 72px; box-sizing: border-box; z-index: 10; max-height: 100%; overflow-y: visible; background-color: transparent; background-repeat: no-repeat; background-position: center top -60px; background-size: 120px; color: #ffffff; margin-top: 0; top: 0; z-index: 9999; }
 header ul li { margin: 0; line-height: 1.2; font-size: .8em; padding-left: 0; }
 header .logo { padding: 6px; position: absolute; width: 10em; height: 10em; background-image: url(/src/images/global/choi-logo.png); background-color: transparent; background-size: 90%; background-repeat: no-repeat; background-position: center; top: 1em; right: -5em; transition: all .2s ease-in-out; }

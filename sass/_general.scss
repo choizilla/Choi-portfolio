@@ -1404,3 +1404,118 @@ body.douglas-squirrel {
         }
     }
 }
+
+body.twoset{
+    border: none;
+    background-image: url(/src/images/twoset/asa-akmelia-U15ZuWxjxYc-unsplash.jpg);
+    background-size: cover;
+    background-color: $dark;
+    overflow: hidden;
+    // -webkit-animation: AnimationName 10s ease infinite;
+    // -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 50s ease infinite;
+    img.rotate.twoset-vinyl {
+        position: absolute;
+        left: 56vh;
+        max-width: 25vw;
+        top: 31vh;
+    }
+    img{
+        z-index: 9990
+    }
+    #midground {
+        background: url(/src/images/twoset/petal-A.png) repeat 10% 10%;
+        background-size: 30%;
+      }
+    #foreground {
+        background: url(/src/images/twoset/petal-B.png) repeat 35% 35%;
+        background-size: 35%;
+    }
+    
+    .col-1-1{
+        max-width: 50vw;
+    }
+    @-webkit-keyframes AnimationName {
+        0% {
+          background-position: 0% 70%;
+        }
+        50% {
+            background-position: 50% 50%;
+        }
+        100% {
+            background-position: 100% 70%;
+        }
+    //   }
+    //   @-moz-keyframes AnimationName {
+    //     0% {
+    //       background-position: 10% 70%;
+    //     }
+    //     50% {
+    //         background-position: 50% 50%;
+    //     }
+    //     100% {
+    //         background-position: 10% 70%;
+    //     }
+    //   }
+    //   @keyframes AnimationName {
+    //     0% {
+    //       background-position: 10% 70%;
+    //     }
+    //     50% {
+    //         background-position: 50% 50%;
+    //     }
+    //     100% {
+    //         background-position: 10% 70%;
+    //     }
+    }
+}
+  
+  .snow{
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      @-webkit-keyframes STAR-MOVE {
+          from {
+              left: 0;
+              top: 0;
+          }
+          to {
+              left: -10000px;
+              bottom: -20000px;
+          }
+      }
+      #midground {
+          // background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 200;
+          -webkit-animation-name: STAR-MOVE;
+          -webkit-animation-duration: 150s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-iteration-count: infinite;
+      }
+      #foreground {
+          // background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 300;
+          -webkit-animation-name: STAR-MOVE;
+          -webkit-animation-duration: 100s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-iteration-count: infinite;
+      }
+      .tile-logo {
+          z-index: 400;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+      }
+  }
