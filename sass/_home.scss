@@ -115,6 +115,7 @@ body.home {
     .col {
         background-size: cover;
         min-height: 49vw;
+        max-height: 50vw;
     }
     .rotatingText {
         margin: 0;
@@ -321,6 +322,7 @@ body.home {
 }
 
 .home {
+    .recordstore-home,
     .recordstore {
         background-color: #45b152;
     }
@@ -652,4 +654,30 @@ body.home {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.box-tasvir {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+@keyframes masihscroll {
+  0% {transform: translateY(0%);}
+  50% {transform: translateY(-50%);}
+  100% {transform: translateY(-5%);}
+}
+.box-tasvir img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  transition: all 6s;
+  animation-duration: 40s;
+  animation-name: masihscroll;
+  animation-iteration-count: 1000;
+}
+
+.choizilla-instagram{
+  overflow: hidden;
 }

@@ -528,7 +528,7 @@ body.home { background-color: #cfff00; }
 .home h2 { font-size: 10vw; }
 @media (max-width: 800px) { .home .home-foot h2 { font-size: 10vh; } }
 .home h1 { font-size: 30px; line-height: 36px; border-bottom: 3px solid #0a0a0a; padding: 0 0 24px 0; margin: 0 0 24px 0; }
-.home .col { background-size: cover; min-height: 49vw; }
+.home .col { background-size: cover; min-height: 49vw; max-height: 50vw; }
 .home .rotatingText { margin: 0; line-height: 1.5; position: absolute; top: 12vh; right: 10%; width: 50%; max-width: 650px; margin: 15vh .5em; color: #cfff00; }
 .home .rotatingText h3 { font-size: 15vw; line-height: 1; margin-top: 0; margin-bottom: 0; padding-right: 0; -webkit-text-stroke: 1px #cfff00; color: transparent; }
 .home .rotatingText h4 { font-size: 2.2em; margin: 0; padding-left: 1em; text-shadow: 1px 1px 10px black; }
@@ -569,7 +569,7 @@ body.home { background-color: #cfff00; }
 .container { background-size: contain; background-repeat: no-repeat; width: 100%; overflow: hidden; background-position: center; overflow: hidden; }
 .container img { margin: auto !important; }
 
-.home .recordstore { background-color: #45b152; }
+.home .recordstore-home, .home .recordstore { background-color: #45b152; }
 .home .islandrecords { background-image: url(/src/images/home/island.jpg); overflow: hidden; }
 
 .home-foot { background-color: #0a0a0a; color: #ffffff; padding: 5%; }
@@ -670,9 +670,18 @@ body.home { background-color: #cfff00; }
 
 #background-video { width: 100vw; height: 100vh; object-fit: cover; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: -1; }
 
+.box-tasvir { overflow: hidden; height: 100%; width: 100%; position: relative; margin: 0 auto; }
+
+@keyframes masihscroll { 0% { transform: translateY(0%); }
+  50% { transform: translateY(-50%); }
+  100% { transform: translateY(-5%); } }
+.box-tasvir img { width: 100%; height: auto; max-width: 100%; transition: all 6s; animation-duration: 40s; animation-name: masihscroll; animation-iteration-count: 1000; }
+
+.choizilla-instagram { overflow: hidden; }
+
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.module { transform-origin: center center; }
+.module { transform-origin: center center; overflow: hidden !important; }
 .module.off-screen-top { transform: translateY(-150px); }
 .module.off-screen-bottom { transform: translateY(150px); }
 
