@@ -688,7 +688,7 @@ a.layer-logo { position: absolute; z-index: 10; }
 
 .skew-home { transform: skew(10deg, 10deg); }
 
-.skew-home .rotate:hover { animation: none; }
+.skew-home .rotate:hover { animation: rotation 40s infinite linear; }
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
