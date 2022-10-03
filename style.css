@@ -679,6 +679,17 @@ body.home { background-color: #cfff00; }
 
 .choizilla-instagram { overflow: hidden; }
 
+a.layer-logo { position: absolute; z-index: 10; }
+
+.col.module { position: relative; }
+
+.col.module.springetts { background: #fcde03; }
+.col.module.springetts img { max-width: 550px; margin: 50% auto; transform: translateY(-50%); }
+
+.skew-home { transform: skew(10deg, 10deg); }
+
+.skew-home .rotate:hover { animation: none; }
+
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .module { transform-origin: center center; overflow: hidden !important; }
