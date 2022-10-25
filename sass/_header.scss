@@ -1,5 +1,6 @@
 header {
     font-family: $title;
+    font-weight: bold;
     background-color: $secondary;
     padding: 0;
     position: fixed;
@@ -99,6 +100,15 @@ header {
             text-align: center;
             color: $secondary!important;
         }
+    }
+    .col-nav {
+        width: 4em;
+        right: 5px;
+        position: fixed;
+    }
+    nav.main ul {
+        text-align: center;
+        margin: 0;
     }
 }
 

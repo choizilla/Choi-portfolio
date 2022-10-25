@@ -32,18 +32,20 @@ body.home {
     }
     .intro {
         position: relative;
-        background-size: auto;
-        background-position: center;
+        // background-size: auto;
+        background-position: top;
         height: 95vh;
         min-height: 600px;
         // background-image: url(/src/images/home/pexels-saph-photography-2929887copy.jpg);
-        background-image: url(/src/images/home/pexels-zack-jarosz-1727658.jpg);
-        background-size: cover;
-        background-color: $dark;
-        overflow: hidden;
-        -webkit-animation: AnimationName 20s ease infinite;
-        -moz-animation: AnimationName 20s ease infinite;
-        animation: AnimationName 20s ease infinite;
+        background-image: url(/src/images/home/choizilla-feature-2022.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: #1b1b1b;
+        // overflow: hidden;
+        // -webkit-animation: AnimationName 20s ease infinite;
+        // -moz-animation: AnimationName 20s ease infinite;
+        // animation: AnimationName 20s ease infinite;
           .github {
             text-align: center;
             text-transform: uppercase;
@@ -411,11 +413,11 @@ body.home {
 //     display: none;
 // }
 // }
-@media (min-width: 1400px) {
-    .home .intro {
-        background-size: 105%;
-    }
-}
+// @media (min-width: 1400px) {
+//     .home .intro {
+//         background-size: 105%;
+//     }
+// }
 
 @media(max-width: 800px) {
     .vinyl {
@@ -430,14 +432,16 @@ body.home {
         -webkit-columns: 2;
     }
     .home .intro {
-      background-size: cover;
-      background-position: top left -150px;
+      // background-size: cover;
+      // background-position: top left -150px;
+      background-image: url(/src/images/home/choizilla-feature-mobile.jpg);
       overflow: hidden;
       -webkit-animation: unset;
       -moz-animation: unset;
       animation: unset;
       background-repeat: no-repeat;
       height: 100vh;
+      // transform: rotate(90deg);
       .github {
         top: 95vh;
       }
@@ -583,6 +587,7 @@ body.home {
   transform: translate3d(var(--move-initial), 0, 0);
   animation: marquee 5s linear infinite;
   animation-play-state: paused;
+  font-weight: bold;
   // animation-play-state: running;
 }
 
@@ -691,16 +696,27 @@ a.layer-logo {
   position: relative;
 }
 
+
 .col.module.springetts{
   background: #fcde03;
    img {
     max-width: 550px;
-    margin: 50% auto;
+    margin: 54% auto;
     transform: translateY(-50%);
   }
 }
 
-
+.col.module.decorte-home{
+  background-image: url(/src/images/home/andrew-kliatskyi-eeoDlzb43rs-unsplash.jpg);
+  background-color: #000000;
+  animation: AnimationName 20s ease infinite;
+   img {
+    // max-width: 550px;
+    width: 60%;
+    margin: 50% auto;
+    transform: translateY(-50%);
+  }
+}
 
 .skew-home{
   transform: skew(10deg, 10deg);
@@ -708,4 +724,22 @@ a.layer-logo {
 
 .skew-home .rotate:hover{
   animation: rotation 40s infinite linear;
+}
+
+h4.tape-title {
+  background-color: rgba(207, 255, 0, 0.9);
+  font-size: 48px;
+  // max-width: 50%;
+  padding: 10px;
+  display: inline;
+}
+
+.role {
+  top: 37vh;
+  position: absolute;
+  right: 3%;
+  max-width: 75%;
+  padding: 2em;
+  text-align: right;
+  color: #1b1b1b;
 }

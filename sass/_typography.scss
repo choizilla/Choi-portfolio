@@ -35,7 +35,7 @@ em {
 
 h1 {
     font-family: $title;
-    ;
+    font-weight: bold;
     font-size: 46px;
     line-height: 52px;
     text-align: center;
@@ -44,7 +44,7 @@ h1 {
 
 h2 {
     font-family: $title;
-    ;
+    font-weight: bold;
     font-size: 8em;
     line-height: 1.2;
     color: $secondary;
@@ -103,6 +103,7 @@ a {
 
 h3 {
     font-family: $title;
+    font-weight: bold;
     font-size: 5em;
     line-height: 1.2;
     margin-top: 1.5em;
@@ -122,6 +123,7 @@ h3 {
 
 H4 {
     font-size: 22px;
+    font-weight: bold;
     line-height: 1.5;
     text-transform: uppercase;
     margin: $baseline*2.5 0 $baseline*.5;
@@ -141,6 +143,7 @@ H4 {
 
 .sub-title {
     font-size: 3.5em;
+    font-weight: bold;
     -webkit-text-stroke: 1px #2764ac;
     color: transparent;
     font-family: $title;
@@ -198,7 +201,7 @@ figcaption {
 // }
 p,
 q {
-    font-size: 20px;
+    font-size: 18px;
     margin: 1.5em 0;
 }
 
