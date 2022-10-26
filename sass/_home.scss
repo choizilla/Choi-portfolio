@@ -750,12 +750,6 @@ h4.tape-title {
   right: 5%;
 }
 
-@media (max-width: 900px) {
-  .float.bubble-1 {
-    top: 10vh!important;
-  }
-}
-
 .float2.bubble-2 {
   max-width: 350px;
   width: 40%;
@@ -763,9 +757,29 @@ h4.tape-title {
   top: 40vh !important;
   left: 2em;
 }
+
+
+.bubble-3 {
+  max-width: 250px;
+  width: 40%;
+  position: absolute;
+  top: 10vh !important;
+  left: 50vw;
+}
+
 @media (max-width: 900px) {
-  .float.bubble-2 {
+  .bubble-2 {
+    display: none!important;
+  }
+  .float.bubble-1 {
+    top: 10vh!important;
+  }
+  .bubble-3 {
+    max-width: 300px;
+    width: 48%;
+    position: absolute;
     top: 79vh !important;
+    left: 21vw;
   }
 }
 
