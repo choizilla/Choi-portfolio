@@ -114,7 +114,7 @@ footer ul li { font-size: 19px; line-height: 22px; margin: 12px 0; }
 
 small { font-size: .7em; line-height: 18px; display: block; color: #ffffff; margin: .5em 0; }
 
-span.call-to-action, a.button, button, input[type=button] { font-size: 24px; line-height: 30px; }
+span.call-to-action, a.button, button, input[type=button] { font-size: 24px; line-height: 30px; font-weight: bold; }
 span.call-to-action a, a.button a, button a, input[type=button] a { color: #0a0a0a; text-decoration: none; color: black; word-wrap: unset; position: unset; background: unset; background-clip: unset; -webkit-background-clip: unset; -webkit-text-fill-color: unset; background-size: unset; background-position: unset; transition: unset; text-decoration: unset; }
 span.call-to-action:hover, a.button:hover, button:hover, input[type=button]:hover { background: #b0da01; }
 
@@ -308,6 +308,8 @@ section.browser-mockup-section .mockup:hover { transform: rotateX(-10deg) rotate
 .clients ul li { list-style: none; }
 
 body.clients, body.about, body.contact { min-height: 100vh; background-image: url(src/images/global/neon-rip.png); background-repeat: no-repeat; background-position: bottom; background-size: auto; }
+
+body.about { background-color: #1b1b1b; }
 
 section#biography { margin-bottom: 10em; }
 
@@ -692,12 +694,26 @@ a.layer-logo { position: absolute; z-index: 10; }
 
 .skew-home { transform: skew(10deg, 10deg); }
 
-.skew-home .rotate:hover { animation: rotation 40s infinite linear; }
-
 h4.tape-title { background-color: rgba(207, 255, 0, 0.9); font-size: 48px; padding: 10px; display: inline; }
 
 .role { top: 37vh; position: absolute; right: 3%; max-width: 75%; padding: 2em; text-align: right; color: #1b1b1b; }
 
+.float.bubble-1 { max-width: 250px; width: 40%; position: absolute; top: 60vh !important; right: 5%; }
+
+@media (max-width: 900px) { .float.bubble-1 { top: 10vh !important; } }
+.float2.bubble-2 { max-width: 350px; width: 40%; position: absolute; top: 40vh !important; left: 2em; }
+
+@media (max-width: 900px) { .float.bubble-2 { top: 79vh !important; } }
+.float { animation: float 6s ease-in-out infinite; }
+
+.float2 { animation: float2 6s ease-in-out infinite; }
+
+@keyframes float { 0% { transform: translatey(0px); }
+  50% { transform: translatey(-50px); }
+  100% { transform: translatey(0px); } }
+@keyframes float2 { 0% { transform: translatey(-40px); }
+  50% { transform: translatey(20px); }
+  100% { transform: translatey(-40px); } }
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .module { transform-origin: center center; overflow: hidden !important; }
