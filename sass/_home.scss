@@ -234,6 +234,7 @@ body.home {
     padding: 0;
 }
 
+
 .ourplanet {
   background-image: url(/src/images/home/ourplanet.jpg);
     #midground {
@@ -242,6 +243,10 @@ body.home {
     #foreground {
         background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%;
     }
+}
+
+.untildawn {
+  background-image: url(/src/images/home/until_dawn_2024.jpg);
 }
 
 .douglas {

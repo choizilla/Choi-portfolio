@@ -559,6 +559,8 @@ body.home { background-color: #cfff00; }
 .ourplanet #midground { background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%; }
 .ourplanet #foreground { background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%; }
 
+.untildawn { background-image: url(/src/images/home/until_dawn_2024.jpg); }
+
 .douglas { background: #D15727; }
 .douglas #midground { background: url(/src/images/douglas-squirrel/leaves-B.png) repeat 20% 20%; }
 .douglas #foreground { background: url(/src/images/douglas-squirrel/leaves-A.png) repeat 35% 35%; }
