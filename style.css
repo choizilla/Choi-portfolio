@@ -561,6 +561,8 @@ body.home { background-color: #cfff00; }
 
 .untildawn { background-image: url(/src/images/home/until_dawn_2024.jpg); }
 
+.concord { background-image: url(/src/images/home/concord.jpg); }
+
 .douglas { background: #D15727; }
 .douglas #midground { background: url(/src/images/douglas-squirrel/leaves-B.png) repeat 20% 20%; }
 .douglas #foreground { background: url(/src/images/douglas-squirrel/leaves-A.png) repeat 35% 35%; }
