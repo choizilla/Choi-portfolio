@@ -517,7 +517,7 @@ body.home { background-color: #cfff00; }
 
 .home .sidetext { position: fixed; z-index: 9998; bottom: 15vh; width: 500px; /* after rotation this is the height */ margin-top: 250px; /* is 50% of width */ transform: rotate(270deg); transform-origin: 0% 0%; /* set to the upper-left corner */ -ms-transform: rotate(270deg); /* IE 9 */ -ms-transform-origin: 0% 0%; /* IE 9 */ -webkit-transform: rotate(270deg); /* Safari and Chrome */ -webkit-transform-origin: 0% 0%; /* Safari and Chrome */ }
 .home .sidetext p { font-size: .75em; letter-spacing: 5px; color: #d0ff00; text-transform: uppercase; margin: 0.5em; }
-.home .intro { position: relative; background-position: top; height: 95vh; min-height: 600px; background-image: url(/src/images/home/choizilla-feature-2022.jpg); background-repeat: no-repeat; background-position: center; background-size: contain; background-color: #1b1b1b; }
+.home .intro { position: relative; background-position: top; height: 95vh; min-height: 600px; background-image: url(/src/images/home/choizilla-feature.jpg); background-repeat: no-repeat; background-position: center; background-size: contain; background-color: #1b1b1b; }
 .home .intro .github { text-align: center; text-transform: uppercase; border: 1px dashed #cfff00; bottom: -2.5vh; position: absolute; min-width: 300px; left: 50%; border-radius: 1em; padding: .5em 1em 2em; transform: translateX(-50%); }
 .home .intro .github p, .home .intro .github q { font-size: 0.8em; margin: 0.2em 0.5em; letter-spacing: 3px; }
 @-webkit-keyframes AnimationName { 0% { background-position: 10% 70%; }
@@ -559,9 +559,9 @@ body.home { background-color: #cfff00; }
 .ourplanet #midground { background: url(/src/images/home/ourplanet-mid.png) repeat 20% 20%; }
 .ourplanet #foreground { background: url(/src/images/home/ourplanet-small.png) repeat 35% 35%; }
 
-.untildawn { background-image: url(/src/images/home/until_dawn_2024.jpg); }
-
 .concord { background-image: url(/src/images/home/concord.jpg); }
+
+.tkn { background-image: url(/src/images/home/marvel_tokon_Fighting_Souls_2025.jpg); }
 
 .douglas { background: #D15727; }
 .douglas #midground { background: url(/src/images/douglas-squirrel/leaves-B.png) repeat 20% 20%; }
