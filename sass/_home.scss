@@ -46,6 +46,23 @@ body.home {
         // -webkit-animation: AnimationName 20s ease infinite;
         // -moz-animation: AnimationName 20s ease infinite;
         // animation: AnimationName 20s ease infinite;
+
+            .intro_title{
+              position: relative;
+              top: 50%;
+              border: 0;
+              width: 30%;
+              left: 50%;
+              h1{
+                text-transform: uppercase;
+                display: inline;
+                border: 0;
+                color: black;
+                background: yellow;
+                line-height: 1em;
+                font-size: 3em;
+              }
+            }
           .github {
             text-align: center;
             text-transform: uppercase;
